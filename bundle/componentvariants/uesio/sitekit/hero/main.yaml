@@ -1,0 +1,46 @@
+name: main
+label: Main
+extends: uesio/sitekit.default
+definition:
+  uesio.styleTokens:
+    root:
+      - gap-8
+      - justify-items-center
+      - text-center
+    category:
+      - font-[Gosha]
+      - text-black/90
+      - font-bold
+      - text-[#EC6940]
+      - text-xs
+      - lg:text-sm
+      - uppercase
+    title:
+      - font-normal
+    subtitle:
+      - font-light
+      - text-zinc-500
+      - lg:text-lg
+      - md:text-base
+      - text-sm
+    actions:
+      - gap-4
+      - mt-6
+    image:
+      - rounded-xl
+      - border-4
+      - border-zinc-900
+      - shadow-xl
+      - shadow-zinc-200
+      - overflow-hidden
+      - mt-10
+      - max-h-[376px]
+      - min-w-full
+      - xl:-mb-24
+      - xl:-mx-0
+      - lg:-mb-48
+      - lg:-mx-6
+      - md:-mb-48
+      - sm:-mb-52
+      - -mb-56
+      - -mx-8

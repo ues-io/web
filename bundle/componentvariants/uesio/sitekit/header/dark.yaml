@@ -1,0 +1,21 @@
+name: dark
+label: Dark
+extends: uesio/sitekit.site
+definition:
+  uesio.styleTokens:
+    root:
+      - bg-black
+      - py-2
+      - px-2
+    right:
+      - grid
+      - md:grid
+      - order-first
+      - md:order-none
+    menu:
+      - order-last
+    menubutton:
+      - text-lg
+      - text-white
+      - py-0
+      - leading-none

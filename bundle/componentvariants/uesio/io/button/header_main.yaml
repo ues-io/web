@@ -1,0 +1,12 @@
+name: header_main
+label: Header Main
+extends: uesio/sitekit.secondary
+definition:
+  uesio.styleTokens:
+    root:
+      - normal-case
+      - px-2
+      - py-0.5
+      - rounded-none
+      - text-black
+      - font-light

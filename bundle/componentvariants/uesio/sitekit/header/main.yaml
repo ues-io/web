@@ -1,0 +1,22 @@
+name: main
+label: Main
+extends: uesio/sitekit.site
+definition:
+  uesio.styleTokens:
+    root:
+      - bg-white
+      - py-4
+      - px-4
+    wrapper:
+      - md:px-2.5
+    right:
+      - grid
+      - md:grid
+    left:
+      - gap-8
+    leftinner:
+      - hidden
+      - md:grid
+      - overflow-hidden
+    menu:
+      - hidden

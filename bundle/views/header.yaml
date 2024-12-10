@@ -3,33 +3,66 @@ definition:
   wires:
   components:
     - uesio/sitekit.header:
-        uesio.styleTokens:
-          root:
-            - from-indigo-700/95
-            - to-violet-600/95
-            - bg-gradient-to-br
-            - "[background-size:100%_500%]"
-            - backdrop-blur
+        uesio.variant: uesio/web.dark
+        sticky: true
+        right:
+          - uesio/io.group:
+              uesio.styleTokens:
+                root:
+                  - gap-4
+              components:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_small
+                    text: Documentation
+                    icon: description
+                    iconFill: false
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_small
+                    text: GitHub
+                    icon: code
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_small
+                    text: Log in
+                    icon: login
+    - uesio/sitekit.header:
+        uesio.variant: uesio/web.main
         sticky: true
         logo:
           - uesio/io.image:
-              file: uesio/core.logowhite
-              height: 44
+              file: uesio/core.logo
+              height: 34
               signals:
                 - signal: "route/NAVIGATE"
                   path: "home"
-        right:
+        left:
           - uesio/io.group:
+              uesio.styleTokens:
+                root:
+                  - hidden
+                  - md:grid
               components:
                 - uesio/io.button:
-                    uesio.variant: uesio/sitekit.secondary
-                    text: Page 1
+                    uesio.variant: uesio/web.header_main
+                    text: Platform
                 - uesio/io.button:
-                    uesio.variant: uesio/sitekit.secondary
-                    text: Page 2
+                    uesio.variant: uesio/web.header_main
+                    text: Pricing
                 - uesio/io.button:
-                    uesio.variant: uesio/sitekit.secondary
-                    text: Page 3
-          - uesio/io.button:
-              uesio.variant: uesio/sitekit.primary
-              text: Call to Action
+                    uesio.variant: uesio/web.header_main
+                    text: Resources
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: About
+        right:
+          - uesio/io.group:
+              uesio.styleTokens:
+                root:
+                  - gap-4
+              components:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_secondary
+                    text: Schedule a demo
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_primary
+                    text: Get started
+                    icon: call_made

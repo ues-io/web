@@ -1,0 +1,15 @@
+name: cta_secondary
+label: Secondary Call-to-action
+extends: uesio/sitekit.secondary
+definition:
+  uesio.styleTokens:
+    root:
+      - normal-case
+      - px-4
+      - py-1.5
+      - rounded-none
+      - text-black/90
+      - font-light
+      - border-black/60
+      - border
+      - rounded-sm

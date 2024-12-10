@@ -1,0 +1,20 @@
+name: cta_primary
+label: Primary Call-to-action
+extends: uesio/sitekit.secondary
+definition:
+  uesio.styleTokens:
+    root:
+      - normal-case
+      - px-3
+      - pl-4
+      - py-1.5
+      - rounded-none
+      - text-white
+      - font-light
+      - bg-black
+      - border-black
+      - border
+      - rounded-sm
+    icon:
+      - order-last
+      - text-white

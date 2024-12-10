@@ -8,11 +8,29 @@ definition:
           - uesio/core.view:
               view: uesio/web.header
         content:
+          - uesio/sitekit.section_hero:
+              heroVariant: uesio/web.main
+              category: No-Code & Pro-Code
+              title: Build applications fast, with or without code.
+              subtitle: Keep what you build. Open source, run anywhere, no lock-in. Ever.
+              actions:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_primary
+                    text: Get started
+                    icon: call_made
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_secondary
+                    text: View templates
+              image:
+                - uesio/io.image:
+                    file: uesio/web.screenshots
           - uesio/io.box:
-              uesio.variant: uesio/sitekit.section
-              components:
-                - uesio/io.text:
-                    text: Hello World
+              uesio.styleTokens:
+                root:
+                  - border-t-1
+                  - border-b-1
+                  - border-zinc-200
+                  - h-32
         footer:
           - uesio/core.view:
               view: uesio/web.footer

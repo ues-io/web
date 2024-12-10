@@ -1,0 +1,17 @@
+name: header_small
+label: Header Small
+extends: uesio/sitekit.secondary
+definition:
+  uesio.styleTokens:
+    root:
+      - normal-case
+      - font-light
+      - px-2
+      - py-0.5
+      - rounded-none
+      - text-xs
+      - text-white/90
+      - hover:text-white
+    icon:
+      - text-base
+      - text-white
