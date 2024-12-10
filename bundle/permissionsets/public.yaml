@@ -1,12 +1,12 @@
 name: public
 named: {}
 views:
-  ben/web.footer: true
-  ben/web.header: true
-  ben/web.home: true
+  uesio/web.footer: true
+  uesio/web.header: true
+  uesio/web.home: true
 collections: {}
 routes:
-  ben/web.home: true
+  uesio/web.home: true
 files: {}
 bots: {}
 integrationActions: {}

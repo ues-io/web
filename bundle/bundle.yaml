@@ -1,6 +1,6 @@
-name: ben/web
-homeRoute: ben/web.home
-publicProfile: ben/web.public
+name: uesio/web
+homeRoute: uesio/web.home
+publicProfile: uesio/web.public
 dependencies:
   uesio/core:
     version: v0.0.1

@@ -3,10 +3,10 @@ definition:
   wires:
   components:
     - uesio/io.viewlayout:
-        uesio.variant: ben/web.page
+        uesio.variant: uesio/web.page
         header:
           - uesio/core.view:
-              view: ben/web.header
+              view: uesio/web.header
         content:
           - uesio/io.box:
               uesio.variant: uesio/sitekit.section
@@ -15,4 +15,4 @@ definition:
                     text: Hello World
         footer:
           - uesio/core.view:
-              view: ben/web.footer
+              view: uesio/web.footer
