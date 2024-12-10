@@ -1,0 +1,10 @@
+name: ben/web
+homeRoute: ben/web.home
+publicProfile: ben/web.public
+dependencies:
+  uesio/core:
+    version: v0.0.1
+  uesio/io:
+    version: v0.0.1
+  uesio/sitekit:
+    version: v0.0.1

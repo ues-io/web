@@ -1,0 +1,18 @@
+name: home
+definition:
+  wires:
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: ben/web.page
+        header:
+          - uesio/core.view:
+              view: ben/web.header
+        content:
+          - uesio/io.box:
+              uesio.variant: uesio/sitekit.section
+              components:
+                - uesio/io.text:
+                    text: Hello World
+        footer:
+          - uesio/core.view:
+              view: ben/web.footer

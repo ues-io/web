@@ -1,0 +1,4 @@
+name: public
+permissionSets:
+  - ben/web.public
+  - uesio/core.public
