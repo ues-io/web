@@ -14,7 +14,7 @@ allowallbots: false
 allowallcollections: false
 allowallviews: false
 allowallroutes: false
-allowallfiles: false
+allowallfiles: true
 allowallintegrationactions: false
 modifyallrecords: false
 viewallrecords: false
