@@ -26,21 +26,19 @@ definition:
     actions:
       - gap-4
       - mt-6
-    image:
-      - rounded-xl
-      - border-4
-      - border-zinc-900
-      - shadow-xl
-      - shadow-zinc-200
-      - overflow-hidden
+    imagewrapper:
       - mt-10
-      - max-h-[376px]
-      - min-w-full
-      - xl:-mb-24
       - xl:-mx-0
-      - lg:-mb-48
       - lg:-mx-6
-      - md:-mb-48
-      - sm:-mb-52
-      - -mb-56
+      - md:-mb-52
+      - -mb-36
       - -mx-8
+      - p-3
+      - rounded
+      - bg-gradient-to-tr
+      - from-zinc-400/20
+      - to-zinc-200/10
+    image:
+      - rounded-sm
+      - overflow-hidden
+      - shadow-xl
