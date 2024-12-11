@@ -10,3 +10,4 @@ definition:
       - "[&.scroll-down]:-top-[44px]"
       - "[&.scroll-up]:-top-0"
       - transition-all
+      - z-10

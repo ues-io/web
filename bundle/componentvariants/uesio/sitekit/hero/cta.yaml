@@ -1,0 +1,14 @@
+name: cta
+label: Call to action
+extends: uesio/web.main
+definition:
+  uesio.styleTokens:
+    root:
+      - md:px-32
+      - sm:px-16
+    title:
+      - xl:text-6xl
+      - lg:text-5xl
+      - md:text-4xl
+      - text-4xl
+      - text-black

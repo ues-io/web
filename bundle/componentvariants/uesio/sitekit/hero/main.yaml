@@ -33,7 +33,7 @@ definition:
       - md:-mb-52
       - -mb-36
       - -mx-8
-      - p-3
+      - p-2
       - rounded
       - bg-gradient-to-tr
       - from-zinc-400/20
@@ -42,3 +42,4 @@ definition:
       - rounded-sm
       - overflow-hidden
       - shadow-xl
+      - bg-white

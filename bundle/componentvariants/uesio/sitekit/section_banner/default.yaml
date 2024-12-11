@@ -1,0 +1,14 @@
+name: default
+label: Default
+definition:
+  uesio.styleTokens:
+    root:
+      - p-10
+      - border-y-1
+      - border-zinc-200
+      - bg-white
+      - overflow-auto
+      - bg-gradient-to-tr
+      - from-zinc-400/10
+      - to-transparent
+      - "[scrollbar-width:none]"

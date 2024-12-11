@@ -1,0 +1,41 @@
+name: feature_item
+category: LAYOUT
+type: DECLARATIVE
+properties:
+  - type: TEXT
+    name: title
+    label: Title text
+definition:
+  - uesio/io.tile:
+      uesio.variant: uesio/io.default
+      uesio.styleTokens:
+        root:
+          - gap-1
+      content:
+        - uesio/io.titlebar:
+            uesio.variant: uesio/io.item
+            uesio.styleTokens:
+              title:
+                - text-xs
+                - text-black/80
+                - font-light
+            title: $Prop{title}
+      avatar:
+        - uesio/io.avatar:
+            image: $File{uesio/core.logo}
+            uesio.styleTokens:
+              root:
+                - "[background-size:50%]"
+                - bg-no-repeat
+                - mb-[1px]
+                - -mt-[1px]
+                - opacity-80
+title: Feature Item Tile
+discoverable: false
+description: An item tile
+sections:
+  - type: HOME
+    properties:
+  - type: DISPLAY
+variants:
+  - uesio/io.titlebar:uesio/io.item

@@ -12,6 +12,9 @@ definition:
     right:
       - grid
       - md:grid
+    logo:
+      - mb-[1px]
+      - -mt-[1px]
     left:
       - gap-8
     leftinner:
