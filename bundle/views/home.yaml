@@ -26,6 +26,9 @@ definition:
                     uesio.variant: uesio/web.cta_primary
                     text: Get started
                     icon: call_made
+                    signals:
+                      - signal: route/REDIRECT
+                        path: https://studio.$Site{domain}/signup
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_secondary
                     text: View templates
