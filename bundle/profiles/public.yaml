@@ -1,4 +1,5 @@
 name: public
 permissionSets:
   - uesio/web.public
+  - uesio/cms.public
   - uesio/core.public

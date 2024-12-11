@@ -4,11 +4,19 @@ definition:
   components:
     - uesio/io.viewlayout:
         uesio.variant: uesio/web.page
+        trackScrolling: true
         header:
           - uesio/core.view:
               view: uesio/web.header
         content:
           - uesio/sitekit.section_hero:
+              uesio.styleTokens:
+                sectionRoot:
+                  - bg-zinc-50
+                  - md:bg-[url($File{uesio/web.background_blocks:files/right.svg}),url($File{uesio/web.background_blocks:files/left.svg})]
+                  - md:bg-[right_bottom,left_bottom]
+                  - bg-[url($File{uesio/web.background_blocks:files/right.svg})]
+                  - bg-no-repeat
               heroVariant: uesio/web.main
               category: No-Code & Pro-Code
               title: Build applications fast, with or without code.

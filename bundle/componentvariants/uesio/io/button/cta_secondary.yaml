@@ -13,3 +13,4 @@ definition:
       - border-black/60
       - border
       - rounded-sm
+      - bg-white

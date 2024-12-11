@@ -5,4 +5,8 @@ definition:
   uesio.styleTokens:
     header:
       - shadow-xl
-      - shadow-zinc-100
+      - shadow-zinc-500/10
+      - sticky
+      - "[&.scroll-down]:-top-[44px]"
+      - "[&.scroll-up]:-top-0"
+      - transition-all
