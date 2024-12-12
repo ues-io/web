@@ -12,6 +12,7 @@ definition:
       - md:grid
       - order-first
       - md:order-none
+      - gap-4
     menu:
       - order-last
     menubutton:

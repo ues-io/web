@@ -1,0 +1,53 @@
+name: generate
+definition:
+  wires:
+    generate_app:
+      viewOnly: true
+      fields:
+        description:
+          label: Description
+          type: TEXT
+      init:
+        create: true
+  components:
+    - uesio/io.box:
+        uesio.styleTokens:
+          root:
+            - shadow-md
+            - border-1
+            - border-zinc-400
+            - md:w-[380px]
+            - w-[320px]
+            - flex
+            - bg-white
+            - rounded-sm
+            - relative
+        components:
+          - uesio/io.item:
+              wire: generate_app
+              mode: EDIT
+              components:
+                - uesio/io.field:
+                    wrapperVariant: uesio/io.minimal
+                    uesio.styleTokens:
+                      wrapper:
+                        - grow
+                      input:
+                        - border-0
+                        - py-4
+                        - pl-4
+                        - pr-32
+                        - placeholder:text-black/60
+                        - placeholder:font-light
+                    labelPosition: none
+                    fieldId: description
+                    placeholder: Build me a CRM...
+          - uesio/io.button:
+              uesio.variant: uesio/web.cta_primary
+              uesio.styleTokens:
+                root:
+                  - absolute
+                  - top-1/2
+                  - translate-y-[-50%]
+                  - right-2
+              text: Get started

@@ -1,6 +1,5 @@
 name: home
 definition:
-  wires:
   components:
     - uesio/io.viewlayout:
         uesio.variant: uesio/web.page
@@ -75,16 +74,9 @@ definition:
               title: Automatically build custom apps with GenAI
               subtitle: Get up and running in minutes with our App Kit and Site Kit starter templates.
               actions:
-                - uesio/io.button:
-                    uesio.variant: uesio/web.cta_primary
-                    text: Get started
-                    icon: call_made
-                    signals:
-                      - signal: route/REDIRECT
-                        path: https://studio.$Site{domain}/signup
-                - uesio/io.button:
-                    uesio.variant: uesio/web.cta_secondary
-                    text: View templates
+                - uesio/core.view:
+                    uesio.id: generate
+                    view: uesio/web.generate
           - uesio/sitekit.section_banner:
               uesio.variant: uesio/web.default
               content:

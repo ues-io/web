@@ -3,7 +3,8 @@ label: Default
 definition:
   uesio.styleTokens:
     root:
-      - p-10
+      - md:p-8
+      - p-6
       - border-y-1
       - border-zinc-200
       - bg-white

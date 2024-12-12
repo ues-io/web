@@ -12,6 +12,7 @@ definition:
     right:
       - grid
       - md:grid
+      - gap-4
     logo:
       - mb-[1px]
       - -mt-[1px]
