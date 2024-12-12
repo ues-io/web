@@ -7,7 +7,7 @@ definition:
       - gap-4
       - pb-16
       - md:pr-36
-      - pr-8
+      - pr-12
     title:
       - font-light
       - text-2xl
