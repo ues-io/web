@@ -1,0 +1,36 @@
+name: feature
+label: Feature
+extends: uesio/io.default
+definition:
+  titlebarVariant: uesio/web.accordion_title
+  uesio.styleTokens:
+    root:
+      - overflow-hidden
+      - -ml-[2000px]
+      - pl-[2000px]
+    content:
+      - bg-white
+      - relative
+      - border-b-1
+      - border-zinc-200/60
+      - -ml-[2000px]
+      - pl-[2000px]
+      - overflow-hidden
+    icon:
+      - text-3xl
+      - text-zinc-200
+      - leading-none
+    titlebar:
+      - border-b-1
+      - border-zinc-200/60
+      - -ml-[2000px]
+      - pl-[2000px]
+    expanded:
+      - border-transparent
+      - bg-white
+    titlebarContent:
+      - transition-opacity
+    titlebarContentExpanded:
+      - opacity-0
+variants:
+  - uesio/io.titlebar:uesio/web.accordion_title

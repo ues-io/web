@@ -1,0 +1,21 @@
+name: main
+label: Main
+definition:
+  uesio.styleTokens:
+    sectionRoot:
+      - bg-gradient-to-tr
+      - from-zinc-400/10
+      - to-transparent
+      - overflow-hidden
+    root:
+      - py-0
+      - grid
+      - md:grid-cols-[65%_35%]
+      - grid-cols-1
+    content:
+      - md:border-r-1
+      - md:border-zinc-300
+      - md:-mr-0
+      - -mr-12
+    image:
+      - md:min-h-[500px]

@@ -1,0 +1,7 @@
+name: cta_tertiary
+label: Tertiary Call-to-action
+extends: uesio/web.cta_secondary
+definition:
+  uesio.styleTokens:
+    root:
+      - bg-zinc-100/60

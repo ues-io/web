@@ -4,7 +4,7 @@ definition:
   uesio.styleTokens:
     root:
       - relative
-      - border-y-1
+      - border-b-1
       - border-zinc-300
       - bg-white
       - bg-gradient-to-tr

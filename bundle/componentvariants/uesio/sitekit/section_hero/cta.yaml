@@ -3,6 +3,8 @@ label: Call to action
 definition:
   uesio.styleTokens:
     sectionRoot:
+      - border-b-1
+      - border-zinc-300
       - bg-zinc-50
       - bg-[url($File{uesio/core.logo})]
       - bg-no-repeat
@@ -10,6 +12,7 @@ definition:
       - bg-blend-soft-light
       - "[background-size:360px]"
       - py-8
+      - overflow-hidden
   heroVariant: uesio/web.cta
 variants:
   - uesio/sitekit.hero:uesio/web.cta

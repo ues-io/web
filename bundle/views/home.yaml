@@ -76,6 +76,79 @@ definition:
                     file: uesio/web.logos
                     filepath: files/digitalocean.svg
                     height: 24
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.main
+              content:
+                - uesio/io.accordion:
+                    uesio.variant: uesio/web.feature
+                    initialItem: templates
+                    items:
+                      - id: templates
+                        title: Templates
+                        components:
+                          - uesio/sitekit.feature:
+                              uesio.variant: uesio/web.accordion_feature
+                              title: Start quickly with pre-built templates
+                              description: Our starter templates let you get up and running fast with common app patterns. Site Kit lets you build sites quickly, while App Kit provides the tools for building internal administrative apps.
+                              actions:
+                                - uesio/io.button:
+                                    uesio.variant: uesio/web.cta_tertiary
+                                    text: Learn more
+                      - id: prototyping
+                        title: Rapid Prototyping
+                        components:
+                          - uesio/sitekit.feature:
+                              uesio.variant: uesio/web.accordion_feature
+                              title: Prototype your app in hours
+                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                              actions:
+                                - uesio/io.button:
+                                    uesio.variant: uesio/web.cta_tertiary
+                                    text: Learn more
+                      - id: sandbox
+                        title: Sandbox development
+                        components:
+                          - uesio/sitekit.feature:
+                              uesio.variant: uesio/web.accordion_feature
+                              title: Make changes confidently with sandboxes
+                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                              actions:
+                                - uesio/io.button:
+                                    uesio.variant: uesio/web.cta_tertiary
+                                    text: Learn more
+                      - id: marketplace
+                        title: App marketplace
+                        components:
+                          - uesio/sitekit.feature:
+                              uesio.variant: uesio/web.accordion_feature
+                              title: Benefit from our community app marketplace
+                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                              actions:
+                                - uesio/io.button:
+                                    uesio.variant: uesio/web.cta_tertiary
+                                    text: Learn more
+                      - id: integrations
+                        title: Custom integrations
+                        components:
+                          - uesio/sitekit.feature:
+                              uesio.variant: uesio/web.accordion_feature
+                              title: Integrate to your heart's content
+                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                              actions:
+                                - uesio/io.button:
+                                    uesio.variant: uesio/web.cta_tertiary
+                                    text: Learn more
+                      - id: builder
+                        title: Visual builder
+                        components:
+                          - uesio/sitekit.feature:
+                              uesio.variant: uesio/web.accordion_feature
+                              title: What you see is what you get
+                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                              actions:
+                                - uesio/io.button:
+                                    uesio.variant: uesio/web.cta_tertiary
+                                    text: Learn more
         footer:
           - uesio/core.view:
               view: uesio/web.footer
