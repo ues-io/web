@@ -1,0 +1,13 @@
+name: main
+label: Main
+definition:
+  uesio.styleTokens:
+    sectionRoot:
+      - bg-zinc-50
+      - md:bg-[url($File{uesio/web.background_blocks:files/right.svg}),url($File{uesio/web.background_blocks:files/left.svg})]
+      - md:bg-[right_bottom,left_bottom]
+      - bg-[url($File{uesio/web.background_blocks:files/right.svg})]
+      - bg-no-repeat
+  heroVariant: uesio/web.main
+variants:
+  - uesio/sitekit.hero:uesio/web.main

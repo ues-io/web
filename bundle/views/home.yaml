@@ -9,14 +9,7 @@ definition:
               view: uesio/web.header
         content:
           - uesio/sitekit.section_hero:
-              uesio.styleTokens:
-                sectionRoot:
-                  - bg-zinc-50
-                  - md:bg-[url($File{uesio/web.background_blocks:files/right.svg}),url($File{uesio/web.background_blocks:files/left.svg})]
-                  - md:bg-[right_bottom,left_bottom]
-                  - bg-[url($File{uesio/web.background_blocks:files/right.svg})]
-                  - bg-no-repeat
-              heroVariant: uesio/web.main
+              uesio.variant: uesio/web.main
               category: No-Code & Pro-Code
               title: Build applications fast, with or without code.
               subtitle: Keep what you build. Open source, run anywhere, no lock-in. Ever.
@@ -39,37 +32,20 @@ definition:
           - uesio/sitekit.section_banner:
               uesio.variant: uesio/web.default
               content:
-                - uesio/io.group:
-                    uesio.styleTokens:
-                      root:
-                        - auto-cols-max
-                        - gap-20
-                        - justify-center
-                        - px-96
-                    components:
-                      - uesio/web.feature_item:
-                          title: App marketplace
-                      - uesio/web.feature_item:
-                          title: Unlimited users
-                      - uesio/web.feature_item:
-                          title: Usage-based pricing
-                      - uesio/web.feature_item:
-                          title: Multi-tenancy
-                      - uesio/web.feature_item:
-                          title: Extendable with code
-                      - uesio/web.feature_item:
-                          title: Run anywhere
+                - uesio/web.feature_item:
+                    title: App marketplace
+                - uesio/web.feature_item:
+                    title: Unlimited users
+                - uesio/web.feature_item:
+                    title: Usage-based pricing
+                - uesio/web.feature_item:
+                    title: Multi-tenancy
+                - uesio/web.feature_item:
+                    title: Extendable with code
+                - uesio/web.feature_item:
+                    title: Run anywhere
           - uesio/sitekit.section_hero:
-              uesio.styleTokens:
-                sectionRoot:
-                  - bg-zinc-50
-                  - bg-[url($File{uesio/core.logo})]
-                  - bg-no-repeat
-                  - bg-center
-                  - bg-blend-soft-light
-                  - "[background-size:360px]"
-                  - py-8
-              heroVariant: uesio/web.cta
+              uesio.variant: uesio/web.cta
               category: Generative AI
               title: Automatically build custom apps with GenAI
               subtitle: Get up and running in minutes with our App Kit and Site Kit starter templates.
@@ -80,34 +56,26 @@ definition:
           - uesio/sitekit.section_banner:
               uesio.variant: uesio/web.default
               content:
-                - uesio/io.group:
+                - uesio/io.image:
                     uesio.styleTokens:
-                      root:
-                        - auto-cols-max
-                        - gap-20
-                        - justify-center
-                        - px-96
-                    components:
-                      - uesio/io.image:
-                          uesio.styleTokens:
-                            root: mt-1
-                          file: uesio/web.logos
-                          filepath: files/aws.svg
-                          height: 28
-                      - uesio/io.image:
-                          file: uesio/web.logos
-                          filepath: files/googlecloud.svg
-                          height: 24
-                      - uesio/io.image:
-                          uesio.styleTokens:
-                            root: mb-1
-                          file: uesio/web.logos
-                          filepath: files/azure.svg
-                          height: 24
-                      - uesio/io.image:
-                          file: uesio/web.logos
-                          filepath: files/digitalocean.svg
-                          height: 24
+                      root: mt-1
+                    file: uesio/web.logos
+                    filepath: files/aws.svg
+                    height: 28
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/googlecloud.svg
+                    height: 24
+                - uesio/io.image:
+                    uesio.styleTokens:
+                      root: mb-1
+                    file: uesio/web.logos
+                    filepath: files/azure.svg
+                    height: 24
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/digitalocean.svg
+                    height: 24
         footer:
           - uesio/core.view:
               view: uesio/web.footer

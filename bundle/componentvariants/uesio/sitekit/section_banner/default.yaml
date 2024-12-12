@@ -3,13 +3,32 @@ label: Default
 definition:
   uesio.styleTokens:
     root:
-      - md:p-8
-      - p-6
+      - relative
       - border-y-1
-      - border-zinc-200
+      - border-zinc-300
       - bg-white
-      - overflow-auto
       - bg-gradient-to-tr
       - from-zinc-400/10
       - to-transparent
+    content:
+      - md:p-8
+      - p-6
+      - overflow-auto
       - "[scrollbar-width:none]"
+    contentinner:
+      - auto-cols-max
+      - gap-20
+      - justify-center
+      - px-10
+      - min-w-max
+    mask:
+      - absolute
+      - inset-0
+      - bg-gradient-to-r
+      - from-white
+      - via-transparent
+      - to-white
+      - from-15%
+      - to-15%
+      - pointer-events-none
+      - z-[1]

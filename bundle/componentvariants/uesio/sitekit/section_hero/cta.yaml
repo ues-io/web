@@ -1,0 +1,15 @@
+name: cta
+label: Call to action
+definition:
+  uesio.styleTokens:
+    sectionRoot:
+      - bg-zinc-50
+      - bg-[url($File{uesio/core.logo})]
+      - bg-no-repeat
+      - bg-center
+      - bg-blend-soft-light
+      - "[background-size:360px]"
+      - py-8
+  heroVariant: uesio/web.cta
+variants:
+  - uesio/sitekit.hero:uesio/web.cta
