@@ -1,0 +1,14 @@
+name: main
+label: Main
+extends: uesio/sitekit.site
+definition:
+  uesio.styleTokens:
+    root:
+      - bg-black
+    note:
+      - p-6
+      - text-white/70
+      - font-light
+      - text-xs
+
+public: true

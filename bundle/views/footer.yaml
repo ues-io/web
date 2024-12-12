@@ -3,8 +3,34 @@ definition:
   wires:
   components:
     - uesio/sitekit.footer:
-        uesio.styleTokens:
-          root:
-            - bg-black
+        uesio.variant: uesio/web.main
         content:
         note:
+          - uesio/io.group:
+              uesio.styleTokens:
+                root:
+                  - justify-between
+              components:
+                - uesio/io.text:
+                    text: © 2024 UESIO, Inc, USA
+                - uesio/io.group:
+                    uesio.styleTokens:
+                      root:
+                        - gap-6
+                    components:
+                      - uesio/io.image:
+                          file: uesio/web.social_icons
+                          filepath: files/x.svg
+                          height: 24
+                      - uesio/io.image:
+                          file: uesio/web.social_icons
+                          filepath: files/linkedin.svg
+                          height: 24
+                      - uesio/io.image:
+                          file: uesio/web.social_icons
+                          filepath: files/youtube.svg
+                          height: 24
+                      - uesio/io.image:
+                          file: uesio/web.social_icons
+                          filepath: files/slack.svg
+                          height: 24
