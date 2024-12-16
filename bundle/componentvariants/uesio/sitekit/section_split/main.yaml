@@ -7,6 +7,8 @@ definition:
       - from-zinc-400/10
       - to-transparent
       - overflow-hidden
+      - border-b-1
+      - border-zinc-300
     root:
       - py-0
       - grid
@@ -17,5 +19,21 @@ definition:
       - md:border-zinc-300
       - md:-mr-0
       - -mr-12
+    imagewrapper:
+      - m-20
+      - lg:-mr-[170%]
+      - md:-mr-[230%]
+      - self-center
+      - p-2
+      - rounded
+      - bg-gradient-to-tr
+      - from-zinc-400/20
+      - to-zinc-200/10
+      - md:block
+      - hidden
     image:
-      - md:min-h-[500px]
+      - rounded-sm
+      - overflow-hidden
+      - shadow-xl
+      - bg-white
+      - relative

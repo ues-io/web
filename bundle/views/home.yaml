@@ -11,7 +11,7 @@ definition:
           - uesio/sitekit.section_hero:
               uesio.variant: uesio/web.main
               category: No-Code & Pro-Code
-              title: Build applications fast, with or without code.
+              title: Build applications fast, with or without code
               subtitle: Keep what you build. Open source, run anywhere, no lock-in. Ever.
               actions:
                 - uesio/io.button:
@@ -27,6 +27,7 @@ definition:
               image:
                 - uesio/io.image:
                     file: uesio/web.screenshots
+                    filepath: files/app_icon_color.png
                     intrinsicHeight: 1422
                     intrinsicWidth: 2410
           - uesio/sitekit.section_banner:
@@ -76,79 +77,68 @@ definition:
                     file: uesio/web.logos
                     filepath: files/digitalocean.svg
                     height: 24
+          - uesio/core.view:
+              uesio.id: features_accordion
+              view: uesio/web.features_accordion
+          - uesio/sitekit.section_hero:
+              uesio.variant: uesio/web.cta
+              category: Use Cases
+              title: Develop apps in minutes, not months
+              subtitle: Rome wasn't built in a day, but your app can be.
+              actions:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_secondary
+                    text: Explore use cases
           - uesio/sitekit.section_split:
               uesio.variant: uesio/web.main
+              uesio.styleTokens:
+                content:
+                  - bg-white
+                  - -ml-[2000px]
+                  - pl-[2000px]
               content:
-                - uesio/io.accordion:
-                    uesio.variant: uesio/web.feature
-                    initialItem: templates
-                    items:
-                      - id: templates
-                        title: Templates
-                        components:
-                          - uesio/sitekit.feature:
-                              uesio.variant: uesio/web.accordion_feature
-                              title: Start quickly with pre-built templates
-                              description: Our starter templates let you get up and running fast with common app patterns. Site Kit lets you build sites quickly, while App Kit provides the tools for building internal administrative apps.
-                              actions:
-                                - uesio/io.button:
-                                    uesio.variant: uesio/web.cta_tertiary
-                                    text: Learn more
-                      - id: prototyping
-                        title: Rapid Prototyping
-                        components:
-                          - uesio/sitekit.feature:
-                              uesio.variant: uesio/web.accordion_feature
-                              title: Prototype your app in hours
-                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
-                              actions:
-                                - uesio/io.button:
-                                    uesio.variant: uesio/web.cta_tertiary
-                                    text: Learn more
-                      - id: sandbox
-                        title: Sandbox development
-                        components:
-                          - uesio/sitekit.feature:
-                              uesio.variant: uesio/web.accordion_feature
-                              title: Make changes confidently with sandboxes
-                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
-                              actions:
-                                - uesio/io.button:
-                                    uesio.variant: uesio/web.cta_tertiary
-                                    text: Learn more
-                      - id: marketplace
-                        title: App marketplace
-                        components:
-                          - uesio/sitekit.feature:
-                              uesio.variant: uesio/web.accordion_feature
-                              title: Benefit from our community app marketplace
-                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
-                              actions:
-                                - uesio/io.button:
-                                    uesio.variant: uesio/web.cta_tertiary
-                                    text: Learn more
-                      - id: integrations
-                        title: Custom integrations
-                        components:
-                          - uesio/sitekit.feature:
-                              uesio.variant: uesio/web.accordion_feature
-                              title: Integrate to your heart's content
-                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
-                              actions:
-                                - uesio/io.button:
-                                    uesio.variant: uesio/web.cta_tertiary
-                                    text: Learn more
-                      - id: builder
-                        title: Visual builder
-                        components:
-                          - uesio/sitekit.feature:
-                              uesio.variant: uesio/web.accordion_feature
-                              title: What you see is what you get
-                              description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
-                              actions:
-                                - uesio/io.button:
-                                    uesio.variant: uesio/web.cta_tertiary
-                                    text: Learn more
-        footer:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Artificial Intelligence
+                    title: Let our AI features do the heavy lifting
+                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_primary
+                          text: Get started
+                          icon: call_made
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://studio.$Site{domain}/signup
+              image:
+                - uesio/io.tile:
+                    uesio.variant: uesio/web.accordion_image
+                    uesio.classes:
+                      selected:
+                        - type: mergeValue
+                          value: true
+                          sourceValue: true
+                    content:
+                      - uesio/io.image:
+                          file: uesio/web.screenshots
+                          filepath: files/ai_files.png
+          - uesio/sitekit.section_hero:
+              uesio.variant: uesio/web.cta
+              category: Security
+              title: Mitigate attack surfaces with enterprise-grade security
+              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+          - uesio/sitekit.section_banner:
+              uesio.variant: uesio/web.default
+              content:
+                - uesio/web.feature_item:
+                    title: Object, field & record level security
+                - uesio/web.feature_item:
+                    title: Bug-free production
+                - uesio/web.feature_item:
+                    title: AWS compliant
+                - uesio/web.feature_item:
+                    title: User profiles & permissions
+                - uesio/web.feature_item:
+                    title: Instantaneous rollbacks
           - uesio/core.view:
               view: uesio/web.footer

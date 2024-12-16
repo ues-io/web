@@ -1,0 +1,26 @@
+name: cta_left
+label: Call to action left
+extends: uesio/web.cta
+definition:
+  uesio.styleTokens:
+    root:
+      - text-left
+      - justify-items-left
+      - py-20
+      - md:pl-0
+      - sm:pl-0
+      - xl:pr-24
+      - lg:pr-20
+      - md:pr-16
+      - sm:pr-12
+      - pr-12
+    title:
+      - xl:text-4xl
+      - lg:text-3xl
+      - md:text-3xl
+      - text-2xl
+      - text-black
+      - font-light
+      - "[text-wrap:pretty]"
+    subtitle:
+      - "[text-wrap:pretty]"

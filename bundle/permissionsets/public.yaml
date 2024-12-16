@@ -5,6 +5,7 @@ views:
   uesio/web.header: true
   uesio/web.home: true
   uesio/web.generate: true
+  uesio/web.features_accordion: true
 collections: {}
 routes:
   uesio/web.home: true

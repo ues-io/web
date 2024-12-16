@@ -1,0 +1,149 @@
+name: features_accordion
+definition:
+  components:
+    - uesio/sitekit.section_split:
+        uesio.variant: uesio/web.main
+        content:
+          - uesio/io.accordion:
+              uesio.id: features
+              uesio.variant: uesio/web.feature
+              initialItem: templates
+              items:
+                - id: templates
+                  title: Templates
+                  components:
+                    - uesio/sitekit.feature:
+                        uesio.variant: uesio/web.accordion_feature
+                        title: Start quickly with pre-built templates
+                        description: Our starter templates let you get up and running fast with common app patterns. Site Kit lets you build sites quickly, while App Kit provides the tools for building internal administrative apps.
+                        actions:
+                          - uesio/io.button:
+                              uesio.variant: uesio/web.cta_tertiary
+                              text: Learn more
+                - id: prototyping
+                  title: Rapid Prototyping
+                  components:
+                    - uesio/sitekit.feature:
+                        uesio.variant: uesio/web.accordion_feature
+                        title: Prototype your app in hours
+                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                        actions:
+                          - uesio/io.button:
+                              uesio.variant: uesio/web.cta_tertiary
+                              text: Learn more
+                - id: sandbox
+                  title: Sandbox development
+                  components:
+                    - uesio/sitekit.feature:
+                        uesio.variant: uesio/web.accordion_feature
+                        title: Make changes confidently with sandboxes
+                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                        actions:
+                          - uesio/io.button:
+                              uesio.variant: uesio/web.cta_tertiary
+                              text: Learn more
+                - id: marketplace
+                  title: App marketplace
+                  components:
+                    - uesio/sitekit.feature:
+                        uesio.variant: uesio/web.accordion_feature
+                        title: Benefit from our community app marketplace
+                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                        actions:
+                          - uesio/io.button:
+                              uesio.variant: uesio/web.cta_tertiary
+                              text: Learn more
+                - id: integrations
+                  title: Custom integrations
+                  components:
+                    - uesio/sitekit.feature:
+                        uesio.variant: uesio/web.accordion_feature
+                        title: Integrate to your heart's content
+                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                        actions:
+                          - uesio/io.button:
+                              uesio.variant: uesio/web.cta_tertiary
+                              text: Learn more
+                - id: builder
+                  title: Visual builder
+                  components:
+                    - uesio/sitekit.feature:
+                        uesio.variant: uesio/web.accordion_feature
+                        title: What you see is what you get
+                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                        actions:
+                          - uesio/io.button:
+                              uesio.variant: uesio/web.cta_tertiary
+                              text: Learn more
+        image:
+          - uesio/io.item:
+              external:
+                componenttype: uesio/io.accordion
+                componentid: features
+              components:
+                - uesio/io.tile:
+                    uesio.variant: uesio/web.accordion_image
+                    uesio.classes:
+                      selected:
+                        - type: mergeValue
+                          value: $ComponentState{[uesio/io.accordion][features][]}
+                          sourceValue: templates
+                    content:
+                      - uesio/io.image:
+                          file: uesio/web.screenshots
+                          filepath: files/starter_templates.png
+                - uesio/io.tile:
+                    uesio.variant: uesio/web.accordion_image
+                    uesio.classes:
+                      selected:
+                        - type: mergeValue
+                          value: $ComponentState{[uesio/io.accordion][features][]}
+                          sourceValue: builder
+                    content:
+                      - uesio/io.image:
+                          file: uesio/web.screenshots
+                          filepath: files/builder.png
+                - uesio/io.tile:
+                    uesio.variant: uesio/web.accordion_image
+                    uesio.classes:
+                      selected:
+                        - type: mergeValue
+                          value: $ComponentState{[uesio/io.accordion][features][]}
+                          sourceValue: prototyping
+                    content:
+                      - uesio/io.image:
+                          file: uesio/web.screenshots
+                          filepath: files/crm_home.png
+                - uesio/io.tile:
+                    uesio.variant: uesio/web.accordion_image
+                    uesio.classes:
+                      selected:
+                        - type: mergeValue
+                          value: $ComponentState{[uesio/io.accordion][features][]}
+                          sourceValue: sandbox
+                    content:
+                      - uesio/io.image:
+                          file: uesio/web.screenshots
+                          filepath: files/view_list.png
+                - uesio/io.tile:
+                    uesio.variant: uesio/web.accordion_image
+                    uesio.classes:
+                      selected:
+                        - type: mergeValue
+                          value: $ComponentState{[uesio/io.accordion][features][]}
+                          sourceValue: marketplace
+                    content:
+                      - uesio/io.image:
+                          file: uesio/web.screenshots
+                          filepath: files/bundle_listing.png
+                - uesio/io.tile:
+                    uesio.variant: uesio/web.accordion_image
+                    uesio.classes:
+                      selected:
+                        - type: mergeValue
+                          value: $ComponentState{[uesio/io.accordion][features][]}
+                          sourceValue: integrations
+                    content:
+                      - uesio/io.image:
+                          file: uesio/web.screenshots
+                          filepath: files/integrations.png

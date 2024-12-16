@@ -1,0 +1,16 @@
+name: accordion_image
+label: Accordion Image
+definition:
+  uesio.styleTokens:
+    root:
+      - opacity-0
+      - transition-opacity
+      - absolute
+      - first:static
+      - inset-0
+    selected:
+      - opacity-100
+    content:
+      - h-full
+      - "[&>img]:w-auto"
+      - "[&>img]:h-full"

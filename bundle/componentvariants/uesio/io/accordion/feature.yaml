@@ -12,6 +12,7 @@ definition:
       - bg-white
       - relative
       - border-b-1
+      - last:border-b-0
       - border-zinc-200/60
       - -ml-[2000px]
       - pl-[2000px]
@@ -23,6 +24,7 @@ definition:
     titlebar:
       - border-b-1
       - border-zinc-200/60
+      - last:border-b-0
       - -ml-[2000px]
       - pl-[2000px]
     expanded:

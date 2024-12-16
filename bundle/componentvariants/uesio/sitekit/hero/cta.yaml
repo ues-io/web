@@ -7,7 +7,7 @@ definition:
       - md:px-32
       - sm:px-16
     title:
-      - xl:text-6xl
+      - xl:text-5xl
       - lg:text-5xl
       - md:text-4xl
       - text-4xl

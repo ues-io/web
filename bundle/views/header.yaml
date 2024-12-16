@@ -29,6 +29,80 @@ definition:
               signals:
                 - signal: route/REDIRECT
                   path: https://studio.$Site{domain}/login
+        menu:
+          - uesio/io.grid:
+              uesio.styleTokens:
+                root:
+                  - gap-2
+                  - mb-12
+              items:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_secondary
+                    text: Schedule a demo
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_primary
+                    text: Get started
+                    icon: call_made
+                    signals:
+                      - signal: route/REDIRECT
+                        path: https://studio.$Site{domain}/signup
+          - uesio/io.grid:
+              uesio.styleTokens:
+                root:
+                  - gap-2
+                  - mb-12
+                  - justify-items-left
+              items:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: Platform
+                    icon: database
+                    iconFill: false
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: Pricing
+                    icon: sell
+                    iconFill: false
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: Resources
+                    icon: inventory
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: About
+                    icon: info
+                    iconFill: false
+          - uesio/io.grid:
+              uesio.styleTokens:
+                root:
+                  - gap-2
+                  - mb-12
+                  - justify-items-left
+              items:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: Documentation
+                    icon: description
+                    iconFill: false
+                    signals:
+                      - signal: route/REDIRECT
+                        path: https://docs.ues.io
+                        newtab: true
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: GitHub
+                    icon: code
+                    signals:
+                      - signal: route/REDIRECT
+                        path: https://github.com/ues-io/uesio
+                        newtab: true
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: Log in
+                    icon: login
+                    signals:
+                      - signal: route/REDIRECT
+                        path: https://studio.$Site{domain}/login
     - uesio/sitekit.header:
         uesio.variant: uesio/web.main
         sticky: true
