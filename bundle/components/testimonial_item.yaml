@@ -1,0 +1,50 @@
+name: testimonial_item
+category: LAYOUT
+type: DECLARATIVE
+properties:
+  - type: TEXT
+    name: quote
+    label: Quote text
+definition:
+  - uesio/io.tile:
+      uesio.styleTokens:
+        root:
+          - p-10
+          - border-r-1
+          - border-l-1
+          - lg:last:border-l-0
+          - last:border-t-1
+          - lg:last:border-t-0
+          - border-zinc-200
+        selected:
+          - bg-white
+          - shadow-md
+          - shadow-zinc-100
+      uesio.classes:
+        selected:
+          - type: hasValue
+            value: $Prop{selected}
+      content:
+        - uesio/sitekit.testimonial:
+            uesio.styleTokens:
+              root:
+                - lg:gap-6
+              quote:
+                - lg:text-2xl
+                - md:text-xl
+                - font-light
+                - "[text-wrap:pretty]"
+            quote: $Prop{quote}
+            name: $Prop{name}
+            title: $Prop{title}
+            stars: $Prop{stars}
+            avatar: $Prop{avatar}
+            avatarPath: $Prop{avatarPath}
+            extra: $Prop{extra}
+title: Testimonial Item Tile
+discoverable: false
+description: An item tile
+sections:
+  - type: HOME
+    properties:
+  - type: DISPLAY

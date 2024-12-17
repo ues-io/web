@@ -5,8 +5,9 @@ definition:
   uesio.styleTokens:
     root:
       - bg-black
-    note:
-      - p-6
+    content:
+      - md:px-2.5
+      - py-6
       - text-white/70
       - font-light
       - text-xs

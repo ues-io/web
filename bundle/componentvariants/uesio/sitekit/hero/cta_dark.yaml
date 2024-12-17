@@ -1,0 +1,32 @@
+name: cta_dark
+label: Call to action dark
+extends: uesio/web.cta_left
+definition:
+  uesio.styleTokens:
+    root:
+      - bg-black
+      - rounded
+      - shadow-lg
+      - bg-[url($File{uesio/web.background_blocks:files/right_dark.svg})]
+      - bg-right-top
+      - bg-no-repeat
+      - "[background-size:130%]"
+      - sm:[background-size:90%]
+      - md:[background-size:80%]
+      - md:[background-size:60%]
+      - md:py-16
+      - py-10
+      - xl:pr-20
+      - lg:pr-16
+      - md:pl-12
+      - sm:pl-8
+      - pl-8
+      - xl:pr-20
+      - lg:pr-16
+      - md:pr-12
+      - sm:pr-8
+      - pr-8
+    title:
+      - text-white/90
+    subtitle:
+      - text-white/60

@@ -24,3 +24,5 @@ definition:
       - "[text-wrap:pretty]"
     subtitle:
       - "[text-wrap:pretty]"
+    extra:
+      - w-full

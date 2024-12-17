@@ -24,11 +24,6 @@ definition:
     mask:
       - absolute
       - inset-0
-      - bg-gradient-to-r
-      - from-white
-      - via-transparent
-      - to-white
-      - from-15%
-      - to-15%
+      - "[background:linear-gradient(to_right,white,white_2%,transparent_20%,transparent_80%,white_98%,white)]"
       - pointer-events-none
       - z-[1]

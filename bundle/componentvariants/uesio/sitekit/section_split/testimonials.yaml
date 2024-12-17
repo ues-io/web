@@ -1,0 +1,20 @@
+name: testimonials
+label: Testimonials
+definition:
+  uesio.styleTokens:
+    sectionRoot:
+      - bg-gradient-to-tr
+      - from-zinc-400/10
+      - to-transparent
+      - overflow-hidden
+      - relative
+      - "md:after:[background:linear-gradient(to_right,white,white_2%,transparent_10%,transparent_90%,white_98%,white)]"
+      - "xl:after:[background:linear-gradient(to_right,white,white_5%,transparent_15%,transparent_85%,white_95%,white)]"
+      - after:absolute
+      - after:inset-0
+      - after:pointer-events-none
+      - border-b-1
+      - border-zinc-300
+    root:
+      - pt-0
+    content:

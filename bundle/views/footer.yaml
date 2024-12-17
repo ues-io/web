@@ -5,7 +5,6 @@ definition:
     - uesio/sitekit.footer:
         uesio.variant: uesio/web.main
         content:
-        note:
           - uesio/io.group:
               uesio.styleTokens:
                 root:

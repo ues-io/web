@@ -1,0 +1,17 @@
+name: testimonial_wrapper
+definition:
+  uesio.styleTokens:
+    root:
+      - relative
+      - grid
+      - lg:grid-cols-2
+      - grid-cols-1
+      - after:absolute
+      - after:-right-[180px]
+      - after:-left-[180px]
+      - after:top-0
+      - after:bottom-0
+      - after:border-b-1
+      - first:after:border-t-1
+      - after:border-200-zinc
+      - after:pointer-events-none
