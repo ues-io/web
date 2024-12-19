@@ -6,6 +6,8 @@ views:
   uesio/web.home: true
   uesio/web.generate: true
   uesio/web.features_accordion: true
+  uesio/web.use_cases: true
+  uesio/web.savings: true
 collections: {}
 routes:
   uesio/web.home: true

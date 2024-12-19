@@ -1,0 +1,119 @@
+name: savings
+definition:
+  wires:
+    savings:
+      viewOnly: true
+      fields:
+        teamsize:
+          label: Team size
+          type: NUMBER
+          number:
+            decimals: 0
+        salary:
+          label: Average annual salary
+          type: NUMBER
+          number:
+            decimals: 0
+      init:
+        create: true
+      defaults:
+        - field: teamsize
+          value: 24
+        - field: salary
+          value: 130000
+  components:
+    - uesio/sitekit.section_split:
+        uesio.variant: uesio/web.pricing
+        uesio.styleTokens:
+        content:
+          - uesio/sitekit.hero:
+              uesio.variant: uesio/web.cta_left
+              category: Savings
+              title: Reduce costs and speed up time-to-market
+              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+              actions:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_primary
+                    text: Try it free
+                    icon: call_made
+                    signals:
+                      - signal: route/REDIRECT
+                        path: https://studio.$Site{domain}/signup
+        image:
+          - uesio/io.box:
+              uesio.styleTokens:
+                root:
+                  - p-8
+              components:
+                - uesio/io.item:
+                    wire: savings
+                    mode: EDIT
+                    components:
+                      - uesio/io.group:
+                          uesio.styleTokens:
+                            root:
+                              - justify-between
+                          components:
+                            - uesio/io.text:
+                                text: Team size
+                                uesio.styleTokens:
+                                  root:
+                                    - text-sm
+                                    - font-normal
+                            - uesio/io.text:
+                                text: ${teamsize}
+                                uesio.styleTokens:
+                                  root:
+                                    - text-sm
+                                    - font-[Gosha]
+                      - uesio/io.field:
+                          uesio.variant: uesio/web.slider
+                          fieldId: teamsize
+                          number:
+                            min: 1
+                            max: 200
+                      - uesio/io.group:
+                          uesio.styleTokens:
+                            root:
+                              - justify-between
+                              - mt-2
+                          components:
+                            - uesio/io.text:
+                                text: Average annual salary
+                                uesio.styleTokens:
+                                  root:
+                                    - text-sm
+                                    - font-normal
+                            - uesio/io.text:
+                                text: $Currency{[${salary}][0]}
+                                uesio.styleTokens:
+                                  root:
+                                    - text-sm
+                                    - font-[Gosha]
+                      - uesio/io.field:
+                          uesio.variant: uesio/web.slider
+                          fieldId: salary
+                          number:
+                            step: 5000
+                            min: 20000
+                            max: 250000
+                      - uesio/io.group:
+                          uesio.styleTokens:
+                            root:
+                              - mt-2
+                          components:
+                            - uesio/io.text:
+                                text: Annual savings with ues.io
+                                uesio.styleTokens:
+                                  root:
+                                    - text-sm
+                                    - font-normal
+                      - uesio/io.text:
+                          text: $Currency{[$Formula{getField("teamsize") * getField("salary") * 0.15}][0]}
+                          uesio.styleTokens:
+                            root:
+                              - text-5xl
+                              - font-bold
+                              - text-[#EC6940]
+                              - font-[Gosha]
+                          element: div

@@ -24,9 +24,9 @@ definition:
       - lg:mb-0
       - self-center
       - justify-self-center
-    image:
       - rounded-sm
-      - w-[360px]
+      - sm:w-[360px]
+      - w-full
       - border-1
       - border-zinc-300
       - overflow-hidden

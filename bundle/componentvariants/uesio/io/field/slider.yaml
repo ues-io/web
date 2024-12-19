@@ -1,0 +1,21 @@
+name: slider
+definition:
+  uesio.styleTokens:
+    rangevalue:
+      - hidden
+    input:
+      - "[--c:#EC6940]"
+      - "[--g:4px]"
+      - "[--l:4px]"
+      - "[--s:20px]"
+      - appearance-none
+      - bg-none
+      - border-0
+      - p-0
+      - h-[var(--s)]
+      - w-full
+      - cursor-pointer
+      - overflow-hidden
+      - "[&::-webkit-slider-thumb]:(h-[var(--s)],aspect-square,[border-radius:50%],appearance-none,[box-shadow:0_0_0_var(--l)_inset_var(--c)],[border-image:linear-gradient(90deg,var(--c)_50%,#eee_0)_0_1/calc(50%_-_var(--l)/2)_100vw/0_calc(100vw_+_var(--g))])"
+  displayAs: SLIDER
+  labelPosition: none

@@ -3,7 +3,6 @@ definition:
   uesio.styleTokens:
     root:
       - relative
-      - pt-10
       - pb-5
       - border-b-1
       - border-zinc-300
@@ -12,4 +11,4 @@ definition:
       - after:inset-0
       - after:pointer-events-none
       - after:[z-index:1]
-      - after:[background:linear-gradient(to_right,white,white_3%,transparent_10%,transparent_90%,white_97%,white)]
+      - after:[background:linear-gradient(to_right,#FAFAFA,#FAFAFA_3%,transparent_10%,transparent_90%,#FAFAFA_97%,#FAFAFA)]
