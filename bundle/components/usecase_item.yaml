@@ -1,0 +1,63 @@
+name: usecase_item
+category: LAYOUT
+type: DECLARATIVE
+properties:
+  - type: TEXT
+    name: title
+    label: Title text
+  - type: TEXT
+    name: iconcolor
+    label: Icon color
+    defaultValue: pink-500
+definition:
+  - uesio/io.tile:
+      uesio.variant: uesio/io.default
+      uesio.styleTokens:
+        root:
+          - md:p-10
+          - p-8
+      content:
+        - uesio/io.text:
+            uesio.styleTokens:
+              root:
+                - mb-4
+                - text-lg
+                - leading-none
+                - "[.swiper-slide-active_&]:bg-$Prop{iconcolor}"
+                - "[.swiper-slide-active_&]:text-white"
+                - bg-zinc-200
+                - text-zinc-400
+                - p-2
+                - rounded
+            text: $Prop{icon}
+            uesio.variant: uesio/io.icon
+            element: div
+        - uesio/io.text:
+            uesio.styleTokens:
+              root:
+                - text-2xl
+                - font-light
+                - text-black/90
+                - mb-2
+            text: $Prop{title}
+            element: div
+        - uesio/io.text:
+            uesio.styleTokens:
+              root:
+                - md:text-base
+                - text-sm
+                - font-light
+                - text-zinc-500
+            text: $Prop{description}
+            element: div
+      avatar:
+
+title: Feature Item Tile
+discoverable: false
+description: An item tile
+sections:
+  - type: HOME
+    properties:
+  - type: DISPLAY
+variants:
+  - uesio/io.titlebar:uesio/io.item

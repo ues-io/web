@@ -20,3 +20,5 @@ definition:
       - text-white
       - py-0
       - leading-none
+    menupanelblocker:
+      - z-20

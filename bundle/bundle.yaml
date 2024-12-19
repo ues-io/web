@@ -10,3 +10,5 @@ dependencies:
     version: v0.0.1
   uesio/cms:
     version: v0.1.17
+  uesio/swiper:
+    version: v0.0.2

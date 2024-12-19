@@ -1,0 +1,12 @@
+name: default
+definition:
+  uesio.styleTokens:
+    root:
+      - "[&_swiper-slide]:(shadow-lg,rounded,border,border-zinc-200,mb-10)"
+      - "md:[&_swiper-slide]:(w-96,h-72)"
+      - "[&_swiper-slide]:(w-80,h-64)"
+      - "[&_.swiper-slide-active]:(bg-white,border-zinc-300)"
+      - "[&_.swiper-button-prev]:(ml-20)"
+      - "[--swiper-pagination-color:#EC6940]"
+      - "[--swiper-navigation-color:#E2E2E2]"
+      - "[--swiper-pagination-bottom:0px]"

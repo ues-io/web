@@ -1,0 +1,15 @@
+name: usecases_wrapper
+definition:
+  uesio.styleTokens:
+    root:
+      - relative
+      - pt-10
+      - pb-5
+      - border-b-1
+      - border-zinc-300
+      - bg-zinc-50
+      - after:absolute
+      - after:inset-0
+      - after:pointer-events-none
+      - after:[z-index:1]
+      - after:[background:linear-gradient(to_right,white,white_3%,transparent_10%,transparent_90%,white_97%,white)]
