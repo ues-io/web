@@ -63,6 +63,9 @@ definition:
                     text: Pricing
                     icon: sell
                     iconFill: false
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: pricing
                 - uesio/io.button:
                     uesio.variant: uesio/web.header_main
                     text: Resources
@@ -111,8 +114,8 @@ definition:
               file: uesio/core.logo
               height: 34
               signals:
-                - signal: "route/NAVIGATE"
-                  path: "home"
+                - signal: route/NAVIGATE
+                  path: home
         left:
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
@@ -120,6 +123,9 @@ definition:
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
               text: Pricing
+              signals:
+                - signal: route/NAVIGATE
+                  path: pricing
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
               text: Resources

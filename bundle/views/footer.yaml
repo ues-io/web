@@ -3,6 +3,103 @@ definition:
   wires:
   components:
     - uesio/sitekit.footer:
+        uesio.variant: uesio/web.links
+        content:
+          - uesio/io.box:
+              uesio.variant: uesio/sitekit.footer_wrapper
+              components:
+                - uesio/io.image:
+                    file: uesio/core.logo
+                    height: 44
+                - uesio/io.grid:
+                    uesio.variant: uesio/sitekit.footer_linkwrapper
+                    items:
+                      - uesio/io.group:
+                          uesio.variant: uesio/sitekit.footer_linkcategory
+                          components:
+                            - uesio/io.text:
+                                uesio.variant: uesio/sitekit.footer_linkcategorytitle
+                                text: Platform
+                            - uesio/io.group:
+                                uesio.variant: uesio/sitekit.footer_linkcategory
+                                components:
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Example 1
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Example 2
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Example 3
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Example 4
+                      - uesio/io.group:
+                          uesio.variant: uesio/sitekit.footer_linkcategory
+                          components:
+                            - uesio/io.text:
+                                uesio.variant: uesio/sitekit.footer_linkcategorytitle
+                                text: Solutions
+                            - uesio/io.group:
+                                uesio.variant: uesio/sitekit.footer_linkcategory
+                                components:
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Example 1
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Example 2
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Example 3
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Example 4
+                      - uesio/io.group:
+                          uesio.variant: uesio/sitekit.footer_linkcategory
+                          components:
+                            - uesio/io.text:
+                                uesio.variant: uesio/sitekit.footer_linkcategorytitle
+                                text: Resources
+                            - uesio/io.group:
+                                uesio.variant: uesio/sitekit.footer_linkcategory
+                                components:
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Blog
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Documentation
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Support
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: GitHub
+                      - uesio/io.group:
+                          uesio.variant: uesio/sitekit.footer_linkcategory
+                          components:
+                            - uesio/io.text:
+                                uesio.variant: uesio/sitekit.footer_linkcategorytitle
+                                text: About
+                            - uesio/io.group:
+                                uesio.variant: uesio/sitekit.footer_linkcategory
+                                components:
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Team
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Contact
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Privacy
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/sitekit.footer_link
+                                      text: Terms
+
+    - uesio/sitekit.footer:
         uesio.variant: uesio/web.main
         content:
           - uesio/io.group:

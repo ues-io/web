@@ -1,0 +1,15 @@
+name: links
+label: Links
+extends: uesio/sitekit.site
+definition:
+  uesio.styleTokens:
+    root:
+      - bg-transparent
+    content:
+      - md:px-2.5
+      - py-6
+      - text-white/70
+      - font-light
+      - text-xs
+
+public: true

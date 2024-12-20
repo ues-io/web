@@ -112,7 +112,8 @@ definition:
                           text: $Currency{[$Formula{getField("teamsize") * getField("salary") * 0.15}][0]}
                           uesio.styleTokens:
                             root:
-                              - text-5xl
+                              - md:text-5xl
+                              - text-4xl
                               - font-bold
                               - text-[#EC6940]
                               - font-[Gosha]
