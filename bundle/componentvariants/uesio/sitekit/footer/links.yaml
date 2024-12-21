@@ -5,6 +5,7 @@ definition:
   uesio.styleTokens:
     root:
       - bg-transparent
+      - "[min-height:0]"
     content:
       - md:px-2.5
       - py-6

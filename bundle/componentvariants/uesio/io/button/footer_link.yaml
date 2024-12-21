@@ -1,0 +1,8 @@
+name: footer_link
+extends: uesio/sitekit.footer_link
+definition:
+  uesio.styleTokens:
+    root:
+      - text-black/60
+      - hover:text-black/90
+      - mt-1

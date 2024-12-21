@@ -280,7 +280,7 @@ definition:
                                       file: uesio/web.logos
                                       filepath: files/ubs.svg
                                       height: 90
-          - uesio/sitekit.section_split:
+          - uesio/sitekit.section:
               content:
                 - uesio/sitekit.hero:
                     uesio.variant: uesio/web.cta_dark

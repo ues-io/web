@@ -1,0 +1,9 @@
+name: footer_wrapper
+extends: uesio/sitekit.footer_wrapper
+definition:
+  uesio.styleTokens:
+    root:
+      - grid
+      - sm:grid-cols-[40%_60%]
+      - grid-cols-2
+      - py-4

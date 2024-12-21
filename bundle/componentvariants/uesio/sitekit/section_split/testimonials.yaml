@@ -13,8 +13,6 @@ definition:
       - after:absolute
       - after:inset-0
       - after:pointer-events-none
-      - border-b-1
-      - border-zinc-300
     root:
       - pt-0
     content:
