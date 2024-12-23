@@ -5,13 +5,13 @@ definition:
     sectionRoot:
       - border-b-1
       - border-zinc-300
-      - bg-zinc-50
       - md:bg-[url($File{uesio/web.background_blocks:files/right.svg}),url($File{uesio/web.background_blocks:files/left.svg})]
       - md:bg-[right_bottom,left_bottom]
       - bg-[right_bottom]
       - bg-[url($File{uesio/web.background_blocks:files/right.svg})]
       - bg-no-repeat
       - "[background-size:550px]"
+      - "lg:[background-size:auto]"
       - overflow-hidden
   heroVariant: uesio/web.main
 variants:

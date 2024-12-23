@@ -1,0 +1,175 @@
+name: demo
+definition:
+  wires:
+    demorequest:
+      viewOnly: true
+      fields:
+        firstname:
+          label: First Name
+          type: TEXT
+        lastname:
+          label: Last Name
+          type: TEXT
+        email:
+          label: Email
+          type: TEXT
+        phone:
+          label: Phone
+          type: TEXT
+        companyname:
+          label: Company Name
+          type: TEXT
+        comments:
+          label: Comments
+          type: LONGTEXT
+        submitted:
+          label: Submitted
+          type: CHECKBOX
+      init:
+        create: true
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: uesio/web.page
+        trackScrolling: true
+        header:
+          - uesio/core.view:
+              view: uesio/web.header
+        content:
+          - uesio/sitekit.section_hero:
+              uesio.variant: uesio/web.main
+              uesio.styleTokens:
+                sectionRoot:
+                  - pb-40
+              category: Demo
+              title: Book your personalized, one-to-one demo today
+              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+          - uesio/sitekit.section:
+              innerVariant: uesio/sitekit.section_inner_content
+              uesio.styleTokens:
+                root:
+                  - bg-gradient-to-b
+                  - from-zinc-50
+              content:
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - grid
+                        - justify-center
+                        - grid-cols-[minmax(0px,400px)]
+                    components:
+                      - uesio/io.item:
+                          wire: demorequest
+                          mode: EDIT
+                          components:
+                            - uesio/io.box:
+                                uesio.styleTokens:
+                                  root:
+                                    - -mt-60
+                                    - p-4
+                                    - shadow-md
+                                    - rounded
+                                    - border
+                                    - border-zinc-300
+                                    - bg-white
+                                components:
+                                  - uesio/io.box:
+                                      uesio.display:
+                                        - type: hasNoValue
+                                          value: ${submitted}
+                                      components:
+                                        - uesio/io.box:
+                                            uesio.styleTokens:
+                                              root:
+                                                - flex
+                                                - ml-2
+                                                - "[&>div]:-ml-2"
+                                                - mb-2
+                                            components:
+                                              - uesio/io.avatar:
+                                                  uesio.variant: uesio/web.demo
+                                                  image: $File{uesio/sitekit.avatarpics:images/randy_billingston.jpg}
+                                              - uesio/io.avatar:
+                                                  uesio.variant: uesio/web.demo
+                                                  image: $File{uesio/sitekit.avatarpics:images/connie_forrester.jpg}
+                                              - uesio/io.avatar:
+                                                  uesio.variant: uesio/web.demo
+                                                  image: $File{uesio/sitekit.avatarpics:images/gavin_foster.jpg}
+                                              - uesio/io.avatar:
+                                                  uesio.variant: uesio/web.demo
+                                                  image: $File{uesio/sitekit.avatarpics:images/sandy_burtrand.jpg}
+                                        - uesio/io.box:
+                                            uesio.styleTokens:
+                                              root:
+                                                - grid
+                                                - sm:grid-cols-2
+                                                - grid-cols-1
+                                                - gap-x-4
+                                            components:
+                                              - uesio/io.field:
+                                                  fieldId: firstname
+                                              - uesio/io.field:
+                                                  fieldId: lastname
+                                        - uesio/io.field:
+                                            fieldId: email
+                                        - uesio/io.field:
+                                            fieldId: phone
+                                        - uesio/io.field:
+                                            fieldId: companyname
+                                        - uesio/io.field:
+                                            fieldId: comments
+                                        - uesio/io.button:
+                                            uesio.styleTokens:
+                                              root:
+                                                - w-full
+                                                - mt-4
+                                            uesio.variant: uesio/web.cta_primary
+                                            text: Submit
+                                            signals:
+                                              - signal: bot/CALL
+                                                bot: uesio/web.request_demo
+                                                params:
+                                                  firstname: ${firstname}
+                                                  lastname: ${lastname}
+                                                  email: ${email}
+                                                  phone: ${phone}
+                                                  companyname: ${companyname}
+                                                  comments: ${comments}
+                                              - signal: wire/UPDATE_RECORD
+                                                field: submitted
+                                                value: true
+                                  - uesio/io.box:
+                                      uesio.display:
+                                        - type: hasValue
+                                          value: ${submitted}
+                                      uesio.styleTokens:
+                                        root:
+                                          - grid
+                                          - justify-center
+                                          - items-center
+                                          - gap-4
+                                          - p-8
+                                      components:
+                                        - uesio/io.text:
+                                            uesio.styleTokens:
+                                              root:
+                                                - text-3xl
+                                            text: Thank you.
+                                            element: div
+                                        - uesio/io.text:
+                                            uesio.styleTokens:
+                                              root:
+                                                - text-sm
+                                                - text-black/60
+                                                - font-light
+                                            text: Your information has been submitted. We'll be in contact shortly to schedule a time. We can't wait to show you what we've been working on.
+                                            element: div
+                                        - uesio/io.text:
+                                            uesio.styleTokens:
+                                              root:
+                                                - text-sm
+                                                - text-black/60
+                                                - font-light
+                                            text: An email has been sent to ${email} to confirm your request.
+                                            element: div
+          - uesio/core.view:
+              view: uesio/web.footer

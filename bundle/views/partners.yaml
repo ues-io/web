@@ -1,0 +1,92 @@
+name: partners
+definition:
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: uesio/web.page
+        trackScrolling: true
+        header:
+          - uesio/core.view:
+              view: uesio/web.header
+        content:
+          - uesio/sitekit.section_hero:
+              uesio.variant: uesio/web.main
+              category: Partners
+              title: Innovation through collaboration
+              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Infrastructure Partner
+                    title: Amazon Web Services
+                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+              image:
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/aws.svg
+                    height: 100
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Payments Partner
+                    title: Usio Integrated Payments
+                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+              image:
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/usio.png
+                    height: 68
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Implementation Partner
+                    title: Thirty3
+                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+              image:
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/thirty3.jpg
+                    height: 120
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Implementation Partner
+                    title: Copebit AG
+                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+              image:
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/copebit.png
+                    height: 120
+          - uesio/io.box:
+              uesio.styleTokens:
+                root:
+                  - h-20
+          - uesio/core.view:
+              uesio.id: personal_demo
+              view: uesio/web.personal_demo
+          - uesio/core.view:
+              view: uesio/web.footer

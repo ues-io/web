@@ -13,6 +13,7 @@ definition:
       - bg-no-repeat
       - overflow-hidden
       - "[background-size:550px]"
+      - "lg:[background-size:auto]"
   heroVariant: uesio/web.main_home
 variants:
   - uesio/sitekit.hero:uesio/web.main_home

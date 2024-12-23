@@ -31,7 +31,7 @@ definition:
                         - justify-center
                         - xl:grid-cols-[repeat(4,minmax(0px,280px))]
                         - md:grid-cols-[repeat(2,minmax(0px,280px))]
-                        - grid-cols-[repeat(1,minmax(0px,280px))]
+                        - grid-cols-[minmax(0px,280px)]
                         - gap-4
                         - -mb-60
                     components:

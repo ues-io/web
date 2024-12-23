@@ -136,6 +136,9 @@ definition:
           - uesio/io.button:
               uesio.variant: uesio/web.cta_secondary
               text: Schedule a demo
+              signals:
+                - signal: route/NAVIGATE
+                  path: demo
           - uesio/io.button:
               uesio.variant: uesio/web.cta_primary
               text: Get started

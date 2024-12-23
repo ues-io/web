@@ -7,6 +7,8 @@ definition:
       - gap-8
       - justify-items-center
       - text-center
+      - xl:px-48
+      - lg:px-36
       - md:px-32
       - sm:px-16
     category:

@@ -1,0 +1,9 @@
+name: demo
+extends: uesio/io.default
+definition:
+  uesio.styleTokens:
+    root:
+      - border-2
+      - border-white
+      - h-10
+      - w-10

@@ -82,6 +82,9 @@ definition:
                                       text: Capabilities
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
+                                      text: App Marketplace
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/web.footer_link
                                       text: Community
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
@@ -128,6 +131,12 @@ definition:
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Support
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/web.footer_link
+                                      text: Partners
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: partners
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: GitHub

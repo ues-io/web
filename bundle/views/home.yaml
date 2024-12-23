@@ -147,7 +147,6 @@ definition:
                                       file: uesio/web.logos
                                       filepath: files/bedrock_text.svg
                                       height: 11
-
                     actions:
                       - uesio/io.button:
                           uesio.variant: uesio/web.cta_primary

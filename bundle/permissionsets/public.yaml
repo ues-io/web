@@ -11,10 +11,14 @@ views:
   uesio/web.savings: true
   uesio/web.testimonials: true
   uesio/web.pricing: true
+  uesio/web.partners: true
+  uesio/web.demo: true
 collections: {}
 routes:
   uesio/web.home: true
   uesio/web.pricing: true
+  uesio/web.partners: true
+  uesio/web.demo: true
 files: {}
 bots: {}
 integrationActions: {}

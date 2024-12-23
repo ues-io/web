@@ -1,0 +1,5 @@
+name: demo
+path: demo
+view: demo
+theme: uesio/core.default
+title: Schedule Demo

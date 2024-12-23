@@ -1,0 +1,25 @@
+name: partners
+label: Partners
+definition:
+  uesio.styleTokens:
+    sectionRoot:
+      - bg-white
+      - overflow-hidden
+      - border-b-1
+      - border-zinc-300
+    root:
+      - py-0
+      - grid
+      - md:grid-cols-[65%_35%]
+      - grid-cols-1
+    content:
+      - md:-mr-0
+      - -mr-12
+    imagewrapper:
+      - grid
+      - items-center
+      - justify-center
+      - md:order-none
+      - order-first
+      - md:pt-0
+      - pt-20

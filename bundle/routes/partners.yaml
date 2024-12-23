@@ -1,0 +1,5 @@
+name: partners
+path: partners
+view: partners
+theme: uesio/core.default
+title: Partners

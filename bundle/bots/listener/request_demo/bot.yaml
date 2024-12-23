@@ -1,0 +1,22 @@
+name: request_demo
+type: LISTENER
+dialect: TYPESCRIPT
+params:
+  - name: firstname
+    type: TEXT
+    required: true
+  - name: lastname
+    type: TEXT
+    required: true
+  - name: email
+    type: TEXT
+    required: true
+  - name: phone
+    type: TEXT
+    required: true
+  - name: companyname
+    type: TEXT
+    required: true
+  - name: comments
+    type: TEXT
+    required: false
