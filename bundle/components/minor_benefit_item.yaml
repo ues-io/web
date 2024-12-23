@@ -1,0 +1,23 @@
+name: minor_benefit_item
+category: LAYOUT
+type: DECLARATIVE
+properties:
+  - type: TEXT
+    name: benefit
+    label: Benefit
+definition:
+  - uesio/io.box:
+      components:
+        - uesio/io.text:
+            uesio.styleTokens:
+              root:
+                - font-light
+                - text-black/60
+            text: "+ $Prop{benefit}"
+title: Minor Benefit Item
+discoverable: false
+description: An item tile
+sections:
+  - type: HOME
+    properties:
+  - type: DISPLAY

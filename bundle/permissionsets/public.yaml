@@ -7,7 +7,9 @@ views:
   uesio/web.generate: true
   uesio/web.features_accordion: true
   uesio/web.use_cases: true
+  uesio/web.personal_demo: true
   uesio/web.savings: true
+  uesio/web.testimonials: true
 collections: {}
 routes:
   uesio/web.home: true

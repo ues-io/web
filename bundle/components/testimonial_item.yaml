@@ -16,10 +16,13 @@ definition:
           - last:border-t-1
           - lg:last:border-t-0
           - border-zinc-200
+          - "!hover:(bg-white,shadow-md,shadow-zinc-100)"
+          - transition-colors
         selected:
           - bg-white
           - shadow-md
           - shadow-zinc-100
+          - "group-hover:(bg-transparent,shadow-none,lg:border-transparent,lg:border-r-zinc-200)"
       uesio.classes:
         selected:
           - type: hasValue

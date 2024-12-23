@@ -10,10 +10,7 @@ definition:
       - bg-[url($File{uesio/web.background_blocks:files/right_dark.svg})]
       - bg-right-top
       - bg-no-repeat
-      - "[background-size:130%]"
-      - sm:[background-size:90%]
-      - md:[background-size:80%]
-      - md:[background-size:60%]
+      - "[background-size:550px]"
       - md:py-16
       - py-10
       - xl:pr-20

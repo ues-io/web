@@ -1,5 +1,5 @@
-name: main
-label: Main
+name: main_home
+label: Main Home
 definition:
   uesio.styleTokens:
     sectionRoot:
@@ -11,8 +11,8 @@ definition:
       - bg-[right_bottom]
       - bg-[url($File{uesio/web.background_blocks:files/right.svg})]
       - bg-no-repeat
-      - "[background-size:550px]"
       - overflow-hidden
-  heroVariant: uesio/web.main
+      - "[background-size:550px]"
+  heroVariant: uesio/web.main_home
 variants:
-  - uesio/sitekit.hero:uesio/web.main
+  - uesio/sitekit.hero:uesio/web.main_home

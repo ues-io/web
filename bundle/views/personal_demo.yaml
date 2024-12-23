@@ -1,0 +1,14 @@
+name: personal_demo
+definition:
+  components:
+    - uesio/sitekit.section:
+        content:
+          - uesio/sitekit.hero:
+              uesio.variant: uesio/web.cta_dark
+              category: Personal Demo
+              title: Schedule an in person demo
+              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+              actions:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_secondary
+                    text: Schedule a demo

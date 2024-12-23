@@ -9,9 +9,170 @@ definition:
               view: uesio/web.header
         content:
           - uesio/sitekit.section_hero:
-              uesio.variant: uesio/web.cta
+              uesio.variant: uesio/web.main
+              uesio.styleTokens:
+                sectionRoot:
+                  - pb-40
               category: Pricing
               title: Pricing to suit any business need
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+          - uesio/sitekit.section:
+              innerVariant: uesio/sitekit.section_inner_content
+              uesio.styleTokens:
+                root:
+                  - border-b-1
+                  - border-zinc-300
+                  - bg-zinc-50
+              content:
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - grid
+                        - justify-center
+                        - xl:grid-cols-[repeat(4,minmax(0px,280px))]
+                        - md:grid-cols-[repeat(2,minmax(0px,280px))]
+                        - grid-cols-[repeat(1,minmax(0px,280px))]
+                        - gap-4
+                        - -mb-60
+                    components:
+                      - uesio/web.pricing_item:
+                          title: Free
+                          subtitle: For start-ups
+                          price: 0
+                          icon: directions_walk
+                          cta_text: Create a free account
+                          content:
+                            - uesio/io.box:
+                                uesio.styleTokens:
+                                  root:
+                                    - mb-4
+                                components:
+                                  - uesio/web.benefit_item:
+                                      benefit: Transactions
+                                      amount: 20K
+                                  - uesio/web.benefit_item:
+                                      benefit: File Downloads
+                                      amount: 2GB
+                                  - uesio/web.benefit_item:
+                                      benefit: Storage
+                                      amount: 500MB
+                            - uesio/io.box:
+                                components:
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Community Support
+                      - uesio/web.pricing_item:
+                          title: Go
+                          subtitle: For small businesses
+                          price: 99
+                          icon: directions_run
+                          cta_text: Get started
+                          content:
+                            - uesio/io.box:
+                                uesio.styleTokens:
+                                  root:
+                                    - mb-4
+                                components:
+                                  - uesio/web.benefit_item:
+                                      benefit: Transactions
+                                      amount: 500K
+                                  - uesio/web.benefit_item:
+                                      benefit: File Downloads
+                                      amount: 20GB
+                                  - uesio/web.benefit_item:
+                                      benefit: Storage
+                                      amount: 10GB
+                            - uesio/io.box:
+                                components:
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: 24H Support SLA
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Something Else
+                      - uesio/web.pricing_item:
+                          title: Grow
+                          subtitle: For most business use cases
+                          price: 299
+                          icon: directions_bike
+                          cta_text: Get started
+                          content:
+                            - uesio/io.box:
+                                uesio.styleTokens:
+                                  root:
+                                    - mb-4
+                                components:
+                                  - uesio/web.benefit_item:
+                                      benefit: Transactions
+                                      amount: 1.5M
+                                  - uesio/web.benefit_item:
+                                      benefit: File Downloads
+                                      amount: 60GB
+                                  - uesio/web.benefit_item:
+                                      benefit: Storage
+                                      amount: 250GB
+                            - uesio/io.box:
+                                components:
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: 24H Support SLA
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Something Else
+                      - uesio/web.pricing_item:
+                          title: Pro
+                          subtitle: For mission critical sites
+                          price: 599
+                          icon: motorcycle
+                          cta_text: Get started
+                          content:
+                            - uesio/io.box:
+                                uesio.styleTokens:
+                                  root:
+                                    - mb-4
+                                components:
+                                  - uesio/web.benefit_item:
+                                      benefit: Transactions
+                                      amount: 3M
+                                  - uesio/web.benefit_item:
+                                      benefit: File Downloads
+                                      amount: 200GB
+                                  - uesio/web.benefit_item:
+                                      benefit: Storage
+                                      amount: 1TB
+                            - uesio/io.box:
+                                components:
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: 12H Support SLA
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Something Else
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Transparent
+                    title: Honest, scalable pricing models
+                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - grid
+                        - md:grid-cols-2
+                        - grid-cols-1
+                        - gap-6
+                        - group
+                    components:
+                      - uesio/web.pricing_model_item:
+                          title: Free to Play
+                          description: We believe that you should be able to develop your software application ideas for FREE in the ues.io Studio development environment for as long as it takes. You only start incurring costs on a pay as you go basis once you application is live in production and your users are engaging.
+                          selected: true
+                      - uesio/web.pricing_model_item:
+                          title: Local Development
+                          description: Run ues.io locally on your own machine. SaaS when you want it to be, run it your self when you don't. Try developing on other low-code platforms without an internet connection, and you'll be in trouble fast.
+                      - uesio/web.pricing_model_item:
+                          title: Open Source
+                          description: All our code is open source under the MIT license. Keep what you make with no vendor lock-in. Become part of our open source community and contributer network.
+                      - uesio/web.pricing_model_item:
+                          title: Self-hosting Option
+                          description: Run ues.io on your own infrastruction with no phone-home schenanigans. You have complete control of your implementation. Make use of your world class support to get your implementation started.
+          - uesio/core.view:
+              uesio.id: testimonials
+              view: uesio/web.testimonials
+          - uesio/core.view:
+              uesio.id: personal_demo
+              view: uesio/web.personal_demo
           - uesio/core.view:
               view: uesio/web.footer

@@ -1,5 +1,5 @@
-name: main
-label: Main
+name: main_home
+label: Main Home
 extends: uesio/sitekit.default
 definition:
   uesio.styleTokens:
@@ -7,8 +7,6 @@ definition:
       - gap-8
       - justify-items-center
       - text-center
-      - md:px-32
-      - sm:px-16
     category:
       - font-[Gosha]
       - text-black/90
@@ -19,18 +17,12 @@ definition:
       - uppercase
     title:
       - font-normal
-      - xl:text-5xl
-      - lg:text-5xl
-      - md:text-4xl
-      - text-4xl
-      - text-black
     subtitle:
       - font-light
       - text-zinc-500
       - lg:text-lg
       - md:text-base
       - text-sm
-      - "[text-wrap:pretty]"
     actions:
       - gap-4
       - mt-6

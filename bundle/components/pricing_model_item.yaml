@@ -1,0 +1,56 @@
+name: pricing_model_item
+category: LAYOUT
+type: DECLARATIVE
+properties:
+  - type: TEXT
+    name: title
+    label: Title
+  - type: TEXT
+    name: description
+    label: Description
+definition:
+  - uesio/io.tile:
+      uesio.variant: uesio/io.default
+      uesio.styleTokens:
+        root:
+          - p-6
+          - items-start
+          - border
+          - border-transparent
+          - rounded
+          - "!hover:(bg-white,shadow-sm,border-zinc-300)"
+          - transition-colors
+          - duration-500
+        selected:
+          - bg-white
+          - shadow-sm
+          - rounded
+          - border-zinc-300
+          - "group-hover:(bg-transparent,shadow-none,border-transparent)"
+      uesio.classes:
+        selected:
+          - type: hasValue
+            value: $Prop{selected}
+      content:
+        - uesio/io.text:
+            uesio.styleTokens:
+              root:
+                - font-light
+                - text-xl
+                - mb-4
+            text: $Prop{title}
+            element: div
+        - uesio/io.text:
+            uesio.styleTokens:
+              root:
+                - font-light
+                - text-black/60
+            text: $Prop{description}
+            element: div
+title: Minor Benefit Item
+discoverable: false
+description: An item tile
+sections:
+  - type: HOME
+    properties:
+  - type: DISPLAY

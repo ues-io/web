@@ -1,0 +1,106 @@
+name: pricing_item
+category: LAYOUT
+type: DECLARATIVE
+properties:
+  - type: TEXT
+    name: title
+    label: Title text
+  - type: TEXT
+    name: subtitle
+    label: Subtitle text
+slots:
+  - name: content
+    label: Content
+definition:
+  - uesio/io.tile:
+      uesio.variant: uesio/io.default
+      uesio.styleTokens:
+        root:
+          - p-4
+          - shadow-sm
+          - rounded
+          - border
+          - border-zinc-300
+          - bg-white
+          - items-start
+          - -mt-60
+          - mb-60
+          - relative
+      content:
+        - uesio/io.text:
+            uesio.styleTokens:
+              root:
+                - absolute
+                - top-4
+                - right-4
+                - p-2
+                - text-base
+                - leading-none
+                - bg-zinc-100
+                - text-zinc-500
+                - rounded
+            text: $Prop{icon}
+            uesio.variant: uesio/io.icon
+            element: div
+        - uesio/io.text:
+            uesio.styleTokens:
+              root:
+                - text-xl
+                - font-light
+                - text-black/90
+            text: $Prop{title}
+            element: div
+        - uesio/io.text:
+            uesio.styleTokens:
+              root:
+                - text-xs
+                - font-light
+                - text-zinc-500
+                - mr-10
+            text: $Prop{subtitle}
+            element: div
+        - uesio/io.box:
+            uesio.styleTokens:
+              root:
+                - my-4
+            components:
+              - uesio/io.text:
+                  text: "$Currency{[$Prop{price}][0]}"
+                  uesio.styleTokens:
+                    root:
+                      - text-3xl
+                      - text-slate-800
+                      - font-[Gosha]
+                      - text-[#EC6940]
+              - uesio/io.text:
+                  text: " / month"
+                  uesio.styleTokens:
+                    root:
+                      - font-light
+                      - text-[7pt]
+                      - text-slate-400
+                      - uppercase
+        - uesio/io.button:
+            uesio.styleTokens:
+              root:
+                - w-full
+                - mb-4
+            uesio.variant: uesio/web.cta_primary
+            text: $Prop{cta_text}
+            signals:
+              - signal: route/REDIRECT
+                path: https://studio.$Site{domain}/signup
+        - uesio/io.box:
+            components:
+              - $Slot{content}
+      avatar:
+
+title: Pricing Item Tile
+discoverable: false
+description: An item tile
+sections:
+  - type: HOME
+    properties:
+  - type: DISPLAY
+variants:
+  - uesio/io.titlebar:uesio/io.item

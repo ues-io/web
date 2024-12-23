@@ -9,7 +9,7 @@ definition:
               view: uesio/web.header
         content:
           - uesio/sitekit.section_hero:
-              uesio.variant: uesio/web.main
+              uesio.variant: uesio/web.main_home
               category: No-Code & Pro-Code
               title: Build applications fast, with or without code
               subtitle: Keep what you build. Open source, run anywhere, no lock-in. Ever.
@@ -189,107 +189,11 @@ definition:
           - uesio/core.view:
               uesio.id: savings
               view: uesio/web.savings
-          - uesio/sitekit.section_split:
-              uesio.variant: uesio/web.testimonials
-              uesio.styleTokens:
-              content:
-                - uesio/sitekit.hero:
-                    uesio.variant: uesio/web.cta_left
-                    category: Scalable
-                    title: For enterprise teams, solo devs & everyone in between
-                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
-                    actions:
-                      - uesio/io.button:
-                          uesio.variant: uesio/web.cta_primary
-                          text: Testimonials
-                          icon: call_made
-                - uesio/io.box:
-                    components:
-                      - uesio/io.box:
-                          uesio.variant: uesio/web.testimonial_wrapper
-                          components:
-                            - uesio/web.testimonial_item:
-                                quote: Most systems fall well short in adding to customer success. ues.io makes a difference.
-                                name: Thomas Wieberneit
-                                title: Developer
-                                stars: 4
-                                avatar: uesio/sitekit.avatarpics
-                                avatarPath: images/gavin_foster.jpg
-                                extra:
-                                  - uesio/io.image:
-                                      uesio.styleTokens:
-                                        root:
-                                          - -mb-4
-                                          - -ml-2.5
-                                          - -mt-1
-                                      file: uesio/web.logos
-                                      filepath: files/umbrella.svg
-                                      height: 45
-                            - uesio/web.testimonial_item:
-                                selected: true
-                                quote: ues.io is not just a systems connector, it's a workforce and talent enabler.
-                                name: Jane Julie
-                                title: CIO
-                                stars: 5
-                                avatar: uesio/sitekit.avatarpics
-                                avatarPath: images/connie_forrester.jpg
-                                extra:
-                                  - uesio/io.image:
-                                      uesio.styleTokens:
-                                        root:
-                                          - -mb-4
-                                          - -ml-3.5
-                                          - -mt-1
-                                      file: uesio/web.logos
-                                      filepath: files/waveless.svg
-                                      height: 58
-                      - uesio/io.box:
-                          uesio.variant: uesio/web.testimonial_wrapper
-                          components:
-                            - uesio/web.testimonial_item:
-                                quote: ues.io helps us consistently deliver cost-effective and quick-to-market solutions.
-                                name: Raymond Gerber
-                                title: Systems Architect
-                                stars: 5
-                                avatar: uesio/sitekit.avatarpics
-                                avatarPath: images/randy_billingston.jpg
-                                extra:
-                                  - uesio/io.image:
-                                      uesio.styleTokens:
-                                        root:
-                                          - -mb-4
-                                          - -ml-2.5
-                                          - -mt-1
-                                      file: uesio/web.logos
-                                      filepath: files/qualtrics.svg
-                                      height: 50
-                            - uesio/web.testimonial_item:
-                                quote: It's a game-changer built to meet enterprise needs for security, scale and reliability.
-                                name: Abigail Trunchean
-                                title: Director
-                                stars: 3
-                                avatar: uesio/sitekit.avatarpics
-                                avatarPath: images/sandy_burtrand.jpg
-                                extra:
-                                  - uesio/io.image:
-                                      uesio.styleTokens:
-                                        root:
-                                          - -mb-10
-                                          - -ml-2.5
-                                          - -mt-6
-                                      file: uesio/web.logos
-                                      filepath: files/ubs.svg
-                                      height: 90
-          - uesio/sitekit.section:
-              content:
-                - uesio/sitekit.hero:
-                    uesio.variant: uesio/web.cta_dark
-                    category: Personal Demo
-                    title: Schedule an in person demo
-                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
-                    actions:
-                      - uesio/io.button:
-                          uesio.variant: uesio/web.cta_secondary
-                          text: Schedule a demo
+          - uesio/core.view:
+              uesio.id: testimonials
+              view: uesio/web.testimonials
+          - uesio/core.view:
+              uesio.id: personal_demo
+              view: uesio/web.personal_demo
           - uesio/core.view:
               view: uesio/web.footer
