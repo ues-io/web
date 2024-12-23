@@ -20,7 +20,8 @@ routes:
   uesio/web.partners: true
   uesio/web.demo: true
 files: {}
-bots: {}
+bots:
+  uesio/web.request_demo: true
 integrationActions: {}
 allowallbots: false
 allowallcollections: false

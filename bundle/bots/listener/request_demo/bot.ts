@@ -48,7 +48,7 @@ The team at ues.io`
 		bodyText: notifyUsBodyText,
 	}
 
-	bot.runIntegrationAction("uesio/appkit.resend", "sendemail", {
+	bot.asAdmin.runIntegrationAction("uesio/appkit.resend", "sendemail", {
 		to: "sales@ues.io",
 		from: fromEmail,
 		subject: `New demo request: ${firstName} ${lastName}`,
@@ -82,7 +82,7 @@ The team at ues.io`
 		bodyText: notifyThemBodyText,
 	}
 
-	bot.runIntegrationAction("uesio/appkit.resend", "sendemail", {
+	bot.asAdmin.runIntegrationAction("uesio/appkit.resend", "sendemail", {
 		to: email,
 		from: fromEmail,
 		subject: `Demo Reequested - ues.io`,
