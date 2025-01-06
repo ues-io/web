@@ -1,6 +1,11 @@
 name: pricing_item
 category: LAYOUT
 type: DECLARATIVE
+variants:
+  - uesio/io.titlebar:uesio/io.item
+slots:
+  - name: content
+    label: Content
 properties:
   - type: TEXT
     name: title
@@ -8,9 +13,6 @@ properties:
   - type: TEXT
     name: subtitle
     label: Subtitle text
-slots:
-  - name: content
-    label: Content
 definition:
   - uesio/io.tile:
       uesio.variant: uesio/io.default
@@ -94,13 +96,9 @@ definition:
             components:
               - $Slot{content}
       avatar:
-
 title: Pricing Item Tile
-discoverable: false
 description: An item tile
 sections:
   - type: HOME
     properties:
   - type: DISPLAY
-variants:
-  - uesio/io.titlebar:uesio/io.item

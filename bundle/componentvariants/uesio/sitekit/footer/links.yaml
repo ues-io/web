@@ -1,5 +1,6 @@
 name: links
 label: Links
+public: true
 extends: uesio/sitekit.site
 definition:
   uesio.styleTokens:
@@ -12,5 +13,3 @@ definition:
       - text-white/70
       - font-light
       - text-xs
-
-public: true

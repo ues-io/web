@@ -1,6 +1,8 @@
 name: feature_item
 category: LAYOUT
 type: DECLARATIVE
+variants:
+  - uesio/io.titlebar:uesio/io.item
 properties:
   - type: TEXT
     name: title
@@ -31,11 +33,8 @@ definition:
                 - -mt-[1px]
                 - opacity-80
 title: Feature Item Tile
-discoverable: false
 description: An item tile
 sections:
   - type: HOME
     properties:
   - type: DISPLAY
-variants:
-  - uesio/io.titlebar:uesio/io.item

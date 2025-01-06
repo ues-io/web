@@ -1,5 +1,6 @@
 name: accordion_feature
 label: Accordion Feature
+public: true
 definition:
   uesio.styleTokens:
     root:
@@ -19,4 +20,3 @@ definition:
     actions:
       - mt-2
       - auto-cols-max
-public: true

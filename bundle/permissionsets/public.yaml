@@ -1,24 +1,24 @@
 name: public
 named: {}
 views:
+  uesio/web.demo: true
+  uesio/web.features_accordion: true
   uesio/web.footer: true
+  uesio/web.generate: true
   uesio/web.header: true
   uesio/web.home: true
-  uesio/web.generate: true
-  uesio/web.features_accordion: true
-  uesio/web.use_cases: true
+  uesio/web.partners: true
   uesio/web.personal_demo: true
+  uesio/web.pricing: true
   uesio/web.savings: true
   uesio/web.testimonials: true
-  uesio/web.pricing: true
-  uesio/web.partners: true
-  uesio/web.demo: true
+  uesio/web.use_cases: true
 collections: {}
 routes:
-  uesio/web.home: true
-  uesio/web.pricing: true
-  uesio/web.partners: true
   uesio/web.demo: true
+  uesio/web.home: true
+  uesio/web.partners: true
+  uesio/web.pricing: true
 files: {}
 bots:
   uesio/web.request_demo: true

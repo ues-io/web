@@ -2,15 +2,15 @@ name: uesio/web
 homeRoute: uesio/web.home
 publicProfile: uesio/web.public
 dependencies:
+  uesio/appkit:
+    version: v0.0.1
+  uesio/cms:
+    version: v0.1.17
   uesio/core:
     version: v0.0.1
   uesio/io:
     version: v0.0.1
   uesio/sitekit:
     version: v0.0.1
-  uesio/appkit:
-    version: v0.0.1
-  uesio/cms:
-    version: v0.1.17
   uesio/swiper:
     version: v0.0.2
