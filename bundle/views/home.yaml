@@ -95,7 +95,7 @@ definition:
                     uesio.variant: uesio/web.cta_left
                     category: Artificial Intelligence
                     title: Let our AI features do the heavy lifting
-                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    subtitle: Effortlessly create apps and websites while generating fully functional frontends and backends. Our embedded AI suggests optimal database fields and generates contextual sample data removing hours of effort. Plus, easily integrate AI features to enhance user experiences. Whether you’re building a polished MVP or scaling your vision, our platform empowers you to build smarter and faster than ever before.
                     extra:
                       - uesio/io.box:
                           uesio.styleTokens:
@@ -171,7 +171,7 @@ definition:
               uesio.variant: uesio/web.cta
               category: Security
               title: Mitigate attack surfaces with enterprise-grade security
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+              subtitle: Includes enterprise-grade security with granular, multilayered security controls. Administrators can define precise access levels through sophisticated permission sets and profiles, controlling user interactions down to individual field permissions. This approach ensures comprehensive data protection while maintaining organizational flexibility.
           - uesio/sitekit.section_banner:
               uesio.variant: uesio/web.default
               content:
