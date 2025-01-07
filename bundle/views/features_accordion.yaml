@@ -25,8 +25,8 @@ definition:
                   components:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
-                        title: Prototype your app in hours
-                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                        title: Prototype your app in minutes
+                        description: Transform your ideas without the need for extensive coding. Our rapid prototyping process accelerates feedback and iteration, enabling you to refine your concepts quickly and efficiently, ensuring that your final product aligns perfectly with your vision.
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
@@ -37,7 +37,7 @@ definition:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
                         title: Make changes confidently with sandboxes
-                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                        description: We provide a secure, isolated environment for developers to experiment and test without risking production systems. Create safe spaces to explore changes and validate new features confidently. Prototype and innovate while maintaining system integrity and minimizing development risks.
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
@@ -48,7 +48,7 @@ definition:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
                         title: Benefit from our community app marketplace
-                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                        description: Tap into our community app marketplace, where developers share, sell or rent out pre-built solutions, templates, and integrations. Access ready-to-use apps, components, and plugins that accelerate development. Discover creative solutions from a global network of professionals.
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
@@ -59,7 +59,7 @@ definition:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
                         title: Integrate to your heart's content
-                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                        description: Include third-party software effortlessly using REST APIs and OAuth 2.0 for secure and seamless connections. Whether connecting external AI LLM's, other popular tools or for enhancing workflows, the flexibility of these integrations ensures robust functionality tailored to your needs.
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
@@ -70,7 +70,7 @@ definition:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
                         title: What you see is what you get
-                        description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl. Pellentesque ultrices turpis non nulla malesuada, eu aliquet augue pharetra. Vestibulum at porta est. Pellentesque ac tempus justo.
+                        description: Unleash creativity with our drag-and-drop Studio view builder that transforms design imagination into reality. Seamlessly arrange pre-built components, visualize your application instantly, and craft stunning interfaces without coding. Need more, then build your own components using REACT libraries.
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
