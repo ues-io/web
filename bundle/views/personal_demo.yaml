@@ -7,7 +7,7 @@ definition:
               uesio.variant: uesio/web.cta_dark
               category: Personal Demo
               title: Schedule an in person demo
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+              subtitle: Experience the power of our platform firsthand by scheduling an in-person demo, where our experts will guide you through its features and capabilities tailored to your specific needs.
               actions:
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_secondary
