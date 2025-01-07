@@ -42,7 +42,7 @@ definition:
                   - pb-40
               category: Demo
               title: Book your personalized, one-to-one demo today
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+              subtitle: One of our team members will send you a personalised email with a link so that you can select a date and time that suits your calendar.
           - uesio/sitekit.section:
               innerVariant: uesio/sitekit.section_inner_content
               uesio.styleTokens:
@@ -87,16 +87,16 @@ definition:
                                             components:
                                               - uesio/io.avatar:
                                                   uesio.variant: uesio/web.demo
-                                                  image: $File{uesio/sitekit.avatarpics:images/randy_billingston.jpg}
+                                                  image: $File{uesio/web.ben}
                                               - uesio/io.avatar:
                                                   uesio.variant: uesio/web.demo
-                                                  image: $File{uesio/sitekit.avatarpics:images/connie_forrester.jpg}
+                                                  image: $File{uesio/web.mark}
                                               - uesio/io.avatar:
                                                   uesio.variant: uesio/web.demo
-                                                  image: $File{uesio/sitekit.avatarpics:images/gavin_foster.jpg}
+                                                  image: $File{uesio/web.gregg}
                                               - uesio/io.avatar:
                                                   uesio.variant: uesio/web.demo
-                                                  image: $File{uesio/sitekit.avatarpics:images/sandy_burtrand.jpg}
+                                                  image: $File{uesio/web.paul}
                                         - uesio/io.box:
                                             uesio.styleTokens:
                                               root:
@@ -107,16 +107,22 @@ definition:
                                             components:
                                               - uesio/io.field:
                                                   fieldId: firstname
+                                                  placeholder: Required
                                               - uesio/io.field:
                                                   fieldId: lastname
+                                                  placeholder: Required
                                         - uesio/io.field:
                                             fieldId: email
+                                            placeholder: Required
                                         - uesio/io.field:
                                             fieldId: phone
+                                            placeholder: Not Required
                                         - uesio/io.field:
                                             fieldId: companyname
+                                            placeholder: Would help
                                         - uesio/io.field:
                                             fieldId: comments
+                                            placeholder: Your potential use case
                                         - uesio/io.button:
                                             uesio.styleTokens:
                                               root:
@@ -137,6 +143,70 @@ definition:
                                               - signal: wire/UPDATE_RECORD
                                                 field: submitted
                                                 value: true
+                                            uesio.display:
+                                              - type: group
+                                                conjunction: AND
+                                                conditions:
+                                                  - type: fieldValue
+                                                    operator: NOT_IN
+                                                    wire: demorequest
+                                                    field: firstname
+                                                    values:
+                                                      - ""
+                                                  - type: fieldValue
+                                                    operator: NOT_IN
+                                                    wire: demorequest
+                                                    field: lastname
+                                                    values:
+                                                      - ""
+                                                  - type: fieldValue
+                                                    operator: NOT_IN
+                                                    wire: demorequest
+                                                    field: email
+                                                    values:
+                                                      - ""
+                                        - uesio/io.button:
+                                            uesio.styleTokens:
+                                              root:
+                                                - w-full
+                                                - mt-4
+                                            uesio.variant: uesio/web.cta_secondary
+                                            text: Submit
+                                            signals:
+                                              - signal: bot/CALL
+                                                bot: uesio/web.request_demo
+                                                params:
+                                                  firstname: ${firstname}
+                                                  lastname: ${lastname}
+                                                  email: ${email}
+                                                  phone: ${phone}
+                                                  companyname: ${companyname}
+                                                  comments: ${comments}
+                                              - signal: wire/UPDATE_RECORD
+                                                field: submitted
+                                                value: true
+                                            uesio.display:
+                                              - type: group
+                                                conjunction: OR
+                                                conditions:
+                                                  - type: fieldValue
+                                                    operator: IN
+                                                    wire: demorequest
+                                                    field: firstname
+                                                    values:
+                                                      - ""
+                                                  - type: fieldValue
+                                                    operator: IN
+                                                    wire: demorequest
+                                                    field: lastname
+                                                    values:
+                                                      - ""
+                                                  - type: fieldValue
+                                                    operator: IN
+                                                    wire: demorequest
+                                                    field: email
+                                                    values:
+                                                      - ""
                                   - uesio/io.box:
                                       uesio.display:
                                         - type: hasValue
