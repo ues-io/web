@@ -9,7 +9,7 @@ definition:
               uesio.variant: uesio/web.cta_left
               category: Scalable
               title: For enterprise teams, solo devs & everyone in between
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+              subtitle: Whether you’re building complex applications for a large organization or launching a personal project, our no-code/pro-code  solution adapts to your requirements. Experience seamless collaboration and rapid development, empowering every user to achieve their goals efficiently.
               actions:
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_primary
@@ -26,48 +26,44 @@ definition:
                       - uesio/web.testimonial_item:
                           quote: Most systems fall well short in adding to customer success. ues.io makes a difference.
                           name: Thomas Wieberneit
-                          title: Developer
+                          title: Co-Founder, CEO, Principal
                           stars: 4
-                          avatar: uesio/sitekit.avatarpics
-                          avatarPath: images/gavin_foster.jpg
+                          avatar: uesio/web.thomaspic
                           extra:
                             - uesio/io.image:
                                 uesio.styleTokens:
                                   root:
-                                    - -mb-4
                                     - -ml-2.5
-                                    - -mt-1
+                                    - mt-4
                                 file: uesio/web.logos
-                                filepath: files/umbrella.svg
-                                height: 45
+                                filepath: aheadcrm1.png
+                                height: 30
                       - uesio/web.testimonial_item:
                           selected: true
-                          quote: ues.io is not just a systems connector, it's a workforce and talent enabler.
-                          name: Jane Julie
-                          title: CIO
+                          quote: It's a game-changer built to meet enterprise needs for security, scale and reliability.
+                          name: Ansuya Ahluwalia
+                          title: CTO
                           stars: 5
-                          avatar: uesio/sitekit.avatarpics
-                          avatarPath: images/connie_forrester.jpg
+                          avatar: uesio/web.ansuya
                           extra:
                             - uesio/io.image:
                                 uesio.styleTokens:
                                   root:
-                                    - -mb-4
+                                    - -mb-1
                                     - -ml-3.5
-                                    - -mt-1
+                                    - mt-4
                                 file: uesio/web.logos
-                                filepath: files/waveless.svg
-                                height: 58
+                                filepath: thirty3.png
+                                height: 30
                 - uesio/io.box:
                     uesio.variant: uesio/web.testimonial_wrapper
                     components:
                       - uesio/web.testimonial_item:
                           quote: ues.io helps us consistently deliver cost-effective and quick-to-market solutions.
                           name: Raymond Gerber
-                          title: Systems Architect
+                          title: Distinguished Product XM Scientist
                           stars: 5
-                          avatar: uesio/sitekit.avatarpics
-                          avatarPath: images/randy_billingston.jpg
+                          avatar: uesio/web.raymond
                           extra:
                             - uesio/io.image:
                                 uesio.styleTokens:
@@ -79,12 +75,11 @@ definition:
                                 filepath: files/qualtrics.svg
                                 height: 50
                       - uesio/web.testimonial_item:
-                          quote: It's a game-changer built to meet enterprise needs for security, scale and reliability.
-                          name: Abigail Trunchean
-                          title: Director
-                          stars: 3
-                          avatar: uesio/sitekit.avatarpics
-                          avatarPath: images/sandy_burtrand.jpg
+                          quote: ues.io is not just a systems connector, it's a workforce and talent enabler.
+                          name: Stuart Buckland
+                          title: NEXT
+                          stars: 4
+                          avatar: uesio/web.staurt
                           extra:
                             - uesio/io.image:
                                 uesio.styleTokens:
