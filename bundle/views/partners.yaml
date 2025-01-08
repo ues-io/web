@@ -115,8 +115,9 @@ definition:
                               newtab: true
               image:
                 - uesio/io.image:
-                    file: uesio/web.central
-                    height: 60
+                    file: uesio/web.logos
+                    filepath: files/centralogic.png
+                    height: 90
           - uesio/io.box:
               uesio.styleTokens:
                 root:
