@@ -9,7 +9,7 @@ definition:
       - "[min-height:0]"
     content:
       - md:px-2.5
-      - py-6
+      - pt-12
       - text-white/70
       - font-light
       - text-xs
