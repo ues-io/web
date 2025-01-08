@@ -12,7 +12,7 @@ definition:
               uesio.variant: uesio/web.main
               category: Partners
               title: Innovation through collaboration
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+              subtitle: Our strategic partners bring diverse expertise and insights to the table. By working together, we create cutting-edge solutions that foster growth and ensure our clients benefit from the latest advancements in technology and best practices.
           - uesio/sitekit.section_split:
               uesio.variant: uesio/web.partners
               content:
@@ -20,11 +20,15 @@ definition:
                     uesio.variant: uesio/web.cta_left
                     category: Infrastructure Partner
                     title: Amazon Web Services
-                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    subtitle: ues.io is an AWS Software Partner, leveraging Amazon Web Services' robust cloud infrastructure to deliver innovative solutions. This partnership allows ues.io to integrate seamlessly with AWS services, providing customers with scalable, secure, and high-performance cloud-based applications. As an AWS Software Partner, ues.io demonstrates expertise in developing and deploying software on the AWS platform, ensuring clients benefit from the latest cloud technologies and best practices.
                     actions:
                       - uesio/io.button:
                           uesio.variant: uesio/web.cta_secondary
                           text: Learn more
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://aws.amazon.com/marketplace/pp/prodview-3s622khfhwbqi
+                              newtab: true
               image:
                 - uesio/io.image:
                     file: uesio/web.logos
@@ -37,11 +41,15 @@ definition:
                     uesio.variant: uesio/web.cta_left
                     category: Payments Partner
                     title: Usio Integrated Payments
-                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    subtitle: Usio is a leading provider of integrated payment solutions, trusted by businesses to process billions of dollars in transactions annually. Usio's platform offers a comprehensive suite of features designed to simplify payment processing, improve user experience, and reduce costs. Usio's Payfac-as-a-Service solution offers a comprehensive suite of features designed to simplify payment processing for businesses of all sizes in the USA. *only available in the USA.
                     actions:
                       - uesio/io.button:
                           uesio.variant: uesio/web.cta_secondary
                           text: Learn more
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://usio.com/
+                              newtab: true
               image:
                 - uesio/io.image:
                     file: uesio/web.logos
@@ -54,11 +62,15 @@ definition:
                     uesio.variant: uesio/web.cta_left
                     category: Implementation Partner
                     title: Thirty3
-                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    subtitle: Founded in 2019, thirty3 has created meaningful products, by aligning technology with human needs in a conscious way.  They operate across continents with their hubs in four major cities to deliver quality in a timely and cost-effective manner.  They help you integrate Artificial Intelligence seamlessly with Cloud Solutions, Intelligent Automation, and help you leverage its use for Actionable Business Insights.
                     actions:
                       - uesio/io.button:
                           uesio.variant: uesio/web.cta_secondary
                           text: Learn more
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://thirty3.ch/
+                              newtab: true
               image:
                 - uesio/io.image:
                     file: uesio/web.logos
@@ -70,17 +82,41 @@ definition:
                 - uesio/sitekit.hero:
                     uesio.variant: uesio/web.cta_left
                     category: Implementation Partner
-                    title: Copebit AG
-                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    title: Copebit
+                    subtitle: As a certified AWS advanced consulting partner, the Swiss IT Company copebit guides clients on their journey into the AWS cloud, helping them migrate their workload and making sure that it is secure and runs optimally within the new environment. copebit demonstrates to its existing clients the simplicity of building and running enterprise grade applications either by accessing ues.io online or running it on-premise and extending it further using other AWS services.
                     actions:
                       - uesio/io.button:
                           uesio.variant: uesio/web.cta_secondary
                           text: Learn more
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://www.copebit.ch/en/home/
+                              newtab: true
               image:
                 - uesio/io.image:
                     file: uesio/web.logos
                     filepath: files/copebit.png
                     height: 120
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Implementation Partner
+                    title: CentraLogic
+                    subtitle: CentraLogic thrives on innovation. They have continually embraced cutting-edge technologies, staying at the forefront of industry trends.They place their clients at the core of every decision and solution they deliver. While CentraLogic's roots can be traced back to its founding location, its impact and reach extend far beyond geographical boundaries. With a global perspective, the company has engaged in partnerships and collaborations that transcend borders.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://centralogic.net/
+                              newtab: true
+              image:
+                - uesio/io.image:
+                    file: uesio/web.central
+                    height: 60
           - uesio/io.box:
               uesio.styleTokens:
                 root:
