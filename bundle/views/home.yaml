@@ -95,7 +95,7 @@ definition:
                     uesio.variant: uesio/web.cta_left
                     category: Artificial Intelligence
                     title: Let our AI features do the heavy lifting
-                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    subtitle: Create apps and websites with a simple prompt. Just describe what you want and ues.io will make it so. Our built-in AI suggests a data structure, builds a user interface, and even generates sample data. In addition to building with AI, you can integrate AI features into your own user experiences.
                     extra:
                       - uesio/io.box:
                           uesio.styleTokens:
@@ -171,7 +171,7 @@ definition:
               uesio.variant: uesio/web.cta
               category: Security
               title: Mitigate attack surfaces with enterprise-grade security
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+              subtitle: Ensure data protection without sacrificing flexibility using our sophisticated security controls at the object, field and record level. Administrators can define access levels for their users through permission sets and profiles, controlling user interactions precisely.
           - uesio/sitekit.section_banner:
               uesio.variant: uesio/web.default
               content:
