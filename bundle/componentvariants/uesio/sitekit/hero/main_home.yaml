@@ -28,11 +28,9 @@ definition:
       - mt-6
     imagewrapper:
       - mt-10
-      - xl:-mx-0
       - lg:-mx-6
       - md:-mb-52
       - -mb-36
-      - -mx-8
       - p-2
       - rounded
       - bg-gradient-to-tr
