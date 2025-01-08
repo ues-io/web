@@ -26,7 +26,7 @@ definition:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
                         title: Prototype your app in minutes
-                        description: Transform your ideas without the need for extensive coding. Our rapid prototyping process accelerates feedback and iteration, enabling you to refine your concepts quickly and efficiently, ensuring that your final product aligns perfectly with your vision.
+                        description: Transform your ideas into reality without the need for extensive coding. Our rapid prototyping process accelerates feedback and iteration, enabling you to refine your concepts quickly and efficiently, ensuring that your final product aligns perfectly with your vision.
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
@@ -70,7 +70,7 @@ definition:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
                         title: What you see is what you get
-                        description: Unleash creativity with our drag-and-drop Studio view builder that transforms design imagination into reality. Seamlessly arrange pre-built components, visualize your application instantly, and craft stunning interfaces without coding. Need more, then build your own components using REACT libraries.
+                        description: Unleash your creativity with our drag-and-drop view builder that transforms design imagination into reality. Seamlessly arrange pre-built components, visualize your application instantly, and craft stunning interfaces without coding. Need more? Build your own components using React.
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
