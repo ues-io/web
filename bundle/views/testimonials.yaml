@@ -27,34 +27,34 @@ definition:
                           quote: Most systems fall well short in adding to customer success. ues.io makes a difference.
                           name: Thomas Wieberneit
                           title: Co-Founder, CEO, Principal
-                          stars: 4
-                          avatar: uesio/web.thomaspic
+                          stars: 5
+                          avatar: uesio/web.testimonial_avatars
+                          avatarPath: files/thomas.jpg
                           extra:
                             - uesio/io.image:
                                 uesio.styleTokens:
                                   root:
-                                    - -ml-2.5
-                                    - mt-4
+                                    - mt-0
                                 file: uesio/web.logos
-                                filepath: aheadcrm1.png
-                                height: 30
+                                filepath: files/aheadcrm.png
+                                height: 28
                       - uesio/web.testimonial_item:
                           selected: true
                           quote: It's a game-changer built to meet enterprise needs for security, scale and reliability.
                           name: Ansuya Ahluwalia
                           title: CTO
                           stars: 5
-                          avatar: uesio/web.ansuya
+                          avatar: uesio/web.testimonial_avatars
+                          avatarPath: files/asunya.jpg
                           extra:
                             - uesio/io.image:
                                 uesio.styleTokens:
                                   root:
                                     - -mb-1
-                                    - -ml-3.5
-                                    - mt-4
+                                    - mix-blend-multiply
                                 file: uesio/web.logos
-                                filepath: thirty3.png
-                                height: 30
+                                filepath: files/thirty3.jpg
+                                height: 40
                 - uesio/io.box:
                     uesio.variant: uesio/web.testimonial_wrapper
                     components:
@@ -63,7 +63,8 @@ definition:
                           name: Raymond Gerber
                           title: Distinguished Product XM Scientist
                           stars: 5
-                          avatar: uesio/web.raymond
+                          avatar: uesio/web.testimonial_avatars
+                          avatarPath: files/raymond.jpg
                           extra:
                             - uesio/io.image:
                                 uesio.styleTokens:
@@ -77,9 +78,10 @@ definition:
                       - uesio/web.testimonial_item:
                           quote: ues.io is not just a systems connector, it's a workforce and talent enabler.
                           name: Stuart Buckland
-                          title: NEXT
-                          stars: 4
-                          avatar: uesio/web.staurt
+                          title: UBS Next
+                          stars: 5
+                          avatar: uesio/web.testimonial_avatars
+                          avatarPath: files/stuart.jpg
                           extra:
                             - uesio/io.image:
                                 uesio.styleTokens:
