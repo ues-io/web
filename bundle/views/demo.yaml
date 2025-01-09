@@ -42,7 +42,7 @@ definition:
                   - pb-40
               category: Demo
               title: Book your personalized, one-to-one demo today
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+              subtitle: One of our team members will send you a personalised email with a link so that you can select a date and time that suits your calendar.
           - uesio/sitekit.section:
               innerVariant: uesio/sitekit.section_inner_content
               uesio.styleTokens:
@@ -87,16 +87,16 @@ definition:
                                             components:
                                               - uesio/io.avatar:
                                                   uesio.variant: uesio/web.demo
-                                                  image: $File{uesio/sitekit.avatarpics:images/randy_billingston.jpg}
+                                                  image: $File{uesio/web.team_avatars:files/ben.jpg}
                                               - uesio/io.avatar:
                                                   uesio.variant: uesio/web.demo
-                                                  image: $File{uesio/sitekit.avatarpics:images/connie_forrester.jpg}
+                                                  image: $File{uesio/web.team_avatars:files/mark.jpg}
                                               - uesio/io.avatar:
                                                   uesio.variant: uesio/web.demo
-                                                  image: $File{uesio/sitekit.avatarpics:images/gavin_foster.jpg}
+                                                  image: $File{uesio/web.team_avatars:files/paul.jpg}
                                               - uesio/io.avatar:
                                                   uesio.variant: uesio/web.demo
-                                                  image: $File{uesio/sitekit.avatarpics:images/sandy_burtrand.jpg}
+                                                  image: $File{uesio/web.team_avatars:files/gregg.jpg}
                                         - uesio/io.box:
                                             uesio.styleTokens:
                                               root:
@@ -116,7 +116,12 @@ definition:
                                         - uesio/io.field:
                                             fieldId: companyname
                                         - uesio/io.field:
+                                            uesio.styleTokens:
+                                              input:
+                                                - placeholder:text-black/30
+                                                - placeholder:font-light
                                             fieldId: comments
+                                            placeholder: Your potential use case
                                         - uesio/io.button:
                                             uesio.styleTokens:
                                               root:
