@@ -170,7 +170,7 @@ definition:
                   - justify-between
               components:
                 - uesio/io.text:
-                    text: © 2024 UESIO, Inc, USA
+                    text: © 2025 UESIO, Inc, USA
                 - uesio/io.group:
                     uesio.styleTokens:
                       root:
