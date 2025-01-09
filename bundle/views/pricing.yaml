@@ -15,7 +15,7 @@ definition:
                   - pb-40
               category: Pricing
               title: Pricing to suit any business need
-              subtitle: We believe that development should not cost anything as this is where you create, experiment and build awesome apps. You only pay for usage once your app is live and your users are engaging and then at a fraction of the cost compared to per user pricing. Dev for FREE.
+              subtitle: Only pay for usage once your app is live and your users are engaging. Our usage-based pricing is a fraction of the cost compared to per user pricing. Developing apps in the studio is always free.
           - uesio/sitekit.section:
               innerVariant: uesio/sitekit.section_inner_content
               uesio.styleTokens:
@@ -112,7 +112,7 @@ definition:
                             - uesio/io.box:
                                 components:
                                   - uesio/web.minor_benefit_item:
-                                      benefit: Free
+                                      benefit: All Free Plan Benefits
                                   - uesio/web.minor_benefit_item:
                                       benefit: Community Support
                                   - uesio/web.minor_benefit_item:
@@ -156,7 +156,7 @@ definition:
                             - uesio/io.box:
                                 components:
                                   - uesio/web.minor_benefit_item:
-                                      benefit: Go
+                                      benefit: All Go Plan Benefits
                                   - uesio/web.minor_benefit_item:
                                       benefit: 24H Support SLA
                                   - uesio/web.minor_benefit_item:
@@ -200,13 +200,13 @@ definition:
                             - uesio/io.box:
                                 components:
                                   - uesio/web.minor_benefit_item:
-                                      benefit: Grow
+                                      benefit: All Grow Plan Benefits
                                   - uesio/web.minor_benefit_item:
                                       benefit: 12H Support SLA
                                   - uesio/web.minor_benefit_item:
                                       benefit: 100 Integrations
                                   - uesio/web.minor_benefit_item:
-                                      benefit: BYO Subdomain
+                                      benefit: BYO Domains
                                   - uesio/web.minor_benefit_item:
                                       benefit: Free CRM
                                   - uesio/web.minor_benefit_item:
