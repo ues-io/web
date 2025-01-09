@@ -28,7 +28,8 @@ definition:
       - mt-6
     imagewrapper:
       - mt-10
-      - lg:-mx-6
+      - lg:mx-12
+      - md:mx-6
       - md:-mb-52
       - -mb-36
       - p-2

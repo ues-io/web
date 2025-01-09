@@ -1,11 +1,12 @@
 name: uesio/web
 homeRoute: uesio/web.home
 publicProfile: uesio/web.public
+loginRoute: uesio/web.login
 dependencies:
   uesio/appkit:
     version: v0.0.1
   uesio/cms:
-    version: v0.1.17
+    version: v0.1.19
   uesio/core:
     version: v0.0.1
   uesio/io:

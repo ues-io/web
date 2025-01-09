@@ -1,0 +1,58 @@
+name: news
+definition:
+  wires:
+    articles:
+      collection: uesio/cms.article
+      fields:
+        uesio/cms.name:
+        uesio/cms.description:
+        uesio/cms.slug:
+        uesio/cms.hero_image:
+        uesio/cms.category:
+          fields:
+            uesio/cms.label:
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: uesio/web.page
+        trackScrolling: true
+        header:
+          - uesio/core.view:
+              view: uesio/web.header
+        content:
+          - uesio/sitekit.section_hero:
+              uesio.variant: uesio/web.main
+              uesio.styleTokens:
+                sectionRoot:
+                  - pb-40
+              category: Blog
+              title: News and Insights
+              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+          - uesio/sitekit.section:
+              innerVariant: uesio/sitekit.section_inner_content
+              uesio.styleTokens:
+                root:
+                  - bg-gradient-to-b
+                  - from-zinc-50
+              content:
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - grid
+                        - justify-center
+                        - md:grid-cols-[repeat(2,minmax(0px,400px))]
+                        - grid-cols-[minmax(0px,400px)]
+                        - lg:gap-16
+                        - gap-8
+                        - -mb-60
+                    components:
+                      - uesio/io.list:
+                          wire: articles
+                          components:
+                            - uesio/web.news_item:
+                                title: ${uesio/cms.name}
+                                subtitle: ${uesio/cms.description}
+                                hero_image: $UserFile{uesio/cms.hero_image}
+                                category: ${uesio/cms.category->uesio/cms.label}
+                                slug: ${uesio/cms.slug}
+          - uesio/core.view:
+              view: uesio/web.footer

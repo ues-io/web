@@ -125,6 +125,9 @@ definition:
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Blog
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: news
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Documentation

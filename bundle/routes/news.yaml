@@ -1,0 +1,5 @@
+name: news
+path: news
+view: news
+theme: uesio/core.default
+title: News and Insights

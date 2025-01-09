@@ -1,6 +1,8 @@
-name: public
+name: admin
 permissionSets:
   - uesio/web.public
   - uesio/cms.public
   - uesio/appkit.public
+  - uesio/cms.admin
   - uesio/core.public
+homeRoute: uesio/cms.article_list

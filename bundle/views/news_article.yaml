@@ -1,0 +1,115 @@
+name: news_article
+definition:
+  wires:
+    article:
+      collection: uesio/cms.article
+      fields:
+        uesio/cms.name:
+        uesio/cms.description:
+        uesio/cms.slug:
+        uesio/cms.content:
+        uesio/cms.hero_image:
+        uesio/cms.author:
+          fields:
+            uesio/cms.firstname:
+            uesio/cms.lastname:
+            uesio/cms.title:
+            uesio/cms.initials:
+            uesio/cms.picture:
+        uesio/cms.category:
+          fields:
+            uesio/cms.label:
+        uesio/core.updatedat:
+      conditions:
+        - field: uesio/cms.slug
+          value: $Param{slug}
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: uesio/web.page
+        trackScrolling: true
+        header:
+          - uesio/core.view:
+              view: uesio/web.header
+        content:
+          - uesio/io.item:
+              wire: article
+              components:
+                - uesio/sitekit.section_hero:
+                    uesio.variant: uesio/web.main
+                    uesio.styleTokens:
+                      sectionRoot:
+                        - pb-40
+                      actions:
+                        - mt-0
+                    category: ${uesio/cms.category->uesio/cms.label}
+                    title: ${uesio/cms.name}
+                    subtitle: ${uesio/cms.description}
+                    actions:
+                      - uesio/io.text:
+                          uesio.styleTokens:
+                            root:
+                              - text-xs
+                              - text-zinc-400
+                              - font-light
+                              - border-r
+                              - border-zinc-300
+                              - py-2
+                              - px-4
+                          text: $Date{uesio/core.updatedat}
+                          element: div
+                      - uesio/appkit.item:
+                          uesio.styleTokens:
+                            root:
+                              - p-0
+                              - text-left
+                          title: ${author->firstname} ${author->lastname}
+                          subtitle: ${author->title}
+                          initials: ${author->initials}
+                          imagefield: author->picture
+                          avatarVariant: uesio/io.default
+                - uesio/sitekit.section:
+                    innerVariant: uesio/sitekit.section_inner_content
+                    uesio.styleTokens:
+                      root:
+                        - bg-white
+                    content:
+                      - uesio/io.box:
+                          uesio.styleTokens:
+                            root:
+                              - grid
+                              - justify-center
+                              - grid-cols-[minmax(0px,900px)]
+                              - -mt-60
+                          components:
+                            - uesio/io.box:
+                                uesio.styleTokens:
+                                  root:
+                                    - bg-[url($UserFile{uesio/cms.hero_image})]
+                                    - bg-zinc-50
+                                    - w-full
+                                    - h-96
+                                    - bg-cover
+                                    - mb-12
+                                uesio.display:
+                                  - type: hasValue
+                                    value: $UserFile{uesio/cms.hero_image})
+                            - uesio/io.field:
+                                uesio.variant: uesio/io.markdownfield:uesio/cms.markdown
+                                fieldId: uesio/cms.content
+                                labelPosition: none
+                                displayAs: MARKDOWN
+                            - uesio/io.box:
+                                components:
+                                  - uesio/io.button:
+                                      uesio.variant: uesio/web.cta_secondary
+                                      icon: arrow_back
+                                      text: Back to blog
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: news
+          - uesio/core.view:
+              view: uesio/web.footer
+  params:
+    slug:
+      type: TEXT
+      required: true

@@ -7,6 +7,8 @@ views:
   uesio/web.generate: true
   uesio/web.header: true
   uesio/web.home: true
+  uesio/web.news: true
+  uesio/web.news_article: true
   uesio/web.partners: true
   uesio/web.personal_demo: true
   uesio/web.pricing: true
@@ -17,6 +19,9 @@ collections: {}
 routes:
   uesio/web.demo: true
   uesio/web.home: true
+  uesio/web.login: true
+  uesio/web.news: true
+  uesio/web.news_article: true
   uesio/web.partners: true
   uesio/web.pricing: true
 files: {}
