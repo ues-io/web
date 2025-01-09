@@ -16,6 +16,7 @@ definition:
             uesio/cms.title:
             uesio/cms.initials:
             uesio/cms.picture:
+            uesio/cms.description:
         uesio/cms.category:
           fields:
             uesio/cms.label:
@@ -71,7 +72,8 @@ definition:
                     innerVariant: uesio/sitekit.section_inner_content
                     uesio.styleTokens:
                       root:
-                        - bg-white
+                        - bg-gradient-to-b
+                        - from-zinc-50
                     content:
                       - uesio/io.box:
                           uesio.styleTokens:
@@ -87,7 +89,8 @@ definition:
                                     - bg-[url($UserFile{uesio/cms.hero_image})]
                                     - bg-zinc-50
                                     - w-full
-                                    - h-96
+                                    - md:h-96
+                                    - h-56
                                     - bg-cover
                                     - mb-12
                                 uesio.display:
@@ -99,7 +102,17 @@ definition:
                                 labelPosition: none
                                 displayAs: MARKDOWN
                             - uesio/io.box:
+                                uesio.styleTokens:
+                                  root:
+                                    - grid
+                                    - justify-items-center
                                 components:
+                                  - uesio/web.author_item:
+                                      name: ${author->firstname} ${author->lastname}
+                                      title: ${author->title}
+                                      description: ${author->description}
+                                      initials: ${author->initials}
+                                      imagefield: author->picture
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.cta_secondary
                                       icon: arrow_back

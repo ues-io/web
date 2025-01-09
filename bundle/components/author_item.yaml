@@ -1,0 +1,95 @@
+name: author_item
+category: LAYOUT
+type: DECLARATIVE
+variants:
+  - uesio/io.titlebar:uesio/io.item
+properties:
+  - type: TEXT
+    name: name
+    label: name
+  - type: TEXT
+    name: title
+    label: Title
+definition:
+  - uesio/io.tile:
+      uesio.variant: uesio/io.default
+      uesio.styleTokens:
+        root:
+          - shadow-md
+          - rounded-sm
+          - bg-white
+          - items-start
+          - max-w-[600px]
+          - my-12
+          - md:flex-row
+          - flex-col
+          - items-center
+          - p-8
+          - gap-8
+        avatar:
+          - "[&>div]:w-32"
+          - "[&>div]:h-32"
+      content:
+        - uesio/io.box:
+            components:
+              - uesio/io.text:
+                  uesio.styleTokens:
+                    root:
+                      - text-lg
+                      - font-light
+                      - text-black/90
+                  text: $Prop{name}
+                  element: div
+              - uesio/io.text:
+                  uesio.styleTokens:
+                    root:
+                      - text-sm
+                      - font-light
+                      - text-black/60
+                      - mb-4
+                  text: $Prop{title}
+                  element: div
+              - uesio/io.text:
+                  uesio.styleTokens:
+                    root:
+                      - text-sm
+                      - font-light
+                      - text-black/60
+                      - mb-8
+                  text: $Prop{description}
+                  element: div
+              - uesio/io.group:
+                  uesio.styleTokens:
+                    root:
+                      - gap-4
+                      - auto-cols-max
+                  components:
+                    - uesio/io.image:
+                        file: uesio/web.social_icons
+                        filepath: files/x_dark.svg
+                        height: 18
+                    - uesio/io.image:
+                        file: uesio/web.social_icons
+                        filepath: files/linkedin_dark.svg
+                        height: 18
+                    - uesio/io.image:
+                        file: uesio/web.social_icons
+                        filepath: files/youtube_dark.svg
+                        height: 18
+                    - uesio/io.image:
+                        file: uesio/web.social_icons
+                        filepath: files/slack_dark.svg
+                        height: 18
+      avatar:
+        - uesio/io.avatar:
+            uesio.display:
+              - type: hasValue
+                value: $Prop{initials}
+            text: $Prop{initials}
+            image: $UserFile{$Prop{imagefield}}
+title: Author Item Tile
+description: An item tile
+sections:
+  - type: HOME
+    properties:
+  - type: DISPLAY

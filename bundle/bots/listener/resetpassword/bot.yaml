@@ -1,0 +1,15 @@
+name: resetpassword
+type: LISTENER
+dialect: TYPESCRIPT
+params:
+  - name: username
+    type: TEXT
+    required: true
+  - name: email
+    type: TEXT
+  - name: code
+    type: TEXT
+    required: true
+  - name: host
+    type: TEXT
+    required: true

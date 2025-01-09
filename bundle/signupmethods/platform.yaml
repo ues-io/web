@@ -1,0 +1,10 @@
+name: platform
+authsource: uesio/core.platform
+profile: uesio/web.admin
+usernameTemplate: ${username}
+usernameRegex: "^[a-z0-9_]+$"
+usernameFormatExplanation: "lowercase a-z, 0-9, and underscore only"
+public: true
+createLoginBot: uesio/web.createlogin
+resetPasswordBot: uesio/web.resetpassword
+label: Username/Password Signup
