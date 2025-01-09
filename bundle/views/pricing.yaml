@@ -15,7 +15,7 @@ definition:
                   - pb-40
               category: Pricing
               title: Pricing to suit any business need
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+              subtitle: Only pay for usage once your app is live and your users are engaging. Our usage-based pricing is a fraction of the cost compared to per user pricing. Developing apps in the studio is always free.
           - uesio/sitekit.section:
               innerVariant: uesio/sitekit.section_inner_content
               uesio.styleTokens:
@@ -48,18 +48,37 @@ definition:
                                     - mb-4
                                 components:
                                   - uesio/web.benefit_item:
-                                      benefit: Transactions
+                                      benefit: Data Records
                                       amount: 20K
+                                  - uesio/web.benefit_item:
+                                      benefit: Transactions
+                                      amount: 10K
                                   - uesio/web.benefit_item:
                                       benefit: File Downloads
                                       amount: 2GB
                                   - uesio/web.benefit_item:
                                       benefit: Storage
                                       amount: 500MB
+                                  - uesio/web.benefit_item:
+                                      benefit: Site
+                                      amount: "1"
+                                  - uesio/web.benefit_item:
+                                      benefit: ""
+                                      amount: Unlimited Users
                             - uesio/io.box:
                                 components:
                                   - uesio/web.minor_benefit_item:
+                                      benefit: 90 Day Access
+                                  - uesio/web.minor_benefit_item:
                                       benefit: Community Support
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: App Kit
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: AI Kit
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Site Kit
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Teams
                       - uesio/web.pricing_item:
                           title: Go
                           subtitle: For small businesses
@@ -73,20 +92,37 @@ definition:
                                     - mb-4
                                 components:
                                   - uesio/web.benefit_item:
-                                      benefit: Transactions
+                                      benefit: Data Records
                                       amount: 500K
+                                  - uesio/web.benefit_item:
+                                      benefit: Transactions
+                                      amount: 100K
                                   - uesio/web.benefit_item:
                                       benefit: File Downloads
                                       amount: 20GB
                                   - uesio/web.benefit_item:
                                       benefit: Storage
                                       amount: 10GB
+                                  - uesio/web.benefit_item:
+                                      benefit: Sites
+                                      amount: "5"
+                                  - uesio/web.benefit_item:
+                                      benefit: ""
+                                      amount: Unlimited Users
                             - uesio/io.box:
                                 components:
                                   - uesio/web.minor_benefit_item:
-                                      benefit: 24H Support SLA
+                                      benefit: All Free Plan Benefits
                                   - uesio/web.minor_benefit_item:
-                                      benefit: Something Else
+                                      benefit: Community Support
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: 1 Integration
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Custom Subdomain
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Custom Components
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Marketplace Access
                       - uesio/web.pricing_item:
                           title: Grow
                           subtitle: For most business use cases
@@ -100,20 +136,37 @@ definition:
                                     - mb-4
                                 components:
                                   - uesio/web.benefit_item:
-                                      benefit: Transactions
+                                      benefit: Data Records
                                       amount: 1.5M
+                                  - uesio/web.benefit_item:
+                                      benefit: Transactions
+                                      amount: 1M
                                   - uesio/web.benefit_item:
                                       benefit: File Downloads
                                       amount: 60GB
                                   - uesio/web.benefit_item:
                                       benefit: Storage
                                       amount: 250GB
+                                  - uesio/web.benefit_item:
+                                      benefit: Sites
+                                      amount: "10"
+                                  - uesio/web.benefit_item:
+                                      benefit: ""
+                                      amount: Unlimited Users
                             - uesio/io.box:
                                 components:
                                   - uesio/web.minor_benefit_item:
+                                      benefit: All Go Plan Benefits
+                                  - uesio/web.minor_benefit_item:
                                       benefit: 24H Support SLA
                                   - uesio/web.minor_benefit_item:
-                                      benefit: Something Else
+                                      benefit: 10 Integrations
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Bot Workflows
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Test Framework
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Billing & Licensing
                       - uesio/web.pricing_item:
                           title: Pro
                           subtitle: For mission critical sites
@@ -127,25 +180,42 @@ definition:
                                     - mb-4
                                 components:
                                   - uesio/web.benefit_item:
-                                      benefit: Transactions
+                                      benefit: Data Records
                                       amount: 3M
                                   - uesio/web.benefit_item:
+                                      benefit: Transactions
+                                      amount: 5M
+                                  - uesio/web.benefit_item:
                                       benefit: File Downloads
-                                      amount: 200GB
+                                      amount: 1TB
                                   - uesio/web.benefit_item:
                                       benefit: Storage
                                       amount: 1TB
+                                  - uesio/web.benefit_item:
+                                      benefit: Sites
+                                      amount: "100"
+                                  - uesio/web.benefit_item:
+                                      benefit: ""
+                                      amount: Unlimited Users
                             - uesio/io.box:
                                 components:
                                   - uesio/web.minor_benefit_item:
+                                      benefit: All Grow Plan Benefits
+                                  - uesio/web.minor_benefit_item:
                                       benefit: 12H Support SLA
                                   - uesio/web.minor_benefit_item:
-                                      benefit: Something Else
+                                      benefit: 100 Integrations
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: BYO Domains
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: Free CRM
+                                  - uesio/web.minor_benefit_item:
+                                      benefit: On Premise Option
                 - uesio/sitekit.hero:
                     uesio.variant: uesio/web.cta_left
                     category: Transparent
                     title: Honest, scalable pricing models
-                    subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+                    subtitle: Our pricing model is refreshingly straightforward and designed to grow with your business needs. Unlike traditional per-user pricing, we charge based on actual platform usage, ensuring you only pay for the resources and capabilities you consume. This transparent, scalable approach means you can expand your applications and infrastructure without worrying about escalating user-based subscription costs, providing maximum flexibility and value for businesses of all sizes.
                 - uesio/io.box:
                     uesio.styleTokens:
                       root:
