@@ -11,4 +11,4 @@ definition:
       - after:inset-0
       - after:pointer-events-none
       - after:[z-index:1]
-      - after:[background:linear-gradient(to_right,#FAFAFA,#FAFAFA_3%,transparent_10%,transparent_90%,#FAFAFA_97%,#FAFAFA)]
+      - after:[background:linear-gradient(to_right,#FAFAFA,#FAFAFA_1%,transparent_8%,transparent_92%,#FAFAFA_99%,#FAFAFA)]

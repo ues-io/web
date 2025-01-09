@@ -18,8 +18,10 @@ definition:
         create: true
       defaults:
         - field: teamsize
+          valueSource: VALUE
           value: 24
         - field: salary
+          valueSource: VALUE
           value: 130000
   components:
     - uesio/sitekit.section_split:
@@ -30,7 +32,7 @@ definition:
               uesio.variant: uesio/web.cta_left
               category: Savings
               title: Reduce costs and speed up time-to-market
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus. Sed et condimentum nisl.
+              subtitle: Developers can save significant time leveraging our platform in the application development process. This reduces time-to-market and allows developers to focus on higher-level problem-solving rather than repetitive coding tasks.
               actions:
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_primary
