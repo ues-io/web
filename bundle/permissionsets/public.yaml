@@ -12,7 +12,9 @@ views:
   uesio/web.partners: true
   uesio/web.personal_demo: true
   uesio/web.pricing: true
+  uesio/web.privacy: true
   uesio/web.savings: true
+  uesio/web.terms: true
   uesio/web.testimonials: true
   uesio/web.use_cases: true
 collections: {}
@@ -24,6 +26,8 @@ routes:
   uesio/web.news_article: true
   uesio/web.partners: true
   uesio/web.pricing: true
+  uesio/web.privacy: true
+  uesio/web.terms: true
 files: {}
 bots:
   uesio/web.request_demo: true
