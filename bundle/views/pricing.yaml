@@ -82,7 +82,7 @@ definition:
                       - uesio/web.pricing_item:
                           title: Go
                           subtitle: For small businesses
-                          price: 99
+                          price: 100
                           icon: directions_run
                           cta_text: Get started
                           content:
@@ -126,7 +126,7 @@ definition:
                       - uesio/web.pricing_item:
                           title: Grow
                           subtitle: For most business use cases
-                          price: 299
+                          price: 500
                           icon: directions_bike
                           cta_text: Get started
                           content:
@@ -170,7 +170,7 @@ definition:
                       - uesio/web.pricing_item:
                           title: Pro
                           subtitle: For mission critical sites
-                          price: 599
+                          price: 5000
                           icon: motorcycle
                           cta_text: Get started
                           content:
