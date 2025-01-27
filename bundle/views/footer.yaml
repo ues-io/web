@@ -158,6 +158,9 @@ definition:
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Contact
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: demo
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Privacy

@@ -1,7 +1,7 @@
 name: uesio/web
+loginRoute: uesio/web.login
 homeRoute: uesio/web.home
 publicProfile: uesio/web.public
-loginRoute: uesio/web.login
 dependencies:
   uesio/appkit:
     version: v0.0.1
