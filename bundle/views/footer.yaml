@@ -161,9 +161,15 @@ definition:
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Privacy
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: privacy
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Terms
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: terms
     - uesio/sitekit.footer:
         uesio.variant: uesio/web.main
         content:
