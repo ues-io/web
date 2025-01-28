@@ -1,7 +1,6 @@
 name: feature_banner
 category: LAYOUT
 type: DECLARATIVE
-properties:
 definition:
   - uesio/sitekit.section_banner:
       uesio.variant: uesio/web.default
