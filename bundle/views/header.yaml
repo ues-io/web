@@ -132,6 +132,9 @@ definition:
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
               text: About
+              signals:
+                - signal: route/NAVIGATE
+                  path: about
         right:
           - uesio/io.button:
               uesio.variant: uesio/web.cta_secondary

@@ -1,6 +1,7 @@
 name: public
 named: {}
 views:
+  uesio/web.about: true
   uesio/web.demo: true
   uesio/web.features_accordion: true
   uesio/web.footer: true
@@ -19,6 +20,7 @@ views:
   uesio/web.use_cases: true
 collections: {}
 routes:
+  uesio/web.about: true
   uesio/web.demo: true
   uesio/web.home: true
   uesio/web.login: true

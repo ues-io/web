@@ -1,0 +1,5 @@
+name: about
+path: about
+view: about
+theme: uesio/core.default
+title: About Us

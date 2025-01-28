@@ -15,7 +15,7 @@ definition:
                 actions:
                   - mt-0
               category: Privacy & Transparency
-              title: We value your privacy.
+              title: Keep it secret. Keep it safe.
           - uesio/sitekit.section:
               innerVariant: uesio/sitekit.section_inner_content
               uesio.styleTokens:

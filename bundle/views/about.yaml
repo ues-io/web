@@ -1,0 +1,117 @@
+name: about
+definition:
+  wires:
+    authors:
+      collection: uesio/cms.author
+      fields:
+        uesio/cms.firstname:
+        uesio/cms.lastname:
+        uesio/cms.title:
+        uesio/cms.initials:
+        uesio/cms.picture:
+        uesio/cms.description:
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: uesio/web.page
+        trackScrolling: true
+        header:
+          - uesio/core.view:
+              view: uesio/web.header
+        content:
+          - uesio/sitekit.section_hero:
+              uesio.variant: uesio/web.main
+              uesio.styleTokens:
+                sectionRoot:
+                  - pb-40
+                actions:
+                  - mt-0
+              category: About Us
+              title: Meet the team
+              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+              actions:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_primary
+                    text: Contact Us
+                    icon: call_made
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: demo
+          - uesio/sitekit.section:
+              innerVariant: uesio/sitekit.section_inner_content
+              uesio.styleTokens:
+                root:
+                  - bg-gradient-to-b
+                  - from-zinc-50
+              content:
+                - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - grid
+                        - justify-center
+                        - grid-cols-[minmax(0px,900px)]
+                        - -mt-60
+                    components:
+                      - uesio/io.box:
+                          uesio.styleTokens:
+                            root:
+                              - bg-[url($File{uesio/web.about:files/zurich.jpg})]
+                              - bg-zinc-50
+                              - w-full
+                              - md:h-96
+                              - h-56
+                              - bg-cover
+                              - bg-center
+                              - background
+                              - mb-12
+                      - uesio/io.box:
+                          uesio.styleTokens:
+                            root:
+                              - grid
+                              - md:grid-cols-2
+                              - grid-cols-1
+                              - gap-6
+                              - group
+                              - mb-12
+                          components:
+                            - uesio/web.pricing_model_item:
+                                title: This is who we are
+                                description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+                                selected: true
+                            - uesio/web.pricing_model_item:
+                                title: This is what we do
+                                description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+                            - uesio/web.pricing_model_item:
+                                title: This is why we do it
+                                description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+                            - uesio/web.pricing_model_item:
+                                title: This is how we're committed
+                                description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+                      - uesio/io.box:
+                          uesio.styleTokens:
+                            root:
+                              - bg-[url($File{uesio/web.about:files/chattanooga.jpg})]
+                              - bg-zinc-50
+                              - w-full
+                              - md:h-96
+                              - h-56
+                              - bg-cover
+                              - bg-center
+                              - mb-12
+                - uesio/io.list:
+                    wire: authors
+                    components:
+                      - uesio/io.box:
+                          uesio.styleTokens:
+                            root:
+                              - grid
+                              - justify-items-center
+                          components:
+                            - uesio/web.author_item:
+                                name: ${firstname} ${lastname}
+                                title: ${title}
+                                description: ${description}
+                                initials: ${initials}
+                                imagefield: picture
+        footer:
+          - uesio/core.view:
+              view: uesio/web.footer
