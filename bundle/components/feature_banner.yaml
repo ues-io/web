@@ -1,0 +1,26 @@
+name: feature_banner
+category: LAYOUT
+type: DECLARATIVE
+properties:
+definition:
+  - uesio/sitekit.section_banner:
+      uesio.variant: uesio/web.default
+      content:
+        - uesio/web.feature_item:
+            title: App marketplace
+        - uesio/web.feature_item:
+            title: Unlimited users
+        - uesio/web.feature_item:
+            title: Usage-based pricing
+        - uesio/web.feature_item:
+            title: Multi-tenancy
+        - uesio/web.feature_item:
+            title: Extendable with code
+        - uesio/web.feature_item:
+            title: Run anywhere
+title: Feature Banner
+description: Featuer Banner
+sections:
+  - type: HOME
+    properties:
+  - type: DISPLAY

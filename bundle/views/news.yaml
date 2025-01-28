@@ -11,6 +11,18 @@ definition:
         uesio/cms.category:
           fields:
             uesio/cms.label:
+      conditions:
+        - field: uesio/cms.category
+          type: SUBQUERY
+          operator: IN
+          subcollection: uesio/cms.category
+          subfield: uesio/core.id
+          conditions:
+            - field: uesio/cms.name
+              operator: IN
+              values:
+                - news
+                - insights
   components:
     - uesio/io.viewlayout:
         uesio.variant: uesio/web.page

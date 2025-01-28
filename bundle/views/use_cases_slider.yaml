@@ -1,0 +1,126 @@
+name: use_cases_slider
+definition:
+  components:
+    - uesio/sitekit.section_hero:
+        uesio.variant: uesio/web.cta
+        uesio.styleTokens:
+          sectionRoot:
+            - border-transparent
+        category: Use Cases
+        title: Develop apps in minutes, not months
+        subtitle: Rome wasn't built in a day, but your app can be.
+        actions:
+          - uesio/io.button:
+              uesio.variant: uesio/web.cta_secondary
+              text: Explore use cases
+              signals:
+                - signal: route/NAVIGATE
+                  path: usecases
+    - uesio/io.box:
+        uesio.variant: uesio/web.usecases_wrapper
+        components:
+          - uesio/swiper.swiper:
+              uesio.id: usecases
+              uesio.variant: uesio/web.default
+              effect: ""
+              slidesPerView: "auto"
+              centeredSlides: true
+              navigationEnabled: false
+              initialSlide: 3
+              spaceBetween: 40
+              slides:
+                - components:
+                    - uesio/web.usecase_item:
+                        title: Landing Pages
+                        icon: flight_land
+                        description: Build landing pages for company initiatives and campaigns. Measure effectiveness and adjust on-the-fly.
+                        iconcolor: rose-500
+                - components:
+                    - uesio/web.usecase_item:
+                        title: eCommerce
+                        icon: payments
+                        description: Integrate with payment providers to build compelling shopping experiences. Manage products and images with an intuitive admin console.
+                        iconcolor: pink-500
+                - components:
+                    - uesio/web.usecase_item:
+                        title: Customer Portal
+                        icon: tune
+                        description: Generate revenue and streamline processes with immersive portals. Manage permissions with flexible roles and profiles.
+                - components:
+                    - uesio/web.usecase_item:
+                        title: CRM
+                        icon: groups
+                        description: Get to know your customers better with our easy-to-use CRM. Manage deals and pipelines without the bloat.
+                        iconcolor: purple-500
+                - components:
+                    - uesio/web.usecase_item:
+                        title: Website
+                        icon: public
+                        description: Building a company website is easy with smart our components and templates from Site Kit. You can build out a web presense for your company in minutes.
+                        iconcolor: indigo-500
+                - components:
+                    - uesio/web.usecase_item:
+                        title: Content Management
+                        icon: description
+                        description: You can spin up documentation sites, blogs, and learning management systems and more with our CMS bundle.
+                        iconcolor: sky-500
+                - components:
+                    - uesio/web.usecase_item:
+                        title: SaaS
+                        icon: apartment
+                        description: Build your own SaaS product on ues.io. With built-in pricing and multitenancy, ues.io handles the SaaS infrastructure for you.
+                        iconcolor: teal-500
+          - uesio/sitekit.section:
+              uesio.styleTokens:
+                root:
+                  - absolute
+                  - bottom-0
+                  - left-0
+                  - right-0
+                inner:
+                  - py-0
+              innerVariant: uesio/sitekit.section_inner_content
+              content:
+                - uesio/io.group:
+                    uesio.styleTokens:
+                      root:
+                        - justify-between
+                    components:
+                      - uesio/io.button:
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+                              - leading-none
+                              - p-0.5
+                              - my-3.5
+                              - z-10
+                              - group
+                            icon:
+                              - text-zinc-200
+                              - group-hover:text-zinc-700
+                          icon: arrow_back
+                          signals:
+                            - signal: component/CALL
+                              component: uesio/swiper.swiper
+                              componentsignal: PREV
+                              targettype: specific
+                              componentid: usecases
+                      - uesio/io.button:
+                          uesio.styleTokens:
+                            root:
+                              - text-2xl
+                              - leading-none
+                              - p-0.5
+                              - my-3.5
+                              - z-10
+                              - group
+                            icon:
+                              - text-zinc-200
+                              - group-hover:text-zinc-700
+                          icon: arrow_forward
+                          signals:
+                            - signal: component/CALL
+                              component: uesio/swiper.swiper
+                              componentsignal: NEXT
+                              targettype: specific
+                              componentid: usecases

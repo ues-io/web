@@ -23,28 +23,14 @@ definition:
                         path: https://studio.$Site{domain}/signup
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_secondary
-                    text: View templates
+                    text: View features
               image:
                 - uesio/io.image:
                     file: uesio/web.screenshots
                     filepath: files/app_icon_color.png
                     intrinsicHeight: 1422
                     intrinsicWidth: 2410
-          - uesio/sitekit.section_banner:
-              uesio.variant: uesio/web.default
-              content:
-                - uesio/web.feature_item:
-                    title: App marketplace
-                - uesio/web.feature_item:
-                    title: Unlimited users
-                - uesio/web.feature_item:
-                    title: Usage-based pricing
-                - uesio/web.feature_item:
-                    title: Multi-tenancy
-                - uesio/web.feature_item:
-                    title: Extendable with code
-                - uesio/web.feature_item:
-                    title: Run anywhere
+          - uesio/web.feature_banner:
           - uesio/sitekit.section_hero:
               uesio.variant: uesio/web.cta
               category: Generative AI
@@ -81,8 +67,8 @@ definition:
               uesio.id: features_accordion
               view: uesio/web.features_accordion
           - uesio/core.view:
-              uesio.id: use_cases
-              view: uesio/web.use_cases
+              uesio.id: use_cases_slider
+              view: uesio/web.use_cases_slider
           - uesio/sitekit.section_split:
               uesio.variant: uesio/web.main
               uesio.styleTokens:

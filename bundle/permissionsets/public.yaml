@@ -18,6 +18,7 @@ views:
   uesio/web.terms: true
   uesio/web.testimonials: true
   uesio/web.use_cases: true
+  uesio/web.use_cases_slider: true
 collections: {}
 routes:
   uesio/web.about: true
@@ -30,6 +31,7 @@ routes:
   uesio/web.pricing: true
   uesio/web.privacy: true
   uesio/web.terms: true
+  uesio/web.use_cases: true
 files: {}
 bots:
   uesio/web.request_demo: true
