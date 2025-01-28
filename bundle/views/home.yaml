@@ -40,29 +40,7 @@ definition:
                 - uesio/core.view:
                     uesio.id: generate
                     view: uesio/web.generate
-          - uesio/sitekit.section_banner:
-              uesio.variant: uesio/web.default
-              content:
-                - uesio/io.image:
-                    uesio.styleTokens:
-                      root: mt-1
-                    file: uesio/web.logos
-                    filepath: files/aws.svg
-                    height: 28
-                - uesio/io.image:
-                    file: uesio/web.logos
-                    filepath: files/googlecloud.svg
-                    height: 24
-                - uesio/io.image:
-                    uesio.styleTokens:
-                      root: mb-1
-                    file: uesio/web.logos
-                    filepath: files/azure.svg
-                    height: 24
-                - uesio/io.image:
-                    file: uesio/web.logos
-                    filepath: files/digitalocean.svg
-                    height: 24
+          - uesio/web.logo_banner:
           - uesio/core.view:
               uesio.id: features_accordion
               view: uesio/web.features_accordion

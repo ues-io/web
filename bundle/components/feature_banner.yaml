@@ -18,7 +18,7 @@ definition:
         - uesio/web.feature_item:
             title: Run anywhere
 title: Feature Banner
-description: Featuer Banner
+description: Feature Banner
 sections:
   - type: HOME
     properties:

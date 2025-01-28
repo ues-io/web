@@ -43,6 +43,8 @@ definition:
                 root:
                   - bg-gradient-to-b
                   - from-zinc-50
+                  - border-b-1
+                  - border-zinc-300
               content:
                 - uesio/io.deck:
                     uesio.styleTokens:
@@ -57,6 +59,7 @@ definition:
                           icon: flight_land
                           description: ${description}
                           iconcolor: rose-500
+          - uesio/web.logo_banner:
           - uesio/core.view:
               uesio.id: testimonials
               view: uesio/web.testimonials
