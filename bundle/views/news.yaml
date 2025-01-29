@@ -11,18 +11,6 @@ definition:
         uesio/cms.category:
           fields:
             uesio/cms.label:
-      conditions:
-        - field: uesio/cms.category
-          type: SUBQUERY
-          operator: IN
-          subcollection: uesio/cms.category
-          subfield: uesio/core.id
-          conditions:
-            - field: uesio/cms.name
-              operator: IN
-              values:
-                - news
-                - insights
   components:
     - uesio/io.viewlayout:
         uesio.variant: uesio/web.page
@@ -38,7 +26,7 @@ definition:
                   - pb-40
               category: Blog
               title: News and Insights
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+              subtitle: Stay informed with our latest announcements, industry updates, and expert insights from ues.io
           - uesio/sitekit.section:
               innerVariant: uesio/sitekit.section_inner_content
               uesio.styleTokens:
