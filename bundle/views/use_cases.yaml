@@ -52,13 +52,29 @@ definition:
                         - xl:grid-cols-3
                         - md:grid-cols-2
                         - grid-cols-1
+                        - gap-12
                     wire: usecases
                     components:
-                      - uesio/web.usecase_item:
-                          title: ${name}
-                          icon: flight_land
-                          description: ${description}
-                          iconcolor: rose-500
+                      - uesio/io.box:
+                          uesio.styleTokens:
+                            root:
+                              - border
+                              - border-zinc-300
+                              - rounded
+                          components:
+                            - uesio/web.usecase_item:
+                                title: ${name}
+                                icon: flight_land
+                                description: ${description}
+                                iconcolor: rose-500
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_light
+                    title: Can't see what you need?
+                    subtitle: Schedule a demo with us to see the power of our platform for your custom use case.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Contact Us
           - uesio/web.logo_banner:
           - uesio/core.view:
               uesio.id: testimonials
