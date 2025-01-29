@@ -27,7 +27,7 @@ definition:
                   - mt-0
               category: About Us
               title: Meet the team
-              subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+              subtitle: Get to know the brilliant minds weaving the fabric of our success - because teamwork makes the dream work!
               actions:
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_primary
@@ -75,17 +75,17 @@ definition:
                           components:
                             - uesio/web.pricing_model_item:
                                 title: This is who we are
-                                description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+                                description: Rooted in Switzerland and the USA, we are no-code pioneers who simplify life with the same creativity and harmony we bring to playing musical instruments with our concert of GenBots, Bots and AI.
                                 selected: true
                             - uesio/web.pricing_model_item:
                                 title: This is what we do
-                                description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+                                description: We revolutionize application development by offering an intuitive, powerful, and cost-effective platform that empowers both professional and citizen developers to create and reuse software applications with minimal coding, while maintaining the flexibility to extend functionality through custom code when necessary.
                             - uesio/web.pricing_model_item:
                                 title: This is why we do it
-                                description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+                                description: We’re driven by the vision of democratizing software development, empowering individuals and businesses to innovate faster, work smarter, and turn their ideas into reality without the traditional barriers of complex coding.
                             - uesio/web.pricing_model_item:
                                 title: This is how we're committed
-                                description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit metus vitae justo maximus fermentum. Morbi ut sem scelerisque, venenatis nibh nec, scelerisque risus.
+                                description: Dedicated to continuous innovation, unwavering customer support, fostering a collaborative open-source community, and ensuring our platform evolves with technology trends while remaining transparent, user-friendly, and empowering for all skill levels.
                       - uesio/io.box:
                           uesio.styleTokens:
                             root:
