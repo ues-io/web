@@ -245,3 +245,4 @@ definition:
                           file: uesio/web.social_icons
                           filepath: files/slack.svg
                           height: 24
+    - uesio/ga4.ga4: {}
