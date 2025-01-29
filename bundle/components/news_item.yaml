@@ -19,7 +19,6 @@ definition:
           - rounded-sm
           - bg-white
           - items-start
-          - -mt-60
           - relative
           - overflow-hidden
           - hover:bg-white

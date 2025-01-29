@@ -55,6 +55,7 @@ definition:
                         - grid-cols-[minmax(0px,400px)]
                         - lg:gap-16
                         - gap-8
+                        - -mt-60
                     components:
                       - uesio/io.list:
                           wire: articles
