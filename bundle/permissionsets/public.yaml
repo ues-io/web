@@ -3,6 +3,7 @@ named: {}
 views:
   uesio/web.about: true
   uesio/web.demo: true
+  uesio/web.features: true
   uesio/web.features_accordion: true
   uesio/web.footer: true
   uesio/web.generate: true
@@ -23,6 +24,7 @@ collections: {}
 routes:
   uesio/web.about: true
   uesio/web.demo: true
+  uesio/web.features: true
   uesio/web.home: true
   uesio/web.login: true
   uesio/web.news: true

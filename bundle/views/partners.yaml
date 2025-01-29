@@ -118,10 +118,6 @@ definition:
                     file: uesio/web.logos
                     filepath: files/centralogic.png
                     height: 90
-          - uesio/io.box:
-              uesio.styleTokens:
-                root:
-                  - h-20
           - uesio/core.view:
               uesio.id: personal_demo
               view: uesio/web.personal_demo

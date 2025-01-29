@@ -25,6 +25,7 @@ definition:
       - md:pr-12
       - sm:pr-8
       - pr-8
+      - mt-20
     title:
       - text-white/90
     subtitle:

@@ -80,18 +80,33 @@ definition:
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Capabilities
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: features
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: App Marketplace
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: features
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Community
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: features
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Open Source
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: features
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Security
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: features
                       - uesio/io.group:
                           uesio.variant: uesio/sitekit.footer_linkcategory
                           components:
@@ -104,15 +119,27 @@ definition:
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Landing Pages
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: usecases
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Websites
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: usecases
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Customer Portals
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: usecases
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: SaaS
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: usecases
                       - uesio/io.group:
                           uesio.variant: uesio/sitekit.footer_linkcategory
                           components:

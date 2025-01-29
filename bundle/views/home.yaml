@@ -24,6 +24,9 @@ definition:
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_secondary
                     text: View features
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: features
               image:
                 - uesio/io.image:
                     file: uesio/web.screenshots

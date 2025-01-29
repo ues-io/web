@@ -1,0 +1,50 @@
+name: features
+definition:
+  wires:
+    features:
+      collection: uesio/cms.track
+      fields:
+        uesio/cms.name:
+        uesio/cms.description:
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: uesio/web.page
+        trackScrolling: true
+        header:
+          - uesio/core.view:
+              view: uesio/web.header
+        content:
+          - uesio/sitekit.section_hero:
+              uesio.variant: uesio/web.main
+              uesio.styleTokens:
+                sectionRoot:
+                  - pb-10
+              category: Features
+              title: Do things differently with ues.io
+              subtitle: Here are our features. This text needs to be replaced.
+              actions:
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_primary
+                    text: Get started
+                    icon: call_made
+                    signals:
+                      - signal: route/REDIRECT
+                        path: https://studio.$Site{domain}/signup
+                - uesio/io.button:
+                    uesio.variant: uesio/web.cta_secondary
+                    text: Schedule a demo
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: demo
+          - uesio/web.feature_banner:
+          - uesio/io.list:
+              wire: features
+              components:
+          - uesio/core.view:
+              uesio.id: use_cases_slider
+              view: uesio/web.use_cases_slider
+          - uesio/core.view:
+              uesio.id: personal_demo
+              view: uesio/web.personal_demo
+          - uesio/core.view:
+              view: uesio/web.footer

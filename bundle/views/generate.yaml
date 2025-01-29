@@ -11,6 +11,9 @@ definition:
         create: true
   components:
     - uesio/io.box:
+        # Hide for now until we build this.
+        uesio.display:
+          - type: hasValue
         uesio.styleTokens:
           root:
             - shadow-md
@@ -51,3 +54,13 @@ definition:
                   - translate-y-[-50%]
                   - right-2
               text: Get started
+    - uesio/io.button:
+        # Show for now until we build the feature.
+        uesio.display:
+          - type: hasNoValue
+        uesio.variant: uesio/web.cta_primary
+        text: Get started
+        icon: call_made
+        signals:
+          - signal: route/REDIRECT
+            path: https://studio.$Site{domain}/signup

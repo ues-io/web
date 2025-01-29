@@ -58,6 +58,9 @@ definition:
                     text: Platform
                     icon: database
                     iconFill: false
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: features
                 - uesio/io.button:
                     uesio.variant: uesio/web.header_main
                     text: Pricing
@@ -70,11 +73,17 @@ definition:
                     uesio.variant: uesio/web.header_main
                     text: Resources
                     icon: inventory
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: news
                 - uesio/io.button:
                     uesio.variant: uesio/web.header_main
                     text: About
                     icon: info
                     iconFill: false
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: about
           - uesio/io.grid:
               uesio.styleTokens:
                 root:
@@ -120,6 +129,9 @@ definition:
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
               text: Platform
+              signals:
+                - signal: route/NAVIGATE
+                  path: features
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
               text: Pricing
@@ -129,6 +141,9 @@ definition:
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
               text: Resources
+              signals:
+                - signal: route/NAVIGATE
+                  path: news
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
               text: About
