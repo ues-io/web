@@ -6,7 +6,7 @@ dependencies:
   uesio/appkit:
     version: v0.0.1
   uesio/cms:
-    version: v0.1.19
+    version: v0.1.20
   uesio/core:
     version: v0.0.1
   uesio/io:
@@ -14,6 +14,6 @@ dependencies:
   uesio/sitekit:
     version: v0.0.1
   uesio/swiper:
-    version: v0.0.2
+    version: v0.0.3
   uesio/ga4:
     version: v0.0.1

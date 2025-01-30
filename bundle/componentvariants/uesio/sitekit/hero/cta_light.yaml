@@ -12,9 +12,11 @@ definition:
       - lg:px-36
       - md:px-32
       - sm:px-16
+      - px-8
       - border
       - border-zinc-300
       - lg:py-20
+      - md:py-16
       - py-12
       - rounded
     category:

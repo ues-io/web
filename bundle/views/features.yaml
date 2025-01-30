@@ -2,10 +2,27 @@ name: features
 definition:
   wires:
     features:
-      collection: uesio/cms.track
+      collection: uesio/cms.series_track
       fields:
-        uesio/cms.name:
-        uesio/cms.description:
+        uesio/cms.series:
+          fields:
+            uesio/cms.slug:
+        uesio/cms.track:
+          fields:
+            uesio/cms.name:
+            uesio/cms.description:
+            uesio/cms.icon:
+            uesio/cms.iconcolor:
+      conditions:
+        - field: uesio/cms.series->uesio/cms.slug
+          value: key-features
+        - field: uesio/cms.series->uesio/cms.published
+          value: true
+        - field: uesio/cms.track->uesio/cms.published
+          value: true
+      order:
+        - field: uesio/cms.order
+          desc: false
   components:
     - uesio/io.viewlayout:
         uesio.variant: uesio/web.page

@@ -5,12 +5,9 @@ definition:
     root:
       - opacity-0
       - transition-opacity
-      - absolute
-      - first:static
-      - inset-0
+      - hidden
     selected:
       - opacity-100
+      - block
     content:
       - h-full
-      - "[&>img]:w-auto"
-      - "[&>img]:h-full"

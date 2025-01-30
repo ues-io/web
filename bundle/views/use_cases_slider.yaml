@@ -1,5 +1,28 @@
 name: use_cases_slider
 definition:
+  wires:
+    usecases:
+      collection: uesio/cms.series_track
+      fields:
+        uesio/cms.series:
+          fields:
+            uesio/cms.slug:
+        uesio/cms.track:
+          fields:
+            uesio/cms.name:
+            uesio/cms.description:
+            uesio/cms.icon:
+            uesio/cms.iconcolor:
+      conditions:
+        - field: uesio/cms.series->uesio/cms.slug
+          value: use-cases
+        - field: uesio/cms.series->uesio/cms.published
+          value: true
+        - field: uesio/cms.track->uesio/cms.published
+          value: true
+      order:
+        - field: uesio/cms.order
+          desc: false
   components:
     - uesio/sitekit.section_hero:
         uesio.variant: uesio/web.cta
@@ -19,57 +42,22 @@ definition:
     - uesio/io.box:
         uesio.variant: uesio/web.usecases_wrapper
         components:
-          - uesio/swiper.swiper:
+          - uesio/swiper.swiper_data:
               uesio.id: usecases
-              uesio.variant: uesio/web.default
-              effect: ""
-              slidesPerView: "auto"
-              centeredSlides: true
-              navigationEnabled: false
-              initialSlide: 3
-              spaceBetween: 40
-              slides:
-                - components:
-                    - uesio/web.usecase_item:
-                        title: Landing Pages
-                        icon: flight_land
-                        description: Build landing pages for company initiatives and campaigns. Measure effectiveness and adjust on-the-fly.
-                        iconcolor: rose-500
-                - components:
-                    - uesio/web.usecase_item:
-                        title: eCommerce
-                        icon: payments
-                        description: Integrate with payment providers to build compelling shopping experiences. Manage products and images with an intuitive admin console.
-                        iconcolor: pink-500
-                - components:
-                    - uesio/web.usecase_item:
-                        title: Customer Portal
-                        icon: tune
-                        description: Generate revenue and streamline processes with immersive portals. Manage permissions with flexible roles and profiles.
-                - components:
-                    - uesio/web.usecase_item:
-                        title: CRM
-                        icon: groups
-                        description: Get to know your customers better with our easy-to-use CRM. Manage deals and pipelines without the bloat.
-                        iconcolor: purple-500
-                - components:
-                    - uesio/web.usecase_item:
-                        title: Website
-                        icon: public
-                        description: Building a company website is easy with smart our components and templates from Site Kit. You can build out a web presense for your company in minutes.
-                        iconcolor: indigo-500
-                - components:
-                    - uesio/web.usecase_item:
-                        title: Content Management
-                        icon: description
-                        description: You can spin up documentation sites, blogs, and learning management systems and more with our CMS bundle.
-                        iconcolor: sky-500
-                - components:
-                    - uesio/web.usecase_item:
-                        title: SaaS
-                        icon: apartment
-                        description: Build your own SaaS product on ues.io. With built-in pricing and multitenancy, ues.io handles the SaaS infrastructure for you.
-                        iconcolor: teal-500
+              uesio.variant: uesio/swiper.swiper:uesio/web.default
+              wire: usecases
+              options:
+                slidesPerView: "auto"
+                centeredSlides: true
+                navigationEnabled: false
+                initialSlide: 3
+                spaceBetween: 40
+              components:
+                - uesio/web.usecase_item:
+                    title: ${track->name}
+                    icon: ${track->icon}
+                    description: ${track->description}
+                    iconcolor: ${track->iconcolor}
           - uesio/sitekit.section:
               uesio.styleTokens:
                 root:
@@ -101,7 +89,7 @@ definition:
                           icon: arrow_back
                           signals:
                             - signal: component/CALL
-                              component: uesio/swiper.swiper
+                              component: uesio/swiper.swiper_data
                               componentsignal: PREV
                               targettype: specific
                               componentid: usecases
@@ -120,7 +108,7 @@ definition:
                           icon: arrow_forward
                           signals:
                             - signal: component/CALL
-                              component: uesio/swiper.swiper
+                              component: uesio/swiper.swiper_data
                               componentsignal: NEXT
                               targettype: specific
                               componentid: usecases

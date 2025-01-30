@@ -2,10 +2,27 @@ name: use_cases
 definition:
   wires:
     usecases:
-      collection: uesio/cms.track
+      collection: uesio/cms.series_track
       fields:
-        uesio/cms.name:
-        uesio/cms.description:
+        uesio/cms.series:
+          fields:
+            uesio/cms.slug:
+        uesio/cms.track:
+          fields:
+            uesio/cms.name:
+            uesio/cms.description:
+            uesio/cms.icon:
+            uesio/cms.iconcolor:
+      conditions:
+        - field: uesio/cms.series->uesio/cms.slug
+          value: use-cases
+        - field: uesio/cms.series->uesio/cms.published
+          value: true
+        - field: uesio/cms.track->uesio/cms.published
+          value: true
+      order:
+        - field: uesio/cms.order
+          desc: false
   components:
     - uesio/io.viewlayout:
         uesio.variant: uesio/web.page
@@ -63,10 +80,10 @@ definition:
                               - rounded
                           components:
                             - uesio/web.usecase_item:
-                                title: ${name}
-                                icon: flight_land
-                                description: ${description}
-                                iconcolor: rose-500
+                                title: ${track->name}
+                                icon: ${track->icon}
+                                description: ${track->description}
+                                iconcolor: ${track->iconcolor}
                 - uesio/sitekit.hero:
                     uesio.variant: uesio/web.cta_light
                     title: Can't see what you need?
