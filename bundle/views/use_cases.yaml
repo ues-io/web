@@ -92,6 +92,9 @@ definition:
                       - uesio/io.button:
                           uesio.variant: uesio/web.cta_secondary
                           text: Contact Us
+                          signals:
+                            - signal: route/NAVIGATE
+                              path: demo
           - uesio/web.logo_banner:
           - uesio/core.view:
               uesio.id: testimonials
