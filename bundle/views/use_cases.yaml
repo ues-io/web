@@ -38,7 +38,7 @@ definition:
                   - pb-10
               category: Use Cases
               title: The flexible platform for your use case.
-              subtitle: These are some common use cases. This text needs to be replaced.
+              subtitle: No matter your needs, we've got you covered.
               actions:
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_primary

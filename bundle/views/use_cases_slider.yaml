@@ -49,7 +49,9 @@ definition:
               options:
                 slidesPerView: "auto"
                 centeredSlides: true
-                navigationEnabled: false
+                navigation: false
+                keyboard: true
+                pagination: true
                 initialSlide: 3
                 spaceBetween: 40
               components:

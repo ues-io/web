@@ -38,7 +38,7 @@ definition:
                   - pb-10
               category: Features
               title: Do things differently with ues.io
-              subtitle: Here are our features. This text needs to be replaced.
+              subtitle: Experience an intuitive way of building and iterating. Learn about the ues.io way.
               actions:
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_primary
