@@ -6,4 +6,5 @@ definition:
       - sm:order-none
       - order-first
       - grid-cols-2
+      - md:pb-4
       - pb-12

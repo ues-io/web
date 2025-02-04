@@ -9,61 +9,79 @@ definition:
               uesio.variant: uesio/web.footer_wrapper
               components:
                 - uesio/io.box:
+                    uesio.styleTokens:
+                      root:
+                        - grid
+                        - lg:grid-cols-2
+                        - sm:grid-cols-1
+                        - grid-cols-2
                     components:
-                      - uesio/io.group:
-                          uesio.styleTokens:
-                            root:
-                              - auto-cols-max
+                      - uesio/io.box:
                           components:
-                            - uesio/io.image:
-                                file: uesio/core.logo
-                                height: 26
-                                signals:
-                                  - signal: route/NAVIGATE
-                                    path: home
+                            - uesio/io.group:
+                                uesio.styleTokens:
+                                  root:
+                                    - auto-cols-max
+                                components:
+                                  - uesio/io.image:
+                                      file: uesio/core.logo
+                                      height: 26
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: home
+                                  - uesio/io.text:
+                                      uesio.styleTokens:
+                                        root:
+                                          - font-[Gosha]
+                                          - text-xl
+                                          - text-black/90
+                                          - mb-0.5
+                                      text: ues.io
+                                      element: div
                             - uesio/io.text:
                                 uesio.styleTokens:
                                   root:
-                                    - font-[Gosha]
-                                    - text-xl
+                                    - text-xs
+                                    - mt-4
                                     - text-black/90
-                                    - mb-0.5
-                                text: ues.io
+                                    - font-[Gosha]
                                 element: div
-                      - uesio/io.text:
-                          uesio.styleTokens:
-                            root:
-                              - text-xs
-                              - mt-4
-                              - text-black/90
-                              - font-[Gosha]
-                          element: div
-                          text: "✉️ support @ ues.io"
-                      - uesio/io.text:
-                          uesio.styleTokens:
-                            root:
-                              - text-xs
-                              - mt-1.5
-                              - text-black/90
-                              - font-[Gosha]
-                          element: div
-                          text: "\U0001F1FA\U0001F1F8 +1 844-558-0040"
-                      - uesio/io.text:
-                          uesio.styleTokens:
-                            root:
-                              - text-xs
-                              - mt-1.5
-                              - text-black/90
-                              - font-[Gosha]
-                          element: div
-                          text: "\U0001F1E8\U0001F1ED +41 44 511 22 88"
+                                text: "✉️ support @ ues.io"
+                            - uesio/io.text:
+                                uesio.styleTokens:
+                                  root:
+                                    - text-xs
+                                    - mt-1.5
+                                    - text-black/90
+                                    - font-[Gosha]
+                                element: div
+                                text: "\U0001F1FA\U0001F1F8 +1 844-558-0040"
+                            - uesio/io.text:
+                                uesio.styleTokens:
+                                  root:
+                                    - text-xs
+                                    - mt-1.5
+                                    - text-black/90
+                                    - font-[Gosha]
+                                element: div
+                                text: "\U0001F1E8\U0001F1ED +41 44 511 22 88"
+                            - uesio/io.image:
+                                uesio.styleTokens:
+                                  root:
+                                    - -ml-1
+                                    - mt-1
+                                file: uesio/web.logos
+                                filepath: files/aws_marketplace.png
+                                height: 56
                       - uesio/io.image:
                           uesio.styleTokens:
                             root:
-                              - -ml-1
-                              - mt-1
+                              - my-12
+                              - lg:mx-2
+                              - sm:-mx-0
+                              - mx-2
                           file: uesio/web.logos
-                          filepath: files/aws_marketplace.png
+                          filepath: files/swiss_made.jpg
                           height: 56
                 - uesio/io.grid:
                     uesio.variant: uesio/web.footer_linkwrapper
