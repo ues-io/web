@@ -18,7 +18,7 @@ definition:
       - md:border-r-1
       - md:border-zinc-300
       - md:-mr-0
-      - -mr-12
+      - -mr-6
     imagewrapper:
       - m-20
       - lg:-mr-[170%]

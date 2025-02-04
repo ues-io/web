@@ -11,6 +11,7 @@ definition:
           fields:
             uesio/cms.name:
             uesio/cms.description:
+            uesio/cms.slug:
             uesio/cms.icon:
             uesio/cms.iconcolor:
       conditions:
@@ -84,6 +85,7 @@ definition:
                                 icon: ${track->icon}
                                 description: ${track->description}
                                 iconcolor: ${track->iconcolor}
+                                link: usecases/${track->slug}
                 - uesio/sitekit.hero:
                     uesio.variant: uesio/web.cta_light
                     title: Can't see what you need?

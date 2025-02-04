@@ -1,0 +1,10 @@
+name: feature_detail
+public: true
+path: features/{slug}
+view: feature_detail
+title: $Record{feature:uesio/cms.name}
+tags:
+  - type: meta
+    location: head
+    name: description
+    content: $Record{feature:uesio/cms.description}

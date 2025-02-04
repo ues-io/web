@@ -1,0 +1,9 @@
+name: cta_left
+label: Call to action left
+extends: uesio/web.main
+definition:
+  uesio.styleTokens:
+    content:
+      - bg-white
+      - -ml-[2000px]
+      - pl-[2000px]

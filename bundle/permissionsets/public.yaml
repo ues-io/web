@@ -2,7 +2,9 @@ name: public
 named: {}
 views:
   uesio/web.about: true
+  uesio/web.ai_hero: true
   uesio/web.demo: true
+  uesio/web.feature_detail: true
   uesio/web.features: true
   uesio/web.features_accordion: true
   uesio/web.footer: true
@@ -18,12 +20,14 @@ views:
   uesio/web.savings: true
   uesio/web.terms: true
   uesio/web.testimonials: true
+  uesio/web.use_case_detail: true
   uesio/web.use_cases: true
   uesio/web.use_cases_slider: true
 collections: {}
 routes:
   uesio/web.about: true
   uesio/web.demo: true
+  uesio/web.feature_detail: true
   uesio/web.features: true
   uesio/web.home: true
   uesio/web.login: true
@@ -33,6 +37,7 @@ routes:
   uesio/web.pricing: true
   uesio/web.privacy: true
   uesio/web.terms: true
+  uesio/web.use_case_detail: true
   uesio/web.use_cases: true
 files: {}
 bots:

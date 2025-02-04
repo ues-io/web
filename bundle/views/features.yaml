@@ -12,7 +12,9 @@ definition:
             uesio/cms.name:
             uesio/cms.description:
             uesio/cms.icon:
+            uesio/cms.slug:
             uesio/cms.iconcolor:
+            uesio/cms.hero_image:
       conditions:
         - field: uesio/cms.series->uesio/cms.slug
           value: key-features
@@ -57,6 +59,27 @@ definition:
           - uesio/io.list:
               wire: features
               components:
+                - uesio/sitekit.section_split:
+                    uesio.variant: uesio/web.alternate
+                    content:
+                      - uesio/sitekit.hero:
+                          uesio.variant: uesio/web.cta_left
+                          category: Feature
+                          title: ${track->name}
+                          subtitle: ${track->description}
+                          actions:
+                            - uesio/io.button:
+                                uesio.variant: uesio/web.cta_secondary
+                                text: Learn More
+                                signals:
+                                  - signal: route/NAVIGATE
+                                    path: features/${track->slug}
+                    image:
+                      - uesio/io.image:
+                          uesio.display:
+                            - type: hasValue
+                              value: $UserFile{track->hero_image}
+                          src: $UserFile{track->hero_image}
           - uesio/core.view:
               uesio.id: use_cases_slider
               view: uesio/web.use_cases_slider
