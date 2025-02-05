@@ -38,9 +38,12 @@ definition:
                 - w-full
                 - h-48
                 - bg-cover
+                - bg-center
                 - transition-all
                 - duration-200
                 - group-hover:brightness-90
+                - "[background-size:100%]"
+                - group-hover:[background-size:105%]
             uesio.display:
               - type: hasValue
                 value: $Prop{hero_image}
