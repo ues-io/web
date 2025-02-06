@@ -7,6 +7,7 @@ definition:
         uesio/cms.name:
         uesio/cms.description:
         uesio/cms.slug:
+        uesio/cms.content:
         uesio/cms.hero_image:
         uesio/core.updatedat:
       conditions:
@@ -49,30 +50,44 @@ definition:
                               - -mt-60
                           components:
                             - uesio/io.box:
-                                uesio.styleTokens:
-                                  root:
-                                    - bg-[url($UserFile{uesio/cms.hero_image})]
-                                    - bg-zinc-50
-                                    - w-full
-                                    - md:h-96
-                                    - h-56
-                                    - bg-cover
-                                    - mb-12
-                                uesio.display:
-                                  - type: hasValue
-                                    value: $UserFile{uesio/cms.hero_image})
-                            - uesio/io.box:
-                                uesio.styleTokens:
-                                  root:
-                                    - text-center
                                 components:
-                                  - uesio/io.button:
-                                      uesio.variant: uesio/web.cta_secondary
-                                      icon: arrow_back
-                                      text: Back to use cases
-                                      signals:
-                                        - signal: route/NAVIGATE
-                                          path: usecases
+                                  - uesio/io.box:
+                                      uesio.styleTokens:
+                                        root:
+                                          - p-2
+                                          - rounded
+                                          - bg-gradient-to-tr
+                                          - from-zinc-400/20
+                                          - to-zinc-200/10
+                                          - mb-12
+                                      uesio.display:
+                                        - type: hasValue
+                                          value: $UserFile{uesio/cms.hero_image}
+                                      components:
+                                        - uesio/io.image:
+                                            src: $UserFile{uesio/cms.hero_image}
+                                            uesio.styleTokens:
+                                              root:
+                                                - m-auto
+                                                - bg-zinc-50
+                                                - rounded-sm
+                                  - uesio/io.field:
+                                      uesio.variant: uesio/io.markdownfield:uesio/cms.markdown
+                                      fieldId: uesio/cms.content
+                                      labelPosition: none
+                                      displayAs: MARKDOWN
+                                  - uesio/io.box:
+                                      uesio.styleTokens:
+                                        root:
+                                          - text-center
+                                      components:
+                                        - uesio/io.button:
+                                            uesio.variant: uesio/web.cta_secondary
+                                            icon: arrow_back
+                                            text: Back to use cases
+                                            signals:
+                                              - signal: route/NAVIGATE
+                                                path: usecases
           - uesio/core.view:
               view: uesio/web.footer
   params:
