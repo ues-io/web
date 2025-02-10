@@ -118,6 +118,26 @@ definition:
                     file: uesio/web.logos
                     filepath: files/centralogic.png
                     height: 90
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Implementation Partner
+                    title: Become a Partner
+                    subtitle: Join our dynamic International partnership program and unlock the potential to supercharge your business growth. Our innovative platform empowers partners to work smarter and faster, allowing you to take on more clients and projects with ease. With ues.io you’ll be able to deliver exceptional results to your clients in record time, enhancing your reputation and attracting even more business opportunities.   Embrace the future of success – become a partner today and watch your business soar to new heights.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+                          signals:
+                            - signal: route/NAVIGATE
+                              path: demo
+                              newtab: true
+              image:
+                - uesio/io.image:
+                    file: uesio/core.logo
+                    height: 90
           - uesio/core.view:
               uesio.id: personal_demo
               view: uesio/web.personal_demo
