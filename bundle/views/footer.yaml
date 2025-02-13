@@ -263,4 +263,18 @@ definition:
                           file: uesio/web.social_icons
                           filepath: files/slack.svg
                           height: 24
-    - uesio/ga4.ga4: {}
+    - uesio/cookieconsent.cookieconsent:
+        uesio.id: cookieconsent
+        title: We value your privacy.
+        description: We use cookies to make your web experience better and to measure interest in our app platform.
+        preferencesTitle: How we use cookies
+        preferencesDescription: |
+          You will find detailed information about all cookies under each consent category below and can choose to enable or disable some or all of these cookies.<br><br>
+          The cookies that are categorised as "Strictly Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site.<br><br>
+          We also use third-party cookies that help us monitor performance and help us analyse how you use this website.
+        moreInformationText: For any queries in relation to our cookie policy and your choices, please <a href="/demo">contact us</a>
+    - uesio/ga4.ga4:
+        consent:
+          componentType: uesio/cookieconsent.cookieconsent
+          componentId: cookieconsent
+          propertyPath: categories.analytics

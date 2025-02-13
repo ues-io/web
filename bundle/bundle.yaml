@@ -10,10 +10,12 @@ dependencies:
   uesio/core:
     version: v0.0.1
   uesio/ga4:
-    version: v0.0.1
+    version: v0.0.2
   uesio/io:
     version: v0.0.1
   uesio/sitekit:
     version: v0.0.1
   uesio/swiper:
     version: v0.0.3
+  uesio/cookieconsent:
+    version: v0.0.1
