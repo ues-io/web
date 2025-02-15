@@ -1,9 +1,9 @@
 declare module "@uesio/bots" {
 type BotParamValue = string | boolean | number | object | undefined
 
-interface BotParamsApi {
-  get: (paramName: string) => BotParamValue
-  getAll: () => Record<string, BotParamValue>
+interface BotParamsApi<T> {
+  get: (paramName: keyof T) => T[keyof T]
+  getAll: () => T
 }
 interface FieldRequest {
   id: string
@@ -201,10 +201,10 @@ interface AsAdminApi {
   callBot: CallBot
   getConfigValue: (configValueKey: string) => string
 }
-interface ListenerBotApi {
+interface ListenerBotApi<T = Record<string, BotParamValue>> {
   addResult: (key: string, value: FieldValue | undefined) => void
   load: (loadRequest: LoadRequest) => Record<string, FieldValue>[]
-  params: BotParamsApi
+  params: BotParamsApi<T>
   delete: (collectionName: string, records: WireRecord[]) => void
   save: (
     collectionName: string,
