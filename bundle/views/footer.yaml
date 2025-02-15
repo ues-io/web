@@ -251,18 +251,34 @@ definition:
                           file: uesio/web.social_icons
                           filepath: files/x.svg
                           height: 24
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://x.com/ues_io
+                              newtab: true
                       - uesio/io.image:
                           file: uesio/web.social_icons
                           filepath: files/linkedin.svg
                           height: 24
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://www.linkedin.com/company/uesio/
+                              newtab: true
                       - uesio/io.image:
                           file: uesio/web.social_icons
                           filepath: files/youtube.svg
                           height: 24
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://www.youtube.com/@uesio
+                              newtab: true
                       - uesio/io.image:
                           file: uesio/web.social_icons
-                          filepath: files/slack.svg
+                          filepath: files/github.svg
                           height: 24
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://github.com/ues-io/uesio
+                              newtab: true
     - uesio/cookieconsent.cookieconsent:
         uesio.id: cookieconsent
         title: We value your privacy.
