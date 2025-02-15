@@ -6,7 +6,7 @@ dependencies:
   uesio/appkit:
     version: v0.0.1
   uesio/cms:
-    version: v0.1.22
+    version: v0.1.23
   uesio/core:
     version: v0.0.1
   uesio/ga4:

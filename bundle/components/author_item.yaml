@@ -3,6 +3,9 @@ category: LAYOUT
 type: DECLARATIVE
 variants:
   - uesio/io.titlebar:uesio/io.item
+slots:
+  - name: extra
+    label: Extra
 properties:
   - type: TEXT
     name: name
@@ -64,22 +67,7 @@ definition:
                       - gap-4
                       - auto-cols-max
                   components:
-                    - uesio/io.image:
-                        file: uesio/web.social_icons
-                        filepath: files/x_dark.svg
-                        height: 18
-                    - uesio/io.image:
-                        file: uesio/web.social_icons
-                        filepath: files/linkedin_dark.svg
-                        height: 18
-                    - uesio/io.image:
-                        file: uesio/web.social_icons
-                        filepath: files/youtube_dark.svg
-                        height: 18
-                    - uesio/io.image:
-                        file: uesio/web.social_icons
-                        filepath: files/slack_dark.svg
-                        height: 18
+                    - $Slot{extra}
       avatar:
         - uesio/io.avatar:
             uesio.display:

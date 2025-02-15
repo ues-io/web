@@ -10,6 +10,10 @@ definition:
         uesio/cms.initials:
         uesio/cms.picture:
         uesio/cms.description:
+        uesio/cms.links:
+          fields:
+            uesio/cms.link:
+            uesio/cms.type:
   components:
     - uesio/io.viewlayout:
         uesio.variant: uesio/web.page
@@ -112,6 +116,21 @@ definition:
                                 description: ${description}
                                 initials: ${initials}
                                 imagefield: picture
+                                extra:
+                                  - uesio/io.field:
+                                      wrapperVariant: uesio/io.minimal
+                                      fieldId: uesio/cms.links
+                                      labelPosition: none
+                                      reference:
+                                        components:
+                                          - uesio/io.image:
+                                              file: uesio/web.social_icons
+                                              filepath: files/${uesio/cms.type}_dark.svg
+                                              height: 18
+                                              signals:
+                                                - signal: route/REDIRECT
+                                                  path: ${uesio/cms.link}
+                                                  newtab: true
         footer:
           - uesio/core.view:
               view: uesio/web.footer
