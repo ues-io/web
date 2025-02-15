@@ -253,7 +253,7 @@ definition:
                           height: 24
                           signals:
                             - signal: route/REDIRECT
-                              path: " https://x.com/ues_io"
+                              path: https://x.com/ues_io
                               newtab: true
                       - uesio/io.image:
                           file: uesio/web.social_icons
