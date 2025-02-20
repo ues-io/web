@@ -39,6 +39,69 @@ definition:
               content:
                 - uesio/sitekit.hero:
                     uesio.variant: uesio/web.cta_left
+                    category: Infrastructure Partner
+                    title: Google
+                    subtitle: As a proud partner of Google, we leverage the power of Google Cloud to enhance our services and deliver innovative solutions to our clients. Google Cloud provides a comprehensive suite of cloud infrastructure services, including computing, storage, and networking, which enable organizations to scale their operations efficiently while ensuring robust data security. By collaborating with Google, we help businesses harness advanced technologies like machine learning and big data analytics, driving their digital transformation and operational excellence.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://aws.amazon.com/marketplace/pp/prodview-3s622khfhwbqi
+                              newtab: true
+              image:
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/Google-Logo.wine.svg
+                    height: 220
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Infrastructure Partner
+                    title: Microsoft
+                    subtitle: As a valued partner of Microsoft, we utilize Microsoft Azure to provide our clients with cutting-edge cloud infrastructure solutions. Microsoft Azure offers a robust platform that includes over 600 services, such as virtual machines, storage options, and networking capabilities, enabling businesses to efficiently manage their IT resources and scale operations. By collaborating with Microsoft, we empower organizations to leverage advanced technologies like AI and machine learning, enhancing their agility and innovation in the digital landscape.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://aws.amazon.com/marketplace/pp/prodview-3s622khfhwbqi
+                              newtab: true
+              image:
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/Microsoft_logo_(2012).svg
+                    height: 180
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Infrastructure Partner
+                    title: Digital Ocean
+                    subtitle: As a strategic partner of DigitalOcean, we harness their powerful cloud infrastructure to deliver reliable and scalable solutions for our clients. DigitalOcean provides a developer-friendly platform with a range of services, including virtual machines, managed databases, and Kubernetes, all designed to optimize performance and simplify application deployment. With a commitment to high availability and a 99.99% uptime SLA, DigitalOcean ensures that businesses can focus on innovation while enjoying seamless connectivity and robust infrastructure support.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://aws.amazon.com/marketplace/pp/prodview-3s622khfhwbqi
+                              newtab: true
+              image:
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/digitalocean.svg
+                    height: 180
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
                     category: Payments Partner
                     title: Usio Integrated Payments
                     subtitle: Usio is a leading provider of integrated payment solutions, trusted by businesses to process billions of dollars in transactions annually. Usio's platform offers a comprehensive suite of features designed to simplify payment processing, improve user experience, and reduce costs. Usio's Payfac-as-a-Service solution offers a comprehensive suite of features designed to simplify payment processing for businesses of all sizes in the USA. *only available in the USA.
