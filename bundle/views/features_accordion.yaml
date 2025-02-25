@@ -19,7 +19,10 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Learn more
+                              text: Get started
+                              signals:
+                                - signal: route/REDIRECT
+                                  path: https://studio.$Site{domain}/signup
                 - id: prototyping
                   title: Rapid Prototyping
                   components:
@@ -30,7 +33,10 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Learn more
+                              text: Get started
+                              signals:
+                                - signal: route/REDIRECT
+                                  path: https://studio.$Site{domain}/signup
                 - id: sandbox
                   title: Sandbox development
                   components:
@@ -41,7 +47,10 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Learn more
+                              text: Get started
+                              signals:
+                                - signal: route/REDIRECT
+                                  path: https://studio.$Site{domain}/signup
                 - id: marketplace
                   title: App marketplace
                   components:
@@ -52,7 +61,10 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Learn more
+                              text: Get started
+                              signals:
+                                - signal: route/REDIRECT
+                                  path: https://studio.$Site{domain}/signup
                 - id: integrations
                   title: Custom integrations
                   components:
@@ -63,7 +75,10 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Learn more
+                              text: Get started
+                              signals:
+                                - signal: route/REDIRECT
+                                  path: https://studio.$Site{domain}/signup
                 - id: builder
                   title: Visual builder
                   components:
@@ -74,7 +89,10 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Learn more
+                              text: Get started
+                              signals:
+                                - signal: route/REDIRECT
+                                  path: https://studio.$Site{domain}/signup
         image:
           - uesio/io.item:
               external:
