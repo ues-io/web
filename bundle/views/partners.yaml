@@ -75,7 +75,7 @@ definition:
                 - uesio/io.image:
                     file: uesio/web.logos
                     filepath: files/Microsoft_logo_(2012).svg
-                    height: 180
+                    height: 64
           - uesio/sitekit.section_split:
               uesio.variant: uesio/web.partners
               content:
@@ -96,7 +96,7 @@ definition:
                 - uesio/io.image:
                     file: uesio/web.logos
                     filepath: files/digitalocean.svg
-                    height: 180
+                    height: 64
           - uesio/sitekit.section_split:
               uesio.variant: uesio/web.partners
               content:
