@@ -10,7 +10,7 @@ definition:
       - bg-no-repeat
       - bg-center
       - bg-blend-soft-light
-      - "[background-size:360px]"
+      - "[background-size:320px]"
       - py-8
       - overflow-hidden
   heroVariant: uesio/web.cta

@@ -29,8 +29,6 @@ definition:
               root:
                 - "[background-size:50%]"
                 - bg-no-repeat
-                - mb-[1px]
-                - -mt-[1px]
                 - opacity-80
 title: Feature Item Tile
 description: An item tile

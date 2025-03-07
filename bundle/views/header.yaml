@@ -121,7 +121,7 @@ definition:
         logo:
           - uesio/io.image:
               file: uesio/core.logo
-              height: 34
+              height: 29
               signals:
                 - signal: route/NAVIGATE
                   path: home
