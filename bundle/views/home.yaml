@@ -21,6 +21,7 @@ definition:
                 root: []
                 title:
                   - font-[gosha]
+          - uesio/web.feature_banner:
           - uesio/sitekit.section_hero:
               uesio.variant: uesio/web.cta
               category: No-Code & Pro-Code
@@ -49,7 +50,6 @@ definition:
               uesio.styleTokens:
                 title:
                   - font-[gosha]
-          - uesio/web.feature_banner:
           - uesio/web.logo_banner:
           - uesio/core.view:
               uesio.id: features_accordion
