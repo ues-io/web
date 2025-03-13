@@ -10,13 +10,26 @@ definition:
         content:
           - uesio/sitekit.section_hero:
               uesio.variant: uesio/web.main_home
+              category: Generative AI
+              title: Automatically build custom apps with GenAI
+              subtitle: Get up and running in minutes with our App Kit and Site Kit starter templates.
+              actions:
+                - uesio/core.view:
+                    uesio.id: generate
+                    view: uesio/web.generate
+              uesio.styleTokens:
+                root: []
+                title:
+                  - font-[gosha]
+          - uesio/sitekit.section_hero:
+              uesio.variant: uesio/web.cta
               category: No-Code & Pro-Code
               title: Build applications fast, with or without code
               subtitle: Keep what you build. Open source, run anywhere, no lock-in. Ever.
               actions:
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_primary
-                    text: Get started
+                    text: Sign up
                     icon: call_made
                     signals:
                       - signal: route/REDIRECT
@@ -33,16 +46,10 @@ definition:
                     filepath: files/app_icon_color.png
                     intrinsicHeight: 1422
                     intrinsicWidth: 2410
+              uesio.styleTokens:
+                title:
+                  - font-[gosha]
           - uesio/web.feature_banner:
-          - uesio/sitekit.section_hero:
-              uesio.variant: uesio/web.cta
-              category: Generative AI
-              title: Automatically build custom apps with GenAI
-              subtitle: Get up and running in minutes with our App Kit and Site Kit starter templates.
-              actions:
-                - uesio/core.view:
-                    uesio.id: generate
-                    view: uesio/web.generate
           - uesio/web.logo_banner:
           - uesio/core.view:
               uesio.id: features_accordion
@@ -58,6 +65,9 @@ definition:
               category: Security
               title: Mitigate attack surfaces with enterprise-grade security
               subtitle: Ensure data protection without sacrificing flexibility using our sophisticated security controls at the object, field and record level. Administrators can define access levels for their users through permission sets and profiles, controlling user interactions precisely.
+              uesio.styleTokens:
+                title:
+                  - font-[gosha]
           - uesio/sitekit.section_banner:
               uesio.variant: uesio/web.default
               content:

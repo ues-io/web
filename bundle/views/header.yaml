@@ -41,7 +41,7 @@ definition:
                     text: Schedule a demo
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_primary
-                    text: Get started
+                    text: Sign up
                     icon: call_made
                     signals:
                       - signal: route/REDIRECT
@@ -55,12 +55,20 @@ definition:
               items:
                 - uesio/io.button:
                     uesio.variant: uesio/web.header_main
-                    text: Platform
+                    text: Features
                     icon: database
                     iconFill: false
                     signals:
                       - signal: route/NAVIGATE
                         path: features
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: Use Cases
+                    icon: sell
+                    iconFill: false
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: usecases
                 - uesio/io.button:
                     uesio.variant: uesio/web.header_main
                     text: Pricing
@@ -69,6 +77,13 @@ definition:
                     signals:
                       - signal: route/NAVIGATE
                         path: pricing
+                - uesio/io.button:
+                    uesio.variant: uesio/web.header_main
+                    text: Partners
+                    icon: group
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: partners
                 - uesio/io.button:
                     uesio.variant: uesio/web.header_main
                     text: Resources
@@ -128,10 +143,16 @@ definition:
         left:
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
-              text: Platform
+              text: Features
               signals:
                 - signal: route/NAVIGATE
                   path: features
+          - uesio/io.button:
+              uesio.variant: uesio/web.header_main
+              text: Use Cases
+              signals:
+                - signal: route/NAVIGATE
+                  path: usecases
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
               text: Pricing
@@ -144,6 +165,12 @@ definition:
               signals:
                 - signal: route/NAVIGATE
                   path: news
+          - uesio/io.button:
+              uesio.variant: uesio/web.header_main
+              text: Partners
+              signals:
+                - signal: route/NAVIGATE
+                  path: partners
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
               text: About
@@ -159,7 +186,7 @@ definition:
                   path: demo
           - uesio/io.button:
               uesio.variant: uesio/web.cta_primary
-              text: Get started
+              text: Sign up
               icon: call_made
               signals:
                 - signal: route/REDIRECT

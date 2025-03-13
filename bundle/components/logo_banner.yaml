@@ -5,6 +5,14 @@ definition:
   - uesio/sitekit.section_banner:
       uesio.variant: uesio/web.default
       content:
+        - uesio/io.text:
+            text: Choose your provider
+            element: div
+            align: left
+            uesio.styleTokens:
+              root:
+                - text-sm
+                - font-light
         - uesio/io.image:
             uesio.styleTokens:
               root: mt-1
@@ -25,6 +33,14 @@ definition:
             file: uesio/web.logos
             filepath: files/digitalocean.svg
             height: 24
+        - uesio/io.text:
+            text: for your infrastructure
+            element: div
+            align: left
+            uesio.styleTokens:
+              root:
+                - text-sm
+                - font-light
 title: Logo Banner
 description: Logo Banner
 sections:
