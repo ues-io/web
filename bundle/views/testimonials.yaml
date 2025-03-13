@@ -13,8 +13,11 @@ definition:
               actions:
                 - uesio/io.button:
                     uesio.variant: uesio/web.cta_primary
-                    text: Testimonials
+                    text: Sign up
                     icon: call_made
+                    signals:
+                      - signal: route/REDIRECT
+                        path: https://studio.$Site{domain}/signup
           - uesio/io.box:
               uesio.styleTokens:
                 root:

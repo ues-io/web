@@ -59,7 +59,7 @@ definition:
         uesio.display:
           - type: hasNoValue
         uesio.variant: uesio/web.cta_primary
-        text: Get started
+        text: Sign up
         icon: call_made
         signals:
           - signal: route/REDIRECT

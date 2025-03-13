@@ -19,7 +19,7 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Get started
+                              text: Sign up
                               signals:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup
@@ -33,7 +33,7 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Get started
+                              text: Sign up
                               signals:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup
@@ -47,7 +47,7 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Get started
+                              text: Sign up
                               signals:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup
@@ -61,7 +61,7 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Get started
+                              text: Sign up
                               signals:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup
@@ -75,7 +75,7 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Get started
+                              text: Sign up
                               signals:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup
@@ -89,7 +89,7 @@ definition:
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
-                              text: Get started
+                              text: Sign up
                               signals:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup

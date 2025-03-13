@@ -47,7 +47,7 @@ definition:
                                     - text-black/90
                                     - font-[Gosha]
                                 element: div
-                                text: "✉️ support @ ues.io"
+                                text: support @ ues.io
                             - uesio/io.text:
                                 uesio.styleTokens:
                                   root:
@@ -56,7 +56,7 @@ definition:
                                     - text-black/90
                                     - font-[Gosha]
                                 element: div
-                                text: "\U0001F1FA\U0001F1F8 +1 844-558-0040"
+                                text: +1 844-558-0040
                             - uesio/io.text:
                                 uesio.styleTokens:
                                   root:
@@ -65,7 +65,7 @@ definition:
                                     - text-black/90
                                     - font-[Gosha]
                                 element: div
-                                text: "\U0001F1E8\U0001F1ED +41 44 511 22 88"
+                                text: +41 44 511 22 88
                             - uesio/io.image:
                                 uesio.styleTokens:
                                   root:
@@ -74,6 +74,10 @@ definition:
                                 file: uesio/web.logos
                                 filepath: files/aws_marketplace.png
                                 height: 56
+                                signals:
+                                  - signal: route/REDIRECT
+                                    path: https://aws.amazon.com/marketplace/pp/prodview-3s622khfhwbqi
+                                    newtab: true
                       - uesio/io.image:
                           uesio.styleTokens:
                             root:

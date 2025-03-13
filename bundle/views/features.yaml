@@ -38,6 +38,8 @@ definition:
               uesio.styleTokens:
                 sectionRoot:
                   - pb-10
+                title:
+                  - font-[gosha]
               category: Features
               title: Do things differently with ues.io
               subtitle: Experience an intuitive way of building and iterating. Learn about the ues.io way.

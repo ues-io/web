@@ -30,6 +30,8 @@ definition:
         uesio.styleTokens:
           sectionRoot:
             - border-transparent
+          title:
+            - font-[gosha]
         category: Use Cases
         title: Develop apps in minutes, not months
         subtitle: Rome wasn't built in a day, but your app can be.

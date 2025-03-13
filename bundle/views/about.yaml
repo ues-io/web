@@ -58,7 +58,7 @@ definition:
                       - uesio/io.box:
                           uesio.styleTokens:
                             root:
-                              - bg-[url($File{uesio/web.about:files/zurich.jpg})]
+                              - bg-[url($File{uesio/web.about:balcony_10.jpg})]
                               - bg-zinc-50
                               - w-full
                               - md:h-96
@@ -67,6 +67,15 @@ definition:
                               - bg-center
                               - background
                               - mb-12
+                      - uesio/io.box:
+                          components:
+                            - uesio/web.pricing_model_item:
+                                title: This is who we are
+                                description: After years in the no-code/low-code industry, we recognized the need for a transformative platform to overcome technical barriers and the "last 10% trap" that hindered innovation. We envisioned combining no-code and pro-code capabilities with AI-driven development to democratize software creation, enabling anyone to build enterprise grade applications. This vision led to the creation of ues.io, a revolutionary platform designed to reshape software development and empower individuals to address global challenges.
+                                selected: true
+                          uesio.styleTokens:
+                            root:
+                              - mb-8
                       - uesio/io.box:
                           uesio.styleTokens:
                             root:
@@ -78,29 +87,18 @@ definition:
                               - mb-12
                           components:
                             - uesio/web.pricing_model_item:
-                                title: This is who we are
-                                description: Rooted in Switzerland and the USA, we are no-code pioneers who simplify life with the same creativity and harmony we bring to playing musical instruments with our concert of GenBots, Bots and AI.
+                                title: This is our purpose
+                                description: To democratize AI-driven software development, empowering individuals and organizations to create innovative, ethical, and impactful solutions that benefit both people and the planet.
                                 selected: true
                             - uesio/web.pricing_model_item:
-                                title: This is what we do
-                                description: We revolutionize application development by offering an intuitive, powerful, and cost-effective platform that empowers both professional and citizen developers to create and reuse software applications with minimal coding, while maintaining the flexibility to extend functionality through custom code when necessary.
+                                title: This is our vision
+                                description: We dream of a world where software development is revolutionized, enabling anyone to build enterprise-grade, AI-driven applications. Our vision is a future where open-source collaboration drives digital transformation and business growth, guided by ethical principles and with people and planet at heart.
                             - uesio/web.pricing_model_item:
                                 title: This is why we do it
-                                description: We’re driven by the vision of democratizing software development, empowering individuals and businesses to innovate faster, work smarter, and turn their ideas into reality without the traditional barriers of complex coding.
+                                description: Because we believe that democratizing AI-driven software development has the power to unlock human potential, foster innovation, and address global challenges. By making powerful tools accessible to all, we can accelerate progress, promote inclusivity, and ensure that technological advancements benefit society as a whole while respecting our planet's resources.
                             - uesio/web.pricing_model_item:
-                                title: This is how we're committed
-                                description: Dedicated to continuous innovation, unwavering customer support, fostering a collaborative open-source community, and ensuring our platform evolves with technology trends while remaining transparent, user-friendly, and empowering for all skill levels.
-                      - uesio/io.box:
-                          uesio.styleTokens:
-                            root:
-                              - bg-[url($File{uesio/web.about:files/chattanooga.jpg})]
-                              - bg-zinc-50
-                              - w-full
-                              - md:h-96
-                              - h-56
-                              - bg-cover
-                              - bg-center
-                              - mb-12
+                                title: This is our mission
+                                description: To empower users of all skill levels with an open-source, AI-enabled platform that integrates no-code and pro-code capabilities, fostering innovation, collaboration, and ethical AI practices. We accelerate digital transformation while prioritizing accessibility, efficiency, and responsible development that benefits both people and the planet.
                 - uesio/io.list:
                     wire: authors
                     components:
