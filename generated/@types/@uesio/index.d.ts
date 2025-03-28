@@ -554,6 +554,7 @@ interface RouteBotApi {
   getNamespace: () => string
   // Returns the name of the Bot, e.g "add_numbers"
   getName: () => string
+  getHostUrl: () => string
 
   /**
    * Returns the resolved value for any config value available in this app.
@@ -817,14 +818,14 @@ export type Definition =
   | DefinitionMap
   | DefinitionValue[]
   | DefinitionMap[]
-export type BaseDefinition = {
+export type BaseDefinition<T = DefinitionMap> = {
   "uesio.id"?: string
   "uesio.styleTokens"?: Record<string, string[]>
   "uesio.variant"?: MetadataKey
   "uesio.classes"?: string
-}
+} & T
 export type BaseProps<T = DefinitionMap> = {
-  definition: T & BaseDefinition
+  definition: BaseDefinition<T>
   path: string
   componentType?: MetadataKey
   context: Context
