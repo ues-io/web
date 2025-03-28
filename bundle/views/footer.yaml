@@ -299,3 +299,8 @@ definition:
           componentType: uesio/cookieconsent.cookieconsent
           componentId: cookieconsent
           propertyPath: categories.analytics
+    - uesio/saleswings.saleswings:
+        consent:
+          componentType: uesio/cookieconsent.cookieconsent
+          componentId: cookieconsent
+          propertyPath: categories.analytics

@@ -19,3 +19,5 @@ dependencies:
     version: v0.0.3
   uesio/cookieconsent:
     version: v0.0.1
+  uesio/saleswings:
+    version: v0.0.1    
