@@ -246,7 +246,7 @@ definition:
                   - justify-between
               components:
                 - uesio/io.text:
-                    text: © 2025 UESIO, Inc, USA
+                    text: © 2025 UESIO Switzerland
                 - uesio/io.group:
                     uesio.styleTokens:
                       root:
