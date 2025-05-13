@@ -10,9 +10,9 @@ definition:
         content:
           - uesio/sitekit.section_hero:
               uesio.variant: uesio/web.main_home
-              category: Generative AI
-              title: Automatically build custom apps with GenAI
-              subtitle: Get up and running in minutes with our App Kit and Site Kit starter templates.
+              category: User experience studio – Generative AI
+              title: Experience software that adapts to you
+              subtitle: Unlock limitless possibilities with our Agents, Agentic AI and Gen Bots.
               actions:
                 - uesio/core.view:
                     uesio.id: generate

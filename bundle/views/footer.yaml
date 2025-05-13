@@ -56,7 +56,7 @@ definition:
                                     - text-black/90
                                     - font-[Gosha]
                                 element: div
-                                text: +1 844-558-0040
+                                text: +1 844 558 0040
                             - uesio/io.text:
                                 uesio.styleTokens:
                                   root:
@@ -76,7 +76,7 @@ definition:
                                 height: 56
                                 signals:
                                   - signal: route/REDIRECT
-                                    path: https://aws.amazon.com/marketplace/pp/prodview-3s622khfhwbqi
+                                    path: https://aws.amazon.com/marketplace/search/results?searchTerms=ues.io
                                     newtab: true
                       - uesio/io.image:
                           uesio.styleTokens:
@@ -116,20 +116,23 @@ definition:
                                       uesio.variant: uesio/web.footer_link
                                       text: Community
                                       signals:
-                                        - signal: route/NAVIGATE
-                                          path: features
+                                        - signal: route/REDIRECT
+                                          path: https://community.ues.io
+                                          newtab: true
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Open Source
                                       signals:
-                                        - signal: route/NAVIGATE
-                                          path: features
+                                        - signal: route/REDIRECT
+                                          path: https://github.com/ues-io/uesio
+                                          newtab: true
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Security
                                       signals:
-                                        - signal: route/NAVIGATE
-                                          path: features
+                                        - signal: route/REDIRECT
+                                          path: https://docs.ues.io/security-model
+                                          newtab: true
                       - uesio/io.group:
                           uesio.variant: uesio/sitekit.footer_linkcategory
                           components:

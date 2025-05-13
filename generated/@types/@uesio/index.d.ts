@@ -107,6 +107,8 @@ interface SiteApi {
   getDomain: () => string
   // Return the subdomain of the site
   getSubDomain: () => string
+  // Return the scheme of the site
+  getScheme: () => string
 }
 interface WorkspaceApi {
   // Return the name of the workspace
@@ -220,6 +222,7 @@ interface ListenerBotApi<T = Record<string, BotParamValue>> {
   getNamespace: () => string
   // Returns the name of the Bot, e.g "add_numbers"
   getName: () => string
+  getHostUrl: () => string
   copyFile: (
     sourceFileKey: string,
     sourcePath: string,
@@ -639,6 +642,7 @@ type FieldMode = "READ" | "EDIT"
 type SiteState = {
   name: string
   app: string
+  scheme: string
   domain: string
   subdomain: string
   version: string
