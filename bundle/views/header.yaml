@@ -24,6 +24,15 @@ definition:
                   newtab: true
           - uesio/io.button:
               uesio.variant: uesio/web.header_small
+              text: Community
+              icon: group
+              iconFill: false
+              signals:
+                - signal: route/REDIRECT
+                  path: https://community.ues.io
+                  newtab: true
+          - uesio/io.button:
+              uesio.variant: uesio/web.header_small
               text: Log in
               icon: login
               signals:
@@ -134,12 +143,27 @@ definition:
         uesio.variant: uesio/web.main
         sticky: true
         logo:
-          - uesio/io.image:
-              file: uesio/core.logo
-              height: 29
-              signals:
-                - signal: route/NAVIGATE
-                  path: home
+          - uesio/io.group:
+              uesio.styleTokens:
+                root:
+                  - auto-cols-max
+              components:
+                - uesio/io.image:
+                    file: uesio/core.logo
+                    height: 26
+                    signals:
+                      - signal: route/NAVIGATE
+                        path: home
+                - uesio/io.text:
+                    uesio.styleTokens:
+                      root:
+                        - font-[Gosha]
+                        - text-xl
+                        - text-black/90
+                        - mb-1
+                        - ml-0.5
+                    text: ues.io
+                    element: div
         left:
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
@@ -186,7 +210,7 @@ definition:
                   path: demo
           - uesio/io.button:
               uesio.variant: uesio/web.cta_primary
-              text: Sign up
+              text: Create Apps
               icon: call_made
               signals:
                 - signal: route/REDIRECT
