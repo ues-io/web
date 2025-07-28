@@ -145,6 +145,27 @@ definition:
                 - uesio/sitekit.hero:
                     uesio.variant: uesio/web.cta_left
                     category: Implementation Partner
+                    title: Jodayn
+                    subtitle: JODAYN is a Saudi-based consulting and digital solutions company with a proven track record since 2009. Headquartered in Riyadh, the company began with a strong foundation in Enterprise Architecture and IT training, and has since evolved into a leading provider of advanced technology services. These include software testing, business analysis, enterprise solutions, innovation, and the integration of emerging technologies such as AI and automation. With a future-focused mindset, JODAYN empowers organizations across the public and private sectors to accelerate digital transformation, enhance operational efficiency, and achieve sustainable growth. As proud partners, we are honored to collaborate in delivering forward-thinking solutions and driving shared success through reliability, excellence, and innovation.
+                    actions:
+                      - uesio/io.button:
+                          uesio.variant: uesio/web.cta_secondary
+                          text: Learn more
+                          signals:
+                            - signal: route/REDIRECT
+                              path: https://www.jodayn.com/
+                              newtab: true
+              image:
+                - uesio/io.image:
+                    file: uesio/web.logos
+                    filepath: files/jodaynlogo.svg
+                    height: 120
+          - uesio/sitekit.section_split:
+              uesio.variant: uesio/web.partners
+              content:
+                - uesio/sitekit.hero:
+                    uesio.variant: uesio/web.cta_left
+                    category: Implementation Partner
                     title: Copebit
                     subtitle: As a certified AWS advanced consulting partner, the Swiss IT Company copebit guides clients on their journey into the AWS cloud, helping them migrate their workload and making sure that it is secure and runs optimally within the new environment. copebit demonstrates to its existing clients the simplicity of building and running enterprise grade applications either by accessing ues.io online or running it on-premise and extending it further using other AWS services.
                     actions:
