@@ -76,7 +76,7 @@ definition:
                                 height: 56
                                 signals:
                                   - signal: route/REDIRECT
-                                    path: https://aws.amazon.com/marketplace/pp/prodview-3s622khfhwbqi
+                                    path: https://aws.amazon.com/marketplace/search/results?searchTerms=ues.io
                                     newtab: true
                       - uesio/io.image:
                           uesio.styleTokens:
@@ -116,14 +116,16 @@ definition:
                                       uesio.variant: uesio/web.footer_link
                                       text: Community
                                       signals:
-                                        - signal: route/NAVIGATE
-                                          path: features
+                                        - signal: route/REDIRECT
+                                          path: https://community.ues.io/
+                                          newtab: true
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Open Source
                                       signals:
-                                        - signal: route/NAVIGATE
-                                          path: features
+                                        - signal: route/REDIRECT
+                                          path: https://github.com/ues-io/uesio
+                                          newtab: true
                                   - uesio/io.button:
                                       uesio.variant: uesio/web.footer_link
                                       text: Security
