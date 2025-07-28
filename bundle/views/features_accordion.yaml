@@ -10,12 +10,12 @@ definition:
               initialItem: templates
               items:
                 - id: templates
-                  title: Templates
+                  title: Starter Templates
                   components:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
                         title: Start quickly with pre-built templates
-                        description: Our starter templates let you get up and running fast with common app patterns. Site Kit lets you build sites quickly, while App Kit provides the tools for building internal administrative apps.
+                        description: Our starter templates let you get up and running fast with common app patterns. Site Kit lets you build sites quickly, while App Kit provides the tools for building internal administrative apps. AI Kit lets you configure your provider and LLM model version to extend AI functionality from within your apps.
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
@@ -29,7 +29,7 @@ definition:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
                         title: Prototype your app in minutes
-                        description: Transform your ideas into reality without the need for extensive coding. Our rapid prototyping process accelerates feedback and iteration, enabling you to refine your concepts quickly and efficiently, ensuring that your final product aligns perfectly with your vision.
+                        description: Transform your ideas into reality without the need for extensive coding. Our rapid prototyping process accelerates feedback and iteration, enabling you to refine your concepts quickly and efficiently, ensuring that your final product aligns perfectly with your vision with a true agile co-creation enterprise environment.
                         actions:
                           - uesio/io.button:
                               uesio.variant: uesio/web.cta_tertiary
@@ -38,7 +38,7 @@ definition:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup
                 - id: sandbox
-                  title: Sandbox development
+                  title: Sandbox Development
                   components:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
@@ -52,7 +52,7 @@ definition:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup
                 - id: marketplace
-                  title: App marketplace
+                  title: App Marketplace
                   components:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
@@ -66,7 +66,7 @@ definition:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup
                 - id: integrations
-                  title: Custom integrations
+                  title: Custom Integrations
                   components:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
@@ -80,7 +80,7 @@ definition:
                                 - signal: route/REDIRECT
                                   path: https://studio.$Site{domain}/signup
                 - id: builder
-                  title: Visual builder
+                  title: Visual Builder
                   components:
                     - uesio/sitekit.feature:
                         uesio.variant: uesio/web.accordion_feature
