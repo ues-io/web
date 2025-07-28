@@ -24,6 +24,14 @@ definition:
                   newtab: true
           - uesio/io.button:
               uesio.variant: uesio/web.header_small
+              text: Community
+              icon: group
+              signals:
+                - signal: route/REDIRECT
+                  path: https://community.ues.io/
+                  newtab: true
+          - uesio/io.button:
+              uesio.variant: uesio/web.header_small
               text: Log in
               icon: login
               signals:
@@ -161,7 +169,7 @@ definition:
                   path: pricing
           - uesio/io.button:
               uesio.variant: uesio/web.header_main
-              text: Resources
+              text: Blog
               signals:
                 - signal: route/NAVIGATE
                   path: news
@@ -186,7 +194,7 @@ definition:
                   path: demo
           - uesio/io.button:
               uesio.variant: uesio/web.cta_primary
-              text: Sign up
+              text: Create Apps
               icon: call_made
               signals:
                 - signal: route/REDIRECT
