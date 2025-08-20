@@ -16,14 +16,6 @@ definition:
                   newtab: true
           - uesio/io.button:
               uesio.variant: uesio/web.header_small
-              text: GitHub
-              icon: code
-              signals:
-                - signal: route/REDIRECT
-                  path: https://github.com/ues-io/uesio
-                  newtab: true
-          - uesio/io.button:
-              uesio.variant: uesio/web.header_small
               text: Community
               icon: group
               signals:

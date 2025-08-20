@@ -278,14 +278,6 @@ definition:
                             - signal: route/REDIRECT
                               path: https://www.youtube.com/@uesio
                               newtab: true
-                      - uesio/io.image:
-                          file: uesio/web.social_icons
-                          filepath: files/github.svg
-                          height: 24
-                          signals:
-                            - signal: route/REDIRECT
-                              path: https://github.com/ues-io/uesio
-                              newtab: true
     - uesio/cookieconsent.cookieconsent:
         uesio.id: cookieconsent
         title: We value your privacy.
