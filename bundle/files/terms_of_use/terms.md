@@ -84,6 +84,7 @@ ues.io or third parties may make available (for example, through a Marketplace o
 The Services may contain features designed to interoperate with Non-ues.io Applications. ues.io cannot guarantee the continued availability of such Service features and may cease providing them without entitling Customer to any refund, credit, or other compensation, if for example and without limitation, the provider of a non-ues.io Application ceases to make the non-ues.io Application available for interoperation with the corresponding Service features in a manner acceptable to ues.io.
 
 **5. FEES AND PAYMENT**
+
 **5.1 Fees.**
 Customer will pay all fees specified in Order Forms. Except as otherwise specified herein or in an Order Form, (i) fees are based on Services and Content subscriptions purchased as well as actual additional usage, (ii) payment obligations are non- cancellable and fees paid are non-refundable, and (iii) quantities purchased cannot be decreased during the relevant subscription term.
 
@@ -112,6 +113,7 @@ ues.io's fees do not include any taxes, levies, duties or similar governmental a
 ues.io will charge fees based on a 30 percent commission, that may change at ues.io’s discretion and redefined from time to time by ues.io, for the sale or rental of applications placed in the Bundle Store/App Marketplace for consumption by and 3rd parties.
 
 **6. PROPRIETARY RIGHTS AND LICENSES**
+
 **6.1 Reservation of Rights.**
 Subject to the limited rights expressly granted hereunder, ues.io, its Affiliates, its licensors and Content Providers reserve all of their right, title and interest in and to the Services and Content, including all of their related intellectual property rights. No rights are granted to Customer hereunder other than as expressly set forth herein.
 
@@ -125,6 +127,7 @@ Customer grants ues.io, its Affiliates and applicable contractors a worldwide, l
 Customer grants to ues.io and its Affiliates a worldwide, perpetual, irrevocable, royalty-free license to use and incorporate into its services any suggestion, enhancement request, recommendation, correction or other feedback provided by Customer or Users relating to the operation of ues.io’s or its Affiliates’ services.
 
 **7. CONFIDENTIALITY**
+
 **7.1 Definition of Confidential Information.**
 “Confidential Information” means all information disclosed by a party (“Disclosing Party”) to the other party (“Receiving Party”), whether orally or in writing, that is designated as confidential or that reasonably should be understood to be confidential given the nature of the information and the circumstances of disclosure. Confidential Information of Customer includes Customer Data; Confidential Information of ues.io includes the Services and Content, and the terms and conditions of this Agreement and all Order Forms (including pricing). Confidential Information of each party includes business and marketing plans, technology and technical information, product plans and designs, and business processes disclosed by such party. However, Confidential Information does not include any information that (i) is or becomes generally known to the public without breach of any obligation owed to the Disclosing Party, (ii) was known to the Receiving Party prior to its disclosure by the Disclosing Party without breach of any obligation owed to the Disclosing Party, (iii) is received from a third party without breach of any obligation owed to the Disclosing Party, or (iv) was independently developed by the Receiving Party. For the avoidance of doubt, the non-disclosure obligations set forth in this “Confidentiality” section apply to Confidential Information exchanged between the parties in connection with the evaluation of additional ues.io services.
 
@@ -135,6 +138,7 @@ As between the parties, each party retains all ownership rights in and to its Co
 The Receiving Party may disclose Confidential Information of the Disclosing Party to the extent compelled by law to do so, provided the Receiving Party gives the Disclosing Party prior notice of the compelled disclosure (to the extent legally permitted) and reasonable assistance, at the Disclosing Party's cost, if the Disclosing Party wishes to contest the disclosure. If the Receiving Party is compelled by law to disclose the Disclosing Party’s Confidential Information as part of a civil proceeding to which the Disclosing Party is a party, and the Disclosing Party is not contesting the disclosure, the Disclosing Party will reimburse the Receiving Party for its reasonable cost of compiling and providing secure access to that Confidential Information.
 
 **8. REPRESENTATIONS, WARRANTIES, EXCLUSIVE REMEDIES AND DISCLAIMERS**
+
 **8.1 Representations.**
 Each party represents that it has validly entered into this Agreement and has the legal power to do so.
 
@@ -155,6 +159,7 @@ Customer will defend ues.io and its Affiliates against any claim, demand, suit o
 This “Mutual Indemnification” section states the indemnifying party’s sole liability to, and the indemnified party’s exclusive remedy against, the other party for any third-party claim described in this section.
 
 **11. LIMITATION OF LIABILITY**
+
 **11.1 Limitation of Liability.**
 In no event shall the aggregate liability of each party together with all of its affiliates arising out of or related to this agreement exceed the total amount paid by customer and its affiliates hereunder for the services giving rise to the liability in the twelve months preceding the first incident out of which the liability arose. The foregoing limitation will apply whether an action is in contract or tort and regardless of the theory of liability but will not limit customer's and its affiliates’ payment obligations under the “fees and payment” section above.
 
@@ -162,6 +167,7 @@ In no event shall the aggregate liability of each party together with all of its
 In no event will either party or its affiliates have any liability arising out of or related to this agreement for any lost profits, revenues, goodwill, or indirect, special, incidental, consequential, cover, business interruption or punitive damages, whether an action is in contract or tort and regardless of the theory of liability, even if a party or its affiliates have been advised of the possibility of such damages or if a party’s or its affiliates’ remedy otherwise fails of its essential purpose. The foregoing disclaimer will not apply to the extent prohibited by law.
 
 **12. TERM AND TERMINATION**
+
 **12.1 Term of Agreement.**
 This Agreement commences on the date Customer first accepts it and continues until all subscriptions hereunder have expired or have been terminated.
 
@@ -178,25 +184,26 @@ If this Agreement is terminated by Customer in accordance with the “Terminatio
 The sections titled “Free Services,” “Fees and Payment,” “Proprietary Rights and Licenses,” “Confidentiality,” “Disclaimers,” “Mutual Indemnification,” “Limitation of Liability,” “Refund or Payment upon Termination,” “Removal of Content and Non-ues.io Applications,” “Surviving Provisions” and “General Provisions” will survive any termination or expiration of this Agreement, and the section titled “Protection of Customer Data” will survive any termination or expiration of this Agreement for so long as ues.io retains possession of Customer Data.
 
 **13. GENERAL PROVISIONS**
-**13.2 Anti-Corruption.**
+
+**13.1 Anti-Corruption.**
 Neither party has received or been offered any illegal or improper bribe, kickback, payment, gift, or thing of value from an employee or agent of the other party in connection with this Agreement. Reasonable gifts and entertainment provided in the ordinary course of business do not violate the above restriction.
 
-**13.3 Entire Agreement and Order of Precedence.**
+**13.2 Entire Agreement and Order of Precedence.**
 This Agreement is the entire agreement between ues.io and Customer regarding Customer’s use of Services and Content and supersedes all prior and contemporaneous agreements, proposals or representations, written or oral, concerning its subject matter. The parties agree that any term or condition stated in a Customer purchase order or in any other Customer order documentation (excluding Order Forms) is void. In the event of any conflict or inconsistency among the following documents, the order of precedence shall be - (1) the applicable Order Form, (2) this Agreement, and (3) the Documentation. Titles and headings of sections of this Agreement are for convenience only and shall not affect the construction of any provision of this Agreement.
 
-**13.4 Relationship of the Parties.**
+**13.3 Relationship of the Parties.**
 The parties are independent contractors. This Agreement does not create a partnership, franchise, joint venture, agency, fiduciary or employment relationship between the parties. Each party will be solely responsible for payment of all compensation owed to its employees, as well as all employment-related taxes.
 
-**13.5 Third-Party Beneficiaries.**
+**13.4 Third-Party Beneficiaries.**
 There are no third-party beneficiaries under this Agreement.
 
-**13.6 Waiver.**
+**13.5 Waiver.**
 No failure or delay by either party in exercising any right under this Agreement will constitute a waiver of that right.
 
-**13.7 Severability.**
+**13.6 Severability.**
 If any provision of this Agreement is held by a court of competent jurisdiction to be contrary to law, the provision will be deemed null and void, and the remaining provisions of this Agreement will remain in effect.
 
-**13.8 Assignment.**
+**13.7 Assignment.**
 Neither party may assign any of its rights or obligations hereunder, whether by operation of law or otherwise, without the other party’s prior written consent (not to be unreasonably withheld); provided, however, either party may assign this Agreement in its entirety (including all Order Forms), without the other party’s consent to its Affiliate or in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of its assets. Notwithstanding the foregoing, if a party is acquired by, sells substantially all of its assets to, or undergoes a change of control in favor of, a direct competitor of the other party, then such other party may terminate this Agreement upon written notice. In the event of such a termination, ues.io will refund Customer any prepaid fees covering the remainder of the term of all subscriptions for the period after the effective date of such termination. Subject to the foregoing, this Agreement will bind and insure to the benefit of the parties, their respective successors and permitted assigns.
 
 **14. Contracting Entity, Notices, Governing Law, and Venue.**
